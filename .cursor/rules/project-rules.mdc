@@ -1,0 +1,130 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Blue Envelope Program Visualization — Project Workflow & Rules
+
+## **Project Goal**
+The goal of this project is to create a **comprehensive U.S. map visualization** that shows where the **Blue Envelope Program** for autism has been officially adopted — whether **statewide** or **locally** — using **real, verified data**.
+
+This visualization will be used for infographics, reporting, advocacy, and public awareness.
+
+---
+
+## **Objectives**
+- ✅ Build a **static map** for infographic-ready images.
+- ✅ Create an **interactive map** for data exploration.
+- ✅ Maintain a **clean, structured repository** for seamless collaboration.
+- ✅ Enable **Cursor AI automation** with rules and prompts.
+- ✅ Prepare a **complete dataset** for all U.S. states (operational, local-only, pending, none).
+
+---
+
+## **Project Workflow**
+
+### **Step 1 — Environment Setup**
+1. Clone the repository.
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+### **Step 2 — Data Management**
+- The verified dataset lives in `data/blue_envelope_data.csv`.
+- Always update **only when a new program is officially adopted**.
+- Include:
+    - **State**
+    - **Coverage Type** → `Statewide` or `Local`
+    - **Location Name** → County, town, or "All Counties"
+    - **Adoption Status** → `Operational` or `Pending`
+
+> ⚠️ **Rule:** Never add data without a trusted source (official DMV, Sheriff’s office, or news release).
+
+---
+
+### **Step 3 — Generate Static Map**
+- Run the static visualization script:
+    ```bash
+    python scripts/plot_static_map.py
+    ```
+- Output: `assets/output_map.png`
+- Uses **color-coding**:
+    - 🟢 **Green** → Statewide adoption
+    - 🟡 **Yellow** → Local adoption only
+    - ⚪ **Grey** → No adoption yet
+
+---
+
+### **Step 4 — Generate Interactive Map**
+- Run the interactive map generator:
+    ```bash
+    python scripts/plot_interactive_map.py
+    ```
+- Output: `assets/interactive_map.html`
+- Hover tooltips show:
+    - State name
+    - Coverage type
+    - Adoption status
+
+---
+
+### **Step 5 — Automation Workflow with Cursor AI**
+We use **Cursor AI agent** to speed up development.
+
+#### **Agent Rules**
+1. Always read from `data/blue_envelope_data.csv`.
+2. Never hallucinate or guess program locations.
+3. Follow defined **color-coding standards**.
+4. Save outputs inside `assets/`.
+5. Follow the repository structure strictly.
+
+#### **Prompts for Cursor AI**
+**Prompt 1 — Update Dataset**
+```
+Open `data/blue_envelope_data.csv` and add newly confirmed states or counties where the Blue Envelope Program is officially adopted.
+```
+
+**Prompt 2 — Generate Static Map**
+```
+Run `scripts/plot_static_map.py` and save the output map to `assets/output_map.png`.
+```
+
+**Prompt 3 — Generate Interactive Map**
+```
+Run `scripts/plot_interactive_map.py` and save the interactive dashboard to `assets/interactive_map.html`.
+```
+
+**Prompt 4 — Validate Consistency**
+```
+Verify that color-coding, dataset references, and file structure follow project rules.
+```
+
+---
+
+### **Step 6 — Version Control Workflow**
+```bash
+git add .
+git commit -m "Update visualization and dataset"
+git push origin main
+```
+
+---
+
+## **Future Enhancements**
+- 🔹 Build an **enhanced dataset** for all **50 U.S. states**.
+- 🔹 Automate data ingestion using official state feeds.
+- 🔹 Add a **searchable dashboard** with program history per county.
+- 🔹 Export maps to multiple formats: `.png`, `.svg`, `.pdf`.
+
+---
+
+## **Summary**
+This project builds an accurate, data-driven, and visually engaging tool to track Blue Envelope Program adoption across the U.S.
+
+By following these rules, you ensure:
+- **Data integrity**  
+- **Consistent visuals**  
+- **Efficient collaboration with Cursor AI**  

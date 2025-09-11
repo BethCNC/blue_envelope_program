@@ -1,0 +1,25 @@
+state,coverage_type,location_name,adoption_status
+North Carolina,Local,Dare County (6 towns),Operational
+Connecticut,Statewide,All Counties,Operational
+Massachusetts,Statewide,All Counties,Operational
+Rhode Island,Statewide,All Counties,Operational
+Vermont,Statewide,All Counties,Operational
+Maine,Statewide,All Counties,Operational
+Arizona,Statewide,All Counties,Operational
+Virginia,Statewide,All Counties,Operational
+Delaware,Statewide,All Counties,Operational
+New York,Statewide,All Counties (via Sheriffs),Operational
+Arkansas,Statewide,All Counties,Pending
+California,Local,San Diego County,Operational
+California,Local,San Bernardino County,Operational
+California,Local,Placer County,Operational
+California,Local,Sutter County,Operational
+Colorado,Local,Boulder PD,Operational
+Colorado,Local,Jefferson County Sheriff,Operational
+Colorado,Local,Longmont Public Safety,Operational
+Colorado,Local,Golden PD,Operational
+Colorado,Local,Lafayette PD,Operational
+New Jersey,Local,Hunterdon County,Operational
+New Jersey,Local,Union County,Operational
+Pennsylvania,Local,Lehigh County,Operational
+Pennsylvania,Local,Northampton County,Operational
