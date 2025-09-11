@@ -1,0 +1,325 @@
+{
+    "title": "Law Enforcement and Autism Interaction Dataset",
+    "description": "Comprehensive compilation of statistics, cases, trends, and outcomes regarding interactions between law enforcement and autistic individuals",
+    "last_updated": "2025-09-11",
+    "data_sources": [
+      "Journal of Autism and Developmental Disorders (2016)",
+      "ABC News (2023, 2024)",
+      "The Marshall Project (2024)",
+      "Connecticut Public/NPR (2020)",
+      "Autistic Self Advocacy Network (ASAN) (2017)",
+      "ACLU of Virginia (2015, 2021)",
+      "Autism Speaks (2022)",
+      "Drexel University (2021)",
+      "National Conference of State Legislatures (2023)",
+      "PBS NewsHour",
+      "Prison Policy Initiative",
+      "The Arc",
+      "Ruderman Family Foundation (2016)",
+      "Guardian analysis",
+      "U.S. Department of Justice"
+    ],
+    "fatal_encounters": [
+      {
+        "name": "Ryan Gainer",
+        "year": 2024,
+        "location": "California",
+        "age": 15,
+        "demographics": "Black, autistic",
+        "details": "Shot and killed by sheriff's deputy outside his home after family called 911 for help during behavioral crisis. Bodycam footage showed teen had chased an officer with a gardening tool, but family had informed deputies of his autism and he had already calmed down before police arrived.",
+        "source": "The Marshall Project (Mar. 16, 2024)"
+      },
+      {
+        "name": "Osaze Osagie",
+        "year": 2019,
+        "location": "Pennsylvania",
+        "age": 29,
+        "demographics": "Black, autistic, schizophrenia",
+        "details": "Fatally shot by police during mental health check. His parents had previously alerted authorities about his condition. When Osagie emerged holding a knife, officers attempted less-lethal subduing and then opened fire. No charges filed against officers, family later sued.",
+        "quote": "Men with guns showed up and gave him a million instructions…it shouldn't be this way",
+        "source": "ABC News"
+      },
+      {
+        "name": "Ethan Saylor",
+        "year": null,
+        "details": "Young man with Down syndrome who died in police custody. Media initially blamed victim's disability rather than scrutinizing officers' actions.",
+        "source": "Mentioned in research document"
+      }
+    ],
+    "use_of_force_incidents": [
+      {
+        "name": "Linden Cameron",
+        "year": 2020,
+        "location": "Utah",
+        "age": 13,
+        "demographics": "Autistic",
+        "details": "Shot multiple times by Salt Lake City police after mother called 911 seeking help during mental health meltdown. Officers were told he was unarmed and having a crisis, yet shortly after arriving they shouted commands and fired multiple shots as the panicked child fled.",
+        "quote": "He was a small child",
+        "source": "Connecticut Public/NPR (Sept. 9, 2020)"
+      },
+      {
+        "name": "Arnaldo Rios Soto",
+        "year": 2016,
+        "location": "Miami",
+        "details": "Case where police shot the unarmed caregiver of an autistic man, despite officers having undergone disability training.",
+        "source": "ASAN citation"
+      }
+    ],
+    "wrongful_detainments": [
+      {
+        "name": "Reginald \"Neli\" Latson",
+        "year": 2010,
+        "location": "Virginia",
+        "demographics": "Black, autistic",
+        "details": "Waiting outside public library when someone called police about a 'suspicious' person. Officer's attempt to detain Neli led to physical altercation - likely a fight-or-flight reaction related to his autism. Arrested and convicted of assaulting an officer. Served time in prison with long stretches in solitary confinement.",
+        "outcome": "Received conditional pardon in 2015 (to transfer to treatment setting) and full pardon in 2021",
+        "advocacy": "ACLU noted case exemplified systemic failures: lack of police training and overuse of jails instead of community services",
+        "source": "ACLU of Virginia Press Release (Jan. 20, 2015)"
+      },
+      {
+        "name": "Matthew Rushin",
+        "year": 2019,
+        "location": "Virginia",
+        "age": 21,
+        "demographics": "Black, autistic",
+        "details": "Involved in serious traffic accident. Police misunderstood his echolalia (repeating words, a coping mechanism) as evidence of criminal intent. Charged with attempted murder and other felonies despite questions about his intent and possible medical episode causing the crash.",
+        "outcome": "Pled guilty under pressure and sentenced to 10 years in prison. Received conditional pardon in 2021 after over 2 years behind bars. Conviction still stands, family seeks full exoneration.",
+        "source": "ABC News"
+      }
+    ],
+    "statistics": {
+      "police_contact": {
+        "by_age_21": {
+          "questioned_by_police": "20%",
+          "arrested": "5%",
+          "interpretation": "1 in 5 autistic young adults have had police contact by their early twenties",
+          "source": "Journal of Autism and Developmental Disorders study (2016)"
+        },
+        "comparison_to_general_population": {
+          "increased_likelihood": "7 times more likely",
+          "source": "U.S. DOJ data (cited by Marshall Project)"
+        },
+        "international": {
+          "uk_data": "18% of autistic adults had been stopped or arrested by police in their lifetime",
+          "source": "U.K. study mentioned in research"
+        }
+      },
+      "use_of_force_fatalities": {
+        "victims_with_disabilities": "33-50%",
+        "victims_with_mental_health_disability": "20%",
+        "source": "Ruderman Family Foundation (2016); Guardian analysis"
+      },
+      "incarceration": {
+        "prison_population_with_any_disability": "40%",
+        "general_population_with_disability": "15%",
+        "prisoners_with_intellectual_developmental_disability": "4-10%",
+        "source": "Prison Policy Initiative; The Arc estimate"
+      },
+      "gender_disparity": {
+        "male_interaction_odds": "2× higher than females",
+        "female_victimization": "Higher odds of being crime victims",
+        "source": "Drexel University study (PA survey, 2021)"
+      },
+      "risk_factors": {
+        "co_occurring_conditions": "Having a co-occurring psychiatric condition increased odds of justice system interaction by nearly 2.7 times",
+        "source": "Pennsylvania survey study (2018)"
+      },
+      "regional_data": {
+        "san_diego_county": "81% of those shot in officer-involved shootings had either a mental health condition or substance use disorder",
+        "source": "Mentioned in research document"
+      },
+      "racial_disparities": {
+        "black_americans": "2-3 times more likely to be killed by police than white Americans",
+        "source": "Mentioned in research document"
+      }
+    },
+    "traffic_stop_initiatives": [
+      {
+        "name": "Blue Envelope Program",
+        "description": "Drivers keep license, registration, and autism information card in distinct blue envelope. Instructs both driver and officer on navigating the stop - alerting officer that individual has autism and may not respond typically.",
+        "locations": ["Connecticut (originating state)", "Massachusetts", "Virginia", "Other states adopting"],
+        "purpose": "Prevent escalation by immediately signaling to officer that driver may have communication challenges and sensory sensitivities",
+        "source": "Autism Speaks (2022)"
+      },
+      {
+        "name": "Autism License Designations",
+        "description": "Voluntary autism notations on driver's licenses or state IDs",
+        "locations": ["Kansas", "Rhode Island (considered)"],
+        "purpose": "Empower autistic drivers to disclose their condition, prompting officers to adjust tactics (giving extra time to respond, avoiding bright lights or loud commands)",
+        "source": "Autism Speaks"
+      },
+      {
+        "name": "Vehicle Placards/Decals",
+        "description": "Visual indicators for vehicles indicating an occupant's autism diagnosis",
+        "purpose": "Quick visual identification for officers during traffic stops",
+        "source": "Mentioned in research document"
+      }
+    ],
+    "policy_and_training": {
+      "state_mandates": {
+        "states_requiring_autism_training_2023": 8,
+        "states_requiring_autism_training_2024": 11,
+        "states_with_any_developmental_disability_training": "no more than 20",
+        "interpretation": "Well over half of U.S. states do not require police to be trained in how to recognize or interact with autistic or developmentally disabled individuals",
+        "source": "ABC News / NCSL; Marshall Project; PBS NewsHour"
+      },
+      "states_with_recent_legislation": [
+        {
+          "state": "Illinois",
+          "year": 2020,
+          "description": "Enacted autism training requirement for officers"
+        },
+        {
+          "state": "New Jersey",
+          "status": "Considered legislation"
+        },
+        {
+          "state": "Florida",
+          "status": "Bill to expand autism training died in committee in 2023"
+        },
+        {
+          "state": "Rhode Island",
+          "status": "Considered legislation, including special designation on driver's licenses"
+        },
+        {
+          "state": "Massachusetts",
+          "description": "Moved to make blue envelopes available statewide through legislation"
+        },
+        {
+          "state": "Virginia",
+          "description": "Program allowing families to voluntarily provide information about autistic household member to local police"
+        },
+        {
+          "state": "California",
+          "status": "Now mandates training on ASD for officers (as of 2024)"
+        }
+      ],
+      "community_initiatives": [
+        {
+          "type": "Voluntary registries/databases",
+          "description": "Caregivers register person with autism and provide information like triggers, de-escalation strategies, or contact info. If call comes in involving that individual or address, dispatchers can alert responding officers.",
+          "legislation": "Illinois 2016 law encouraged creation of such databases",
+          "locations": ["Illinois", "Various local agencies nationwide"]
+        },
+        {
+          "type": "Mental health professional partnerships",
+          "description": "Programs pairing mental health professionals with police on certain calls",
+          "locations": ["New York", "Pennsylvania"],
+          "status": "Pilot programs"
+        },
+        {
+          "type": "Alternative crisis response teams",
+          "description": "Unarmed mobile crisis units to handle nonviolent mental health emergencies instead of police",
+          "endorsement": "U.S. Department of Justice recently endorsed efforts to reduce police involvement in mental health calls, calling traditional police responses 'less effective, potentially harmful'"
+        },
+        {
+          "type": "Crisis Intervention Team (CIT) training",
+          "description": "Mental illness-focused training that often includes segments on autism and developmental disabilities",
+          "effectiveness_note": "Data on effectiveness is limited; many use-of-force databases do not capture whether subject had autism or disability"
+        },
+        {
+          "type": "Department-level policies",
+          "description": "Some agencies instruct officers to reduce sensory stimuli when possible - turning off sirens or flashing lights if safe to do so - during autism-related calls"
+        }
+      ]
+    },
+    "risk_factors": {
+      "demographic": [
+        "Male gender (2× the risk of police interaction compared to females)",
+        "Being Black or from other marginalized communities (double jeopardy of bias)",
+        "Co-occurring psychiatric conditions (increased odds by 2.7 times)",
+        "Young autistic men, especially those with additional mental health needs, at highest risk of police encounters"
+      ],
+      "behavioral": [
+        "Avoiding eye contact (police trained to notice as 'suspicious')",
+        "Stimming (repetitive movements)",
+        "Delayed responses to questions or commands",
+        "Literal interpretation of language",
+        "Pacing or appearing agitated",
+        "Not responding to social cues",
+        "Echolalia (repeating words) misinterpreted as admission of guilt or intent"
+      ],
+      "misinterpretation_patterns": [
+        "Non-compliance often actually inability to understand or swiftly follow orders",
+        "What looks like resisting arrest may be sensory overload or communication gap",
+        "Fight-or-flight reactions related to autism misread as aggression",
+        "Appearing unemotional misinterpreted as guilt"
+      ]
+    },
+    "advocacy_perspectives": {
+      "ASAN": {
+        "key_positions": [
+          "Emphasize autistic people themselves should have say in reforms",
+          "Highlight pattern of excessive force against people with disabilities, especially people of color with disabilities",
+          "Critique mere 'disability training' as sole solution - training alone hasn't prevented tragedies",
+          "Call for greater police accountability, data collection on use of force incidents involving disabilities"
+        ],
+        "proposed_solutions": [
+          "Investment in non-police crisis services",
+          "Deeper changes in police culture and protocols beyond one-time training"
+        ],
+        "source": "Autistic Self Advocacy Network (ASAN) - Autism & Safety Toolkit: Research Overview (2017)"
+      },
+      "ACLU": {
+        "key_positions": [
+          "Jails and prisons should not be default management for autism or mental health",
+          "States must provide suitable community services rather than using criminal justice system to 'warehouse' people with disabilities"
+        ],
+        "actions": [
+          "Involved in cases like Neli Latson's",
+          "2022 lawsuit in Washington, D.C. arguing dispatching armed police to mental health crises violates Americans with Disabilities Act",
+          "Using disability rights law to demand better training and alternative response options"
+        ],
+        "source": "ACLU of Virginia - Press Release on Neli Latson Pardon (Jan. 20, 2015)"
+      },
+      "Autism_Speaks": {
+        "key_positions": [
+          "Focus on practical safety measures",
+          "Promote identification tools (autism ID cards, vehicle decals, license notations)",
+          "Respect that disclosure should be voluntary - some fear stigma or targeting"
+        ],
+        "initiatives": [
+          "Collaboration with law enforcement on training curricula",
+          "Programs like Project Lifesaver (for wandering prevention)",
+          "Local police-autism awareness days"
+        ],
+        "source": "Autism Speaks - 'Autism and driving: Ways to identify as autistic when driving' (2022)"
+      },
+      "Academic_Experts": {
+        "key_positions": [
+          "Seth Stoughton (law professor/former officer): Police training needs to reframe 'compliance' when dealing with disabled civilians",
+          "Lack of eye contact or failure to obey often not willful resistance but a cue to de-escalate"
+        ],
+        "research_focus": [
+          "Examining outcomes and testing interventions",
+          "Identifying risk factors to target preventive support",
+          "Developing simulation training for officers"
+        ],
+        "recommendations": [
+          "Implementing standardized protocols (checking for medical ID jewelry or wallet cards before assuming noncompliance)",
+          "Including autistic people in training of police through direct storytelling or videos",
+          "Building empathy by having officers understand how sirens or shouted orders feel to person with autism"
+        ]
+      }
+    },
+    "systemic_issues": {
+      "training_gaps": {
+        "national_standards": "No consistent national standards or funding for autism training",
+        "effectiveness_measurement": "Very difficult to collect data on how many encounters officers have with autistic people and whether training improves outcomes",
+        "implementation": "Training needs to be more widespread and scenario-based, coupled with departmental policies emphasizing de-escalation"
+      },
+      "media_coverage": {
+        "bias": "Initial media narratives often blame individual's disability for outcome rather than scrutinizing officers' actions",
+        "framing": "Portray incidents as 'tragic accidents' inherent to autism rather than examining police protocols"
+      },
+      "justice_system": {
+        "false_confessions": "Autistic individuals have falsely confessed or gotten entangled in justice system because they did not understand rights or implications of police questioning",
+        "court_disadvantages": "U.K. study noted autistic adults sometimes disadvantaged during police interrogations and court due to communication differences and juries misreading their affect",
+        "overrepresentation": "People with cognitive and developmental disabilities significantly overrepresented in prisons"
+      },
+      "response_models": {
+        "traditional_approach": "Typical police tools (loud commands, bright lights, physical restraints) can exacerbate autistic person's distress",
+        "alternative_paradigm": "Growing support for alternative crisis response teams to handle nonviolent mental health emergencies instead of police"
+      }
+    }
+  }
