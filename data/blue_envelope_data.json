@@ -1,0 +1,138 @@
+[
+    {
+        "state": "Connecticut",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2020",
+        "notes": "First state to implement; DMV-driven; became national model."
+    },
+    {
+        "state": "Massachusetts",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2023",
+        "notes": "Pilot launched 2023; Senate bill S.2558 codifies program; envelopes via RMV & police barracks."
+    },
+    {
+        "state": "Rhode Island",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2025",
+        "notes": "2024 law effective Jan 2025; DMV & Police Chiefs Association manage; AAA branches distribute envelopes."
+    },
+    {
+        "state": "Vermont",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2024",
+        "notes": "DMV partnership with Univ. of Vermont Autism Collaborative; modeled after CT/MA."
+    },
+    {
+        "state": "Maine",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2024",
+        "notes": "Partnership with Down Syndrome Advocacy Project; widely distributed via state police."
+    },
+    {
+        "state": "Arizona",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2024",
+        "notes": "ADOT & DPS collaboration; envelopes at all MVD locations; law enforcement training included."
+    },
+    {
+        "state": "Virginia",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2025",
+        "notes": "DMV launched program statewide after HB2501; Loudoun County piloted earlier."
+    },
+    {
+        "state": "Delaware",
+        "adopted": true,
+        "adoption_type": "Statewide",
+        "localities": "",
+        "implementation_year": "2025",
+        "notes": "State Police, DMV, Univ. of Delaware collaboration; launched Aug 2025."
+    },
+    {
+        "state": "Arkansas",
+        "adopted": true,
+        "adoption_type": "Pending Statewide",
+        "localities": "",
+        "implementation_year": "2026",
+        "notes": "Act 16 signed Feb 2025; program starts Jan 1, 2026; unanimous bipartisan passage."
+    },
+    {
+        "state": "New Jersey",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "Hunterdon, Union, Camden, Morris, Monmouth, Bergen, others",
+        "implementation_year": "2019",
+        "notes": "Widespread local programs; first pilot in Hunterdon County; many sheriff offices now distribute envelopes."
+    },
+    {
+        "state": "New York",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "Multiple counties via Sheriffs' Offices",
+        "implementation_year": "2021",
+        "notes": "NY Sheriffs\u2019 Association supports county-by-county adoption; growing rapidly."
+    },
+    {
+        "state": "California",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "San Diego, San Bernardino, Placer, Sutter, Rio Dell PD",
+        "implementation_year": "2022",
+        "notes": "Local programs active; 2023 state bill proposed for statewide rollout."
+    },
+    {
+        "state": "Colorado",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "Boulder, Aurora, Jefferson Co., Golden, Lafayette",
+        "implementation_year": "2025",
+        "notes": "First launched Boulder PD Jan 2025; Aurora PD added stickers & driver buttons."
+    },
+    {
+        "state": "North Carolina",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "Dare County (6 towns)",
+        "implementation_year": "2024",
+        "notes": "Outer Banks Health initiative; free envelopes via sheriff & town PDs."
+    },
+    {
+        "state": "Pennsylvania",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "Montgomery Co., Bucks, Lehigh Valley, Allentown PD",
+        "implementation_year": "2023",
+        "notes": "Multiple local programs; Montgomery Co. distributes free envelopes at police stations."
+    },
+    {
+        "state": "Ohio",
+        "adopted": true,
+        "adoption_type": "Local",
+        "localities": "Lakewood PD, NE Ohio pilot",
+        "implementation_year": "2025",
+        "notes": "Lakewood Police launched April 2025; positive response driving expansion."
+    },
+    {
+        "state": "Other States",
+        "adopted": false,
+        "adoption_type": "None",
+        "localities": "",
+        "implementation_year": "",
+        "notes": "No Blue Envelope programs; many states offer autism ID cards, license indicators, or special notations instead."
+    }
+]
