@@ -1,0 +1,53 @@
+{
+  "scan_date": "2025-09-11T23:17:42.929506",
+  "website": "https://www.unioncountysheriffsoffice.com",
+  "scan_method": "Manual Analysis Required",
+  "reason": "Website blocking automated requests (403 Forbidden)",
+  "manual_analysis_instructions": {
+    "steps": [
+      "1. Visit the website manually in a web browser",
+      "2. Navigate through all main pages and sections",
+      "3. Use Ctrl+F (or Cmd+F on Mac) to search for each keyword",
+      "4. Record the count for each keyword on each page",
+      "5. Note any relevant content or policies found"
+    ],
+    "keywords_to_search": [
+      "autism",
+      "autistic",
+      "autism spectrum",
+      "disability",
+      "disabilities",
+      "disabled",
+      "disabled rights",
+      "disability rights",
+      "ADA",
+      "Americans with Disabilities",
+      "accessibility",
+      "accessible",
+      "accommodation",
+      "accommodate",
+      "reasonable accommodation"
+    ],
+    "pages_to_check": [
+      "Home page",
+      "About Us / About the Sheriff",
+      "Services / Programs",
+      "Community Programs",
+      "Training / Education",
+      "Policies / Procedures",
+      "Contact / Information",
+      "News / Press Releases",
+      "Resources / Links"
+    ]
+  },
+  "expected_findings": {
+    "hypothesis": "Based on typical law enforcement websites, we expect to find:",
+    "predictions": [
+      "0-2 mentions of autism/autistic",
+      "1-5 mentions of disability/disabilities (likely in general context)",
+      "0-1 mentions of ADA or accessibility",
+      "0 mentions of disability rights or accommodations",
+      "Most mentions will be in general policy statements, not specific programs"
+    ]
+  }
+}

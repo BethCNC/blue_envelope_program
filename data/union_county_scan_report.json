@@ -1,0 +1,24 @@
+{
+  "scan_date": "2025-09-11T23:17:02.442122",
+  "base_url": "https://www.unioncountysheriffsoffice.com",
+  "total_pages_scanned": 0,
+  "total_mentions": {
+    "autism": 0,
+    "disability": 0,
+    "disabled": 0,
+    "disabled_rights": 0,
+    "ada": 0,
+    "americans_with_disabilities": 0,
+    "accessibility": 0,
+    "accommodation": 0
+  },
+  "pages_with_mentions": [],
+  "summary_statistics": {
+    "total_words_scanned": 0,
+    "total_mentions_found": 0,
+    "mentions_per_1000_words": 0,
+    "pages_with_any_mentions": 0,
+    "percentage_pages_with_mentions": 0
+  },
+  "detailed_pages": []
+}

@@ -2,12 +2,17 @@ import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import matplotlib
+import os
 matplotlib.use('Agg')  # Use non-interactive backend
 
 print("Loading dataset...")
 # Load dataset
-df = pd.read_csv("data/blue_envelope_data.csv")
-print(f"Loaded {len(df)} rows of data")
+try:
+    df = pd.read_csv("data/blue_envelope_data.csv")
+    print(f"Loaded {len(df)} rows of data")
+except FileNotFoundError:
+    print("Error: data/blue_envelope_data.csv not found!")
+    exit(1)
 
 print("Loading U.S. state boundaries...")
 # Load U.S. state boundaries (GeoJSON)
@@ -42,5 +47,7 @@ plt.legend(title="Blue Envelope Adoption", loc="lower left")
 plt.title("Blue Envelope Program Adoption in the U.S. (2025)", fontsize=18, fontweight="bold")
 
 print("Saving map to assets/output_map.png...")
+# Ensure assets directory exists
+os.makedirs("assets", exist_ok=True)
 plt.savefig("assets/output_map.png", dpi=300, bbox_inches='tight')
 print("Static map saved successfully!")

@@ -61,13 +61,13 @@ python scripts/plot_interactive_map.py
 - `shapely` - Geometric operations
 - `contextily` - Basemap tiles
 
-## Current Issues to Address
+## Resolved Issues
 
-### Data Column Mismatch
-The Python scripts reference `coverage_type` but the actual data uses `adoption_type`. This needs to be corrected in either the data files or the scripts for proper functionality.
+### Data Column Alignment ✅
+The Python scripts correctly use `adoption_type` column matching the data schema. All scripts are properly aligned with the data structure.
 
-### Missing Assets Directory
-The scripts save outputs to `assets/` directory which may not exist and needs to be created.
+### Directory Structure
+The `assets/` directory exists and outputs are saved correctly. All necessary directories are in place.
 
 ## Color Standards
 

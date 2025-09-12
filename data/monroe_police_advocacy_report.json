@@ -1,0 +1,555 @@
+{
+  "department": "Monroe Police Department",
+  "location": "Monroe, North Carolina",
+  "scan_date": "2025-09-11T23:33:03.437571",
+  "executive_summary": "LIMITED AWARENESS: The Monroe Police Department website contains 13 mentions of autism, disability, or accessibility-related terms. While some awareness exists, there is significant room for improvement in disability inclusion and training.",
+  "specific_findings": {
+    "autism_mentions": 0,
+    "disability_mentions": 0,
+    "ada_mentions": 0,
+    "accessibility_mentions": 13,
+    "total_pages_scanned": 15,
+    "pages_with_mentions": 13
+  },
+  "advocacy_implications": [
+    {
+      "finding": "Zero autism awareness",
+      "implication": "Complete lack of preparedness for autistic community members",
+      "evidence": "No mentions of autism, autistic, or autism spectrum across entire website",
+      "impact": "High risk of miscommunication during police interactions"
+    },
+    {
+      "finding": "No disability awareness",
+      "implication": "No training or protocols for disability interactions",
+      "evidence": "Zero mentions of disability, disabilities, or disabled persons",
+      "impact": "Potential ADA compliance issues"
+    },
+    {
+      "finding": "No ADA awareness",
+      "implication": "Lack of understanding of legal requirements",
+      "evidence": "No mentions of ADA or Americans with Disabilities Act",
+      "impact": "Legal compliance risk"
+    }
+  ],
+  "recommendations": [
+    "Implement comprehensive autism awareness training for all Monroe Police officers",
+    "Develop clear protocols for traffic stops involving autistic individuals",
+    "Create accessible communication materials and procedures",
+    "Establish partnerships with local autism organizations in Monroe/Union County",
+    "Implement the Blue Envelope Program as the first structured approach to autism awareness",
+    "Develop ADA compliance training and procedures",
+    "Create community outreach programs for the autism community"
+  ],
+  "statistics": {
+    "total_words_scanned": 32388,
+    "total_mentions_found": 13,
+    "mentions_per_1000_words": 0.4,
+    "pages_with_any_mentions": 13,
+    "percentage_pages_with_mentions": 86.67
+  },
+  "raw_data": {
+    "scan_date": "2025-09-11T23:33:03.437571",
+    "website": "https://www.monroenc.org",
+    "police_section": "https://www.monroenc.org/250/Police",
+    "total_pages_scanned": 15,
+    "total_mentions": {
+      "autism": 0,
+      "disability": 0,
+      "disabled": 0,
+      "disabled_rights": 0,
+      "ada": 0,
+      "americans_with_disabilities": 0,
+      "accessibility": 13,
+      "accommodation": 0
+    },
+    "pages_with_mentions": [
+      {
+        "url": "https://www.monroenc.org/250/Police",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_3",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/257/Compliment-Complaint",
+        "title": "Compliment / Complaint | Monroe, NC",
+        "page_name": "General Page",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/259/Recruitment",
+        "title": "Recruitment | Monroe, NC",
+        "page_name": "General Page",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_4",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_0",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#cc5f8c90dc-b4cb-431b-90ee-10648f8df655",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_5",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/FormCenter/Police-12/Monroe-Police-Department-Rescue-Group-Ap-75",
+        "title": "Form Center \u2022 Monroe Police Department Rescue Group Applicat",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_2",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/252/Accreditation",
+        "title": "Accreditation | Monroe, NC",
+        "page_name": "General Page",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_1",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      },
+      {
+        "url": "https://www.monroenc.org/255/Community-Involvement",
+        "title": "Community Involvement | Monroe, NC",
+        "page_name": "General Page",
+        "total_mentions": 1,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        }
+      }
+    ],
+    "summary_statistics": {
+      "total_words_scanned": 32388,
+      "total_mentions_found": 13,
+      "mentions_per_1000_words": 0.4,
+      "pages_with_any_mentions": 13,
+      "percentage_pages_with_mentions": 86.67
+    },
+    "detailed_pages": [
+      {
+        "url": "https://www.monroenc.org/250/Police",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_3",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/257/Compliment-Complaint",
+        "title": "Compliment / Complaint | Monroe, NC",
+        "page_name": "General Page",
+        "word_count": 836,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Compliment / Complaint | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPoliceCompliment / Complaint Compliment / Complaint Compliment or Complaint FormsIf you have been assisted by a Police Department emplo..."
+      },
+      {
+        "url": "https://www.monroenc.org/259/Recruitment",
+        "title": "Recruitment | Monroe, NC",
+        "page_name": "General Page",
+        "word_count": 483,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Recruitment | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPoliceRecruitment Recruitment Would you like to enter into a law enforcement career serving over 30,000 citizens? If this sounds like what you're ..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_4",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_0",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/DocumentCenter/View/1316/Extra-Patrol-Request-Form-PDF",
+        "title": "General Page",
+        "page_name": "General Page",
+        "word_count": 13810,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "%PDF-1.6 %\ufffd\ufffd\ufffd\ufffd 171 0 obj <> endobj 286 0 obj <>/Filter/FlateDecode/ID[<2CA161E9425CDC42AD899292C2083F44><823CA0683759F44595678D5F3BFDB842>]/Index[171 212]/Info 170 0 R/Length 262/Prev 229439/Root 172 0 R/Size 383/Type/XRef/W[1 3 1]>>stream h\ufffd\ufffd1KBa\u0014\ufffd\ufffd9&\ufffd\ufffd\ufffd8G\ufffd4H\ufffd\ufffd\ufffd(\b-\ufffdbh\ufffd\ufffd\ufffd\ufffd\ufffd t(\\jjmj)\ufffdED\ufffd)\bZl\ud9df\udd1b\ufffd<7\ufffd\ufffd5\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd~\ufffd\ufffd3\u0015I\ufffd\ufffd\u012bN}t\ufffd1y\ufffd\ufffda\ufffdg\u0625y \ufffd1-2^\ufffd\ufffda_\ufffd\ufffd\ufffd\ufffd\ufffd<\u02feA\ufffd\ufffd\ufffd2\ufffd\ufffd`\ufffd\ufffd'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u03c9\ufffdM\u0006\ufffdFK\ufffd\ufffd<,;c{\ufffd\u00b9\ufffd \ufffd`\u0002\u04c7=\ufffdl\ufffd\u02f63y\ufffd\ufffd\ufffd\u0001\ufffdq\ufffd\ufffdd\ufffd,\ufffd\u0016\ufffdB\ufffdH&\ufffd\ufffdj\ufffdt\ufffd\ufffds\ufffd\ufffd\ufffd\ufffd<\ufffdC\ufffd\ufffd\ufffd$\ufffdG;\ufffd\ufffd\ufffd s\ufffd<\ufffd\ufffd|\ufffd\u000fo \ufffd\ufffd1|\ufffd\u001f\ufffd \ufffd\ufffd\ufffdW\ufffd\ufffd\ufffd\ufffdXpo\ufffd!X_s\ufffd%\ufffd-\ufffd\ufffd\ufffdT\ufffd\u0001\u0000\ufffd\ufffdJ\ufffd endstream end..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#cc5f8c90dc-b4cb-431b-90ee-10648f8df655",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_5",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/FormCenter/Police-12/Monroe-Police-Department-Rescue-Group-Ap-75",
+        "title": "Form Center \u2022 Monroe Police Department Rescue Group Applicat",
+        "page_name": "Police Department",
+        "word_count": 1310,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Form Center \u2022 Monroe Police Department Rescue Group Applicat Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeForm Center Form Center Search Forms by: Enter Search Terms Select a Category Select category/categories to filter All Ca..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_2",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/252/Accreditation",
+        "title": "Accreditation | Monroe, NC",
+        "page_name": "General Page",
+        "word_count": 596,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Accreditation | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPoliceAccreditation Accreditation National AccreditationThe Monroe Police Department voluntarily elected to enter the accreditation process. Thi..."
+      },
+      {
+        "url": "https://www.monroenc.org/250/Police#tab9c13a590-86d5-42c9-a1c9-54450dfc9ee6_1",
+        "title": "Police | Monroe, NC",
+        "page_name": "Police Department",
+        "word_count": 995,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Police | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPolice Police Monroe Police Department Mission StatementThe Monroe Police Department strives to improve the quality of life of those we serve. It is ou..."
+      },
+      {
+        "url": "https://www.monroenc.org/255/Community-Involvement",
+        "title": "Community Involvement | Monroe, NC",
+        "page_name": "General Page",
+        "word_count": 440,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 1,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "Community Involvement | Monroe, NC Skip to Main Content Create a Website Account - Manage notification subscriptions, save form progress and more. Website Sign In Dowd Center Theatre Monroe Science Center Monroe Aquatics & Fitness Center Parks & Recreation Utilities /QuickLinks.aspx Search Government Departments Residents Visit Monroe How Do I... HomeDepartmentsPoliceCommunity Involvement Community Involvement Community Watch ProgramThe foundation for creating and maintaining neighborhood crime ..."
+      },
+      {
+        "url": "https://www.monroenc.org/DocumentCenter/View/1318/Non-Emergency-Incident-Report-Form-PDF",
+        "title": "General Page",
+        "page_name": "General Page",
+        "word_count": 6953,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "has_content": true,
+        "text_sample": "%PDF-1.6 %\ufffd\ufffd\ufffd\ufffd 105 0 obj <> endobj 164 0 obj <>/Filter/FlateDecode/ID[<67EFD93864C0734C9FA9A40EDA752689>]/Index[105 113]/Info 104 0 R/Length 203/Prev 163003/Root 106 0 R/Size 218/Type/XRef/W[1 3 1]>>stream h\ufffd\ufffd\ufffd?\ufffd\ufffda\u0018\ufffd\ufffd\ufffd)\ufffdb\ufffd \ufffd\ufffd\u0244\ufffd`:\ufffdER\ufffdEFfJ\u0780\ufffd\ufffd\"\ufffdu\ufffd\u8813\ufffdl4\u0019\ufffd8\ufffd\u0007\ufffdw\ufffd\ufffdx\u0001\ufffdOW\ufffd\ufffd\ufffds\ufffdX#\ufffd\u0017+\ufffdZ\ufffdfL\ufffdSe\ufffd\ufffd(y\u0012\u001b$U5;\ufffd\ufffd@\u0012\ufffd\u001aI\ufffd:E \ufffd\ufffd\ufffdf\ufffdDTo\ufffd\ufffd\t\ufffd\ufffd\ufffdk3\ufffd!\ufffd>o\ufffdt\ufffd\ufffdDZ\ufffdO\ufffdd\ufffd\ufffd2\ufffdu\ufffd\ufffd\ufffd\ufffd'\ufffd\ufffd\ufffdg\\\ufffd\ufffd\ufffdT\ufffd\ufffdH\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd N\ufffd6\ufffd\ufffdlp\ufffd\ufffd\ufffd3\ufffd\ufffd\ufffd\u06ec}\ufffd \ufffdb\u001f\ufffd\ufffdJ\ufffd\ufffd\u05cf\ufffd\ufffd\ufffd/\ufffd\u0002 \u0000\ufffd-*\ufffd endstream endobj startxref 0 %%EOF 217 0 obj <>stream h\ufffdb``\ufffdd``\ufffdc```JPf@\u0005\ufffd@\ufffd\ufffd\ufffdq\u0000U\ufffd\u0012\ufffd\u0019\u0018L\u0019\u0004\ufffd\ufffd\u0019V1|edc..."
+      }
+    ]
+  }
+}

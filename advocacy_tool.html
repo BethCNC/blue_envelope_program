@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Envelope Program - Law Enforcement Education</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #164772;
+            text-align: center;
+            border-bottom: 3px solid #164772;
+            padding-bottom: 20px;
+        }
+        h2 {
+            color: #164772;
+            margin-top: 30px;
+        }
+        .stat-box {
+            background: #d1e9f3;
+            border-left: 5px solid #164772;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #164772;
+        }
+        .stat-text {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .problem, .solution {
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .problem {
+            background: #ffeaea;
+            border-left: 5px solid #d32f2f;
+        }
+        .solution {
+            background: #e8f5e8;
+            border-left: 5px solid #4caf50;
+        }
+        .case-study {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .call-to-action {
+            background: #2c5aa0;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .cta-button {
+            background: white;
+            color: #164772;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        
+        /* Monroe Analysis Styles */
+        .monroe-analysis {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border: 2px solid #ef4444;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .monroe-findings {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .finding {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+        
+        .finding.critical {
+            border-color: #ef4444;
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+        }
+        
+        .finding.limited {
+            border-color: #f59e0b;
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+        }
+        
+        .finding-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+        
+        .finding-label {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 5px;
+        }
+        
+        .finding-desc {
+            font-size: 0.9em;
+            color: #6b7280;
+        }
+        
+        .monroe-impact {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .monroe-impact h4 {
+            color: #dc2626;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .monroe-impact ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .monroe-impact li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blue Envelope Program: Improving Police Interactions with Autistic Individuals</h1>
+        
+        <div class="stat-box">
+            <div class="stat-number">20%</div>
+            <div class="stat-text">of autistic adults have police contact by age 21</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">7x</div>
+            <div class="stat-text">more likely to interact with police than general population</div>
+        </div>
+
+        <h2>The Problem</h2>
+        <div class="problem-solution">
+            <div class="problem">
+                <h3>Current Challenges</h3>
+                <ul>
+                    <li><strong>Sensory Overload:</strong> Bright lights, sirens, radios, and traffic noise can cause extreme distress</li>
+                    <li><strong>Communication Differences:</strong> May not make eye contact, need extra time to process, or repeat words</li>
+                    <li><strong>Misinterpreted Behaviors:</strong> Rocking, covering ears, or delayed responses seen as non-compliance</li>
+                    <li><strong>Fight-or-Flight Response:</strong> Overwhelming situations can trigger panic reactions</li>
+                    <li><strong>Lack of Understanding:</strong> Officers may not recognize autism-related behaviors</li>
+                </ul>
+            </div>
+            <div class="solution">
+                <h3>Blue Envelope Solution</h3>
+                <ul>
+                    <li><strong>Immediate Recognition:</strong> Blue envelope signals autism to officer</li>
+                    <li><strong>All Documents Included:</strong> License, registration, insurance in one place</li>
+                    <li><strong>Communication Card:</strong> Explains autism behaviors and needs</li>
+                    <li><strong>Reduces Stress:</strong> Clear, simple information upfront</li>
+                    <li><strong>Prevents Escalation:</strong> Better understanding leads to safer interactions</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Monroe, North Carolina: Critical Need Identified</h2>
+        <div class="monroe-analysis">
+            <h3>Website Analysis Results</h3>
+            <div class="monroe-findings">
+                <div class="finding critical">
+                    <div class="finding-number">0</div>
+                    <div class="finding-label">Autism Mentions</div>
+                    <div class="finding-desc">Across entire Monroe PD website (15 pages, 32,388 words)</div>
+                </div>
+                <div class="finding critical">
+                    <div class="finding-number">0</div>
+                    <div class="finding-label">Disability Awareness</div>
+                    <div class="finding-desc">In law enforcement context</div>
+                </div>
+                <div class="finding critical">
+                    <div class="finding-number">0</div>
+                    <div class="finding-label">ADA Compliance</div>
+                    <div class="finding-desc">Americans with Disabilities Act mentions</div>
+                </div>
+                <div class="finding limited">
+                    <div class="finding-number">13</div>
+                    <div class="finding-label">Accessibility</div>
+                    <div class="finding-desc">Mentions (website accessibility only)</div>
+                </div>
+            </div>
+            <div class="monroe-impact">
+                <h4>Critical Implications for Monroe:</h4>
+                <ul>
+                    <li><strong>Complete Lack of Preparedness:</strong> Zero autism awareness creates dangerous situations during traffic stops</li>
+                    <li><strong>Legal Risk:</strong> No ADA compliance awareness puts department at risk of discrimination claims</li>
+                    <li><strong>Community Trust:</strong> Without proper training, interactions can damage trust and create trauma</li>
+                    <li><strong>Simple Solution:</strong> Blue Envelope Program provides cost-effective, proven solution</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Real Impact</h2>
+        <div class="case-study">
+            <h3>Common Scenarios</h3>
+            <p>Traffic stops can be overwhelming for autistic individuals due to:</p>
+            <ul>
+                <li><strong>Sensory Overload:</strong> Bright lights, sirens, radios, and traffic noise</li>
+                <li><strong>Communication Challenges:</strong> Difficulty processing rapid questions or commands</li>
+                <li><strong>Stress Responses:</strong> Rocking, covering ears, or other self-regulation behaviors</li>
+                <li><strong>Misunderstanding:</strong> Officers may interpret autism-related behaviors as non-compliance</li>
+            </ul>
+            <p><strong>The Blue Envelope Program is designed to prevent these difficult situations through better communication and understanding.</strong></p>
+        </div>
+
+        <h2>Legal Framework</h2>
+        <p>The <strong>Americans with Disabilities Act (ADA)</strong> requires law enforcement to:</p>
+        <ul>
+            <li>Provide reasonable accommodations during interactions</li>
+            <li>Ensure effective communication</li>
+            <li>Modify procedures when necessary for safety and accessibility</li>
+            <li>Recognize that some behaviors may be disability-related, not threatening</li>
+        </ul>
+
+        <h2>Current Implementation Status</h2>
+        <p>The Blue Envelope Program is currently implemented in:</p>
+        <ul>
+            <li><strong>8 States Statewide:</strong> Connecticut, Massachusetts, Rhode Island, Vermont, Maine, Arizona, Virginia, Delaware</li>
+            <li><strong>8 States Locally:</strong> New Jersey, New York, California, Colorado, North Carolina, Pennsylvania, Ohio</li>
+            <li><strong>1 State Pending:</strong> Arkansas (implementation 2026)</li>
+        </ul>
+
+        <h2>How It Works</h2>
+        <ol>
+            <li><strong>Driver Preparation:</strong> Keep license, registration, insurance, and autism communication card in blue envelope</li>
+            <li><strong>Traffic Stop:</strong> Present entire blue envelope to officer</li>
+            <li><strong>Officer Recognition:</strong> Blue envelope immediately signals autism</li>
+            <li><strong>Modified Approach:</strong> Officer adjusts communication style and reduces sensory input</li>
+            <li><strong>Safer Interaction:</strong> Both parties understand the situation better</li>
+        </ol>
+
+        <div class="call-to-action">
+            <h2>Take Action</h2>
+            <p>Help implement the Blue Envelope Program in your community:</p>
+            <a href="#resources" class="cta-button">View Resources</a>
+            <a href="#contact" class="cta-button">Contact Local Officials</a>
+        </div>
+
+        <h2>Resources for Implementation</h2>
+        <ul>
+            <li><strong>Connecticut Model:</strong> First state to implement; DMV-driven program</li>
+            <li><strong>Massachusetts:</strong> Senate bill S.2558 codifies program statewide</li>
+            <li><strong>Local Programs:</strong> Many counties and cities have successful local implementations</li>
+            <li><strong>Training Materials:</strong> Available for law enforcement education</li>
+            <li><strong>Community Support:</strong> Autism organizations can provide guidance</li>
+        </ul>
+
+        <h2>Next Steps</h2>
+        <ol>
+            <li><strong>Research:</strong> Check if your state/county already has a program</li>
+            <li><strong>Connect:</strong> Reach out to local autism organizations</li>
+            <li><strong>Educate:</strong> Share this information with law enforcement</li>
+            <li><strong>Advocate:</strong> Contact local officials about implementation</li>
+            <li><strong>Support:</strong> Help with program development and training</li>
+        </ol>
+
+        <div class="stat-box">
+            <div class="stat-text">The Blue Envelope Program is a simple, effective way to improve safety and communication during police interactions with autistic individuals.</div>
+        </div>
+    </div>
+</body>
+</html>

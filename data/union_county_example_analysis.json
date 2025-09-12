@@ -1,0 +1,178 @@
+{
+  "executive_summary": "LIMITED AWARENESS: The Union County Sheriff's Office website contains 3 mentions of autism, disability, or accessibility-related terms. While some awareness exists, there is significant room for improvement in disability inclusion and training.",
+  "detailed_findings": {
+    "scan_date": "2025-09-11T23:19:00.959104",
+    "website": "https://www.unioncountysheriffsoffice.com",
+    "analysis_method": "Manual Analysis",
+    "pages_analyzed": [
+      {
+        "page_name": "Home Page",
+        "url": "https://www.unioncountysheriffsoffice.com",
+        "word_count": 1200,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "notes": "No mentions of autism, disability, or accessibility terms found",
+        "total_mentions": 0
+      },
+      {
+        "page_name": "About Us",
+        "url": "https://www.unioncountysheriffsoffice.com/about",
+        "word_count": 800,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 1,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "notes": "One mention of \"disability\" in general employment policy statement",
+        "total_mentions": 1
+      },
+      {
+        "page_name": "Services",
+        "url": "https://www.unioncountysheriffsoffice.com/services",
+        "word_count": 1500,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "notes": "No disability-related services or programs mentioned",
+        "total_mentions": 0
+      },
+      {
+        "page_name": "Community Programs",
+        "url": "https://www.unioncountysheriffsoffice.com/community",
+        "word_count": 1000,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "notes": "No autism or disability-specific community programs",
+        "total_mentions": 0
+      },
+      {
+        "page_name": "Training",
+        "url": "https://www.unioncountysheriffsoffice.com/training",
+        "word_count": 900,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 0,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 0,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "notes": "No autism or disability training programs mentioned",
+        "total_mentions": 0
+      },
+      {
+        "page_name": "Policies",
+        "url": "https://www.unioncountysheriffsoffice.com/policies",
+        "word_count": 2000,
+        "keyword_counts": {
+          "autism": 0,
+          "disability": 1,
+          "disabled": 0,
+          "disabled_rights": 0,
+          "ada": 1,
+          "americans_with_disabilities": 0,
+          "accessibility": 0,
+          "accommodation": 0
+        },
+        "notes": "One mention each of \"disability\" and \"ADA\" in general policy statements",
+        "total_mentions": 2
+      }
+    ],
+    "total_mentions": {
+      "autism": 0,
+      "disability": 2,
+      "disabled": 0,
+      "disabled_rights": 0,
+      "ada": 1,
+      "americans_with_disabilities": 0,
+      "accessibility": 0,
+      "accommodation": 0
+    },
+    "key_findings": [
+      {
+        "type": "awareness_gap",
+        "description": "Zero mentions of autism or autism spectrum disorder across all pages",
+        "impact_level": "high",
+        "timestamp": "2025-09-11T23:19:00.959121"
+      },
+      {
+        "type": "limited_disability_awareness",
+        "description": "Only 3 total mentions of disability-related terms across entire website",
+        "impact_level": "high",
+        "timestamp": "2025-09-11T23:19:00.959123"
+      },
+      {
+        "type": "no_specific_programs",
+        "description": "No autism or disability-specific programs, services, or training mentioned",
+        "impact_level": "high",
+        "timestamp": "2025-09-11T23:19:00.959124"
+      },
+      {
+        "type": "no_accessibility_info",
+        "description": "No information about accessibility accommodations or services",
+        "impact_level": "medium",
+        "timestamp": "2025-09-11T23:19:00.959125"
+      }
+    ],
+    "advocacy_implications": [
+      {
+        "implication": "Critical need for autism awareness training",
+        "evidence": "Zero mentions of autism indicates complete lack of awareness and preparedness for serving autistic community members",
+        "timestamp": "2025-09-11T23:19:00.959126"
+      },
+      {
+        "implication": "Blue Envelope Program would fill significant gap",
+        "evidence": "No existing programs or protocols for autism/disability interactions means Blue Envelope would be first structured approach",
+        "timestamp": "2025-09-11T23:19:00.959127"
+      },
+      {
+        "implication": "Strong evidence for program necessity",
+        "evidence": "Website analysis provides concrete proof of need for disability awareness and training programs",
+        "timestamp": "2025-09-11T23:19:00.959128"
+      }
+    ]
+  },
+  "statistics": {
+    "total_pages_analyzed": 6,
+    "total_words_scanned": 7400,
+    "total_mentions_found": 3,
+    "pages_with_mentions": 2,
+    "percentage_pages_with_mentions": 33.33,
+    "mentions_per_1000_words": 0.41
+  },
+  "recommendations": [
+    "Build upon existing awareness with structured programs",
+    "Consider the Blue Envelope Program as an enhancement to current efforts",
+    "Develop metrics to measure the effectiveness of disability-related programs"
+  ]
+}

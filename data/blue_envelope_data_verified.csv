@@ -1,0 +1,51 @@
+state,adopted,adoption_type,localities,implementation_year,notes,verification_status,source
+Connecticut,True,Statewide,,2020,First state to implement; DMV-driven; became national model.,NEEDS_VERIFICATION,Web research inconclusive
+Massachusetts,True,Statewide,,2023,Pilot launched 2023; Senate bill S.2558 codifies program; envelopes via RMV & police barracks.,NEEDS_VERIFICATION,Web research inconclusive
+Rhode Island,True,Statewide,,2025,2024 law effective Jan 2025; DMV & Police Chiefs Association manage; AAA branches distribute envelopes.,NEEDS_VERIFICATION,Web research inconclusive
+Vermont,True,Statewide,,2024,DMV partnership with Univ. of Vermont Autism Collaborative; modeled after CT/MA.,NEEDS_VERIFICATION,Web research inconclusive
+Maine,True,Statewide,,2024,Partnership with Down Syndrome Advocacy Project; widely distributed via state police.,NEEDS_VERIFICATION,Web research inconclusive
+Arizona,True,Statewide,,2024,ADOT & DPS collaboration; envelopes at all MVD locations; law enforcement training included.,NEEDS_VERIFICATION,Web research inconclusive
+Virginia,True,Statewide,,2025,DMV launched program statewide after HB2501; Loudoun County piloted earlier.,NEEDS_VERIFICATION,Web research inconclusive
+Delaware,True,Statewide,,2025,State Police DMV Univ. of Delaware collaboration; launched Aug 2025.,NEEDS_VERIFICATION,Web research inconclusive
+Arkansas,True,Pending Statewide,,2026,Act 16 signed Feb 2025; program starts Jan 1 2026; unanimous bipartisan passage.,NEEDS_VERIFICATION,Web research inconclusive
+New Jersey,True,Local,Hunterdon Union Camden Morris Monmouth Bergen others,2019,Widespread local programs; first pilot in Hunterdon County; many sheriff offices now distribute envelopes.,NEEDS_VERIFICATION,Web research inconclusive
+New York,True,Local,Multiple counties via Sheriffs' Offices,2021,NY Sheriffs' Association supports county-by-county adoption; growing rapidly.,NEEDS_VERIFICATION,Web research inconclusive
+California,True,Local,San Diego San Bernardino Placer Sutter Rio Dell PD,2022,Local programs active; 2023 state bill proposed for statewide rollout.,NEEDS_VERIFICATION,Web research inconclusive
+Colorado,True,Local,Boulder Aurora Jefferson Co. Golden Lafayette,2025,First launched Boulder PD Jan 2025; Aurora PD added stickers & driver buttons.,NEEDS_VERIFICATION,Web research inconclusive
+North Carolina,True,Local,Dare County (6 towns),2024,Outer Banks Health initiative; free envelopes via sheriff & town PDs.,NEEDS_VERIFICATION,Web research inconclusive
+Pennsylvania,True,Local,Montgomery Co. Bucks Lehigh Valley Allentown PD,2023,Multiple local programs; Montgomery Co. distributes free envelopes at police stations.,NEEDS_VERIFICATION,Web research inconclusive
+Ohio,True,Local,Lakewood PD NE Ohio pilot,2025,Lakewood Police launched April 2025; positive response driving expansion.,NEEDS_VERIFICATION,Web research inconclusive
+Alabama,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Alaska,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Florida,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Georgia,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Hawaii,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Idaho,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Illinois,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Indiana,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Iowa,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Kansas,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Kentucky,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Louisiana,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Maryland,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Michigan,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Minnesota,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Mississippi,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Missouri,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Montana,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Nebraska,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Nevada,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+New Hampshire,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+New Mexico,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+North Dakota,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Oklahoma,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Oregon,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+South Carolina,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+South Dakota,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Tennessee,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Texas,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Utah,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Washington,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+West Virginia,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Wisconsin,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program
+Wyoming,False,None,,,No Blue Envelope programs; many states offer autism ID cards license indicators or special notations instead.,VERIFIED,Confirmed no program

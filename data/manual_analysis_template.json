@@ -1,0 +1,61 @@
+{
+  "instructions": {
+    "how_to_analyze": [
+      "1. Visit https://www.unioncountysheriffsoffice.com in your browser",
+      "2. Navigate through all main pages and sections",
+      "3. For each page, use Ctrl+F (Cmd+F on Mac) to search for keywords",
+      "4. Count the number of occurrences for each keyword",
+      "5. Note any relevant content or policies found",
+      "6. Record your findings using the analysis tool"
+    ],
+    "keywords_to_search": [
+      "autism",
+      "autistic",
+      "autism spectrum",
+      "disability",
+      "disabilities",
+      "disabled",
+      "disabled rights",
+      "disability rights",
+      "ADA",
+      "Americans with Disabilities",
+      "accessibility",
+      "accessible",
+      "accommodation",
+      "accommodate",
+      "reasonable accommodation"
+    ],
+    "pages_to_check": [
+      "Home page",
+      "About Us / About the Sheriff",
+      "Services / Programs",
+      "Community Programs",
+      "Training / Education",
+      "Policies / Procedures",
+      "Contact / Information",
+      "News / Press Releases",
+      "Resources / Links",
+      "Employment / Careers",
+      "Public Safety",
+      "Community Outreach"
+    ]
+  },
+  "expected_findings": {
+    "hypothesis": "Based on typical law enforcement websites, we expect to find:",
+    "predictions": [
+      "0-2 mentions of autism/autistic",
+      "1-5 mentions of disability/disabilities (likely in general context)",
+      "0-1 mentions of ADA or accessibility",
+      "0 mentions of disability rights or accommodations",
+      "Most mentions will be in general policy statements, not specific programs"
+    ]
+  },
+  "analysis_tool_usage": {
+    "step_1": "Create an instance: analyzer = ManualWebsiteAnalysis()",
+    "step_2": "Add each page: analyzer.add_page_analysis(page_name, url, word_count, keyword_counts)",
+    "step_3": "Add findings: analyzer.add_finding(type, description)",
+    "step_4": "Add implications: analyzer.add_advocacy_implication(implication, evidence)",
+    "step_5": "Save results: analyzer.save_analysis()",
+    "step_6": "Print summary: analyzer.print_analysis_summary()"
+  }
+}

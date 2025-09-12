@@ -1,10 +1,15 @@
 import pandas as pd
 import plotly.express as px
+import os
 
 print("Loading dataset...")
 # Load dataset
-df = pd.read_csv("data/blue_envelope_data.csv")
-print(f"Loaded {len(df)} rows of data")
+try:
+    df = pd.read_csv("data/blue_envelope_data.csv")
+    print(f"Loaded {len(df)} rows of data")
+except FileNotFoundError:
+    print("Error: data/blue_envelope_data.csv not found!")
+    exit(1)
 print(f"Data columns: {df.columns.tolist()}")
 print(f"Unique adoption types: {df['adoption_type'].unique()}")
 
@@ -32,5 +37,7 @@ fig.update_layout(
 )
 
 print("Saving interactive map to assets/interactive_map.html...")
+# Ensure assets directory exists
+os.makedirs("assets", exist_ok=True)
 fig.write_html("assets/interactive_map.html")
 print("Interactive map saved successfully!")
