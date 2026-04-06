@@ -1,590 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Law Enforcement Training - Blue Envelope Program</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Officer Training — Blue Envelope Union County</title>
+  <meta name="description" content="A 15-minute roll-call training module on the Blue Envelope Program for Union County, NC law enforcement officers.">
+  <meta name="theme-color" content="#002fa7">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="training.css?v=3">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Blue Envelope Program</div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#overview">Training Overview</a></li>
-                <li><a href="#recognition">Recognition</a></li>
-                <li><a href="#interaction">Interaction Guidelines</a></li>
-                <li><a href="#scenarios">Scenarios</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul>
-        </div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"></span>
+        Blue Envelope / Union
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html#problem" class="nav-link">Problem</a></li>
+        <li><a href="index.html#states" class="nav-link">9 States</a></li>
+        <li><a href="index.html#union" class="nav-link">Union Co.</a></li>
+        <li><a href="index.html#dare" class="nav-link">Dare Co.</a></li>
+        <li><a href="index.html#cost" class="nav-link">Cost</a></li>
+        <li><a href="training.html" class="nav-cta">Officer Training</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+  </header>
 
-    <!-- Training Hero -->
-    <section class="training-hero">
-        <div class="container">
-            <div class="training-header">
-                <h1><i class="fas fa-graduation-cap"></i> Law Enforcement Training Materials</h1>
-                <p class="training-subtitle">Blue Envelope Program Officer Training Module</p>
-                <p class="training-description">Comprehensive training materials to help officers understand and effectively implement the Blue Envelope Program during traffic stops and community interactions.</p>
-            </div>
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          <span class="eyebrow">15-Minute Roll-Call Training Module</span>
         </div>
+
+        <h1 class="hero-title">
+          <span class="blue">Officer</span>
+          <span class="ink">Training.</span>
+        </h1>
+
+        <div class="hero-meta">
+          <p class="hero-lead">
+            Everything an officer needs to know about the Blue Envelope Program in fifteen minutes. No new equipment. No new paperwork. Just a small change in how you approach a stop when someone hands you a blue envelope.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#protocol" class="btn btn-primary">
+              Jump to Protocol
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+            <a href="index.html" class="btn btn-secondary">
+              Back to Proposal
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Training Overview -->
-    <section id="overview" class="training-overview">
-        <div class="container">
-            <h2>Training Module Overview</h2>
-            <div class="training-grid">
-                <div class="training-content">
-                    <h3>Learning Objectives</h3>
-                    <div class="objectives">
-                        <div class="objective">
-                            <div class="objective-icon"><i class="fas fa-eye"></i></div>
-                            <div class="objective-content">
-                                <h4>Recognition</h4>
-                                <p>Identify Blue Envelope Program participants and understand the significance of the blue envelope</p>
-                            </div>
-                        </div>
-                        <div class="objective">
-                            <div class="objective-icon"><i class="fas fa-comments"></i></div>
-                            <div class="objective-content">
-                                <h4>Communication</h4>
-                                <p>Adapt communication techniques for individuals with autism spectrum disorders</p>
-                            </div>
-                        </div>
-                        <div class="objective">
-                            <div class="objective-icon"><i class="fas fa-shield-alt"></i></div>
-                            <div class="objective-content">
-                                <h4>De-escalation</h4>
-                                <p>Apply de-escalation techniques specific to autism-related behaviors</p>
-                            </div>
-                        </div>
-                        <div class="objective">
-                            <div class="objective-icon"><i class="fas fa-balance-scale"></i></div>
-                            <div class="objective-content">
-                                <h4>Legal Awareness</h4>
-                                <p>Understand ADA requirements and legal considerations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="training-stats">
-                    <div class="training-stat">
-                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
-                        <div class="stat-info">
-                            <strong>15 Minutes</strong>
-                            <span>Roll-call friendly format</span>
-                        </div>
-                    </div>
-                    <div class="training-stat">
-                        <div class="stat-icon"><i class="fas fa-users"></i></div>
-                        <div class="stat-info">
-                            <strong>2.21%</strong>
-                            <span>of adults have autism</span>
-                        </div>
-                    </div>
-                    <div class="training-stat">
-                        <div class="stat-icon"><i class="fas fa-car"></i></div>
-                        <div class="stat-info">
-                            <strong>20%</strong>
-                            <span>have police contact by age 21</span>
-                        </div>
-                    </div>
-                    <div class="training-stat">
-                        <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                        <div class="stat-info">
-                            <strong>7x Higher</strong>
-                            <span>likelihood of police interaction</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- QUICK REFERENCE CARD -->
+    <section class="quick-card">
+      <div class="container">
+        <div class="qr-grid">
+          <div class="qr-block">
+            <div class="qr-eyebrow">If you see this</div>
+            <div class="qr-big">A blue envelope</div>
+            <div class="qr-sub">handed to you, displayed on the dash, or visible in the glove box</div>
+          </div>
+          <div class="qr-divider"></div>
+          <div class="qr-block">
+            <div class="qr-eyebrow">Then do this</div>
+            <div class="qr-big">Slow it all the way down</div>
+            <div class="qr-sub">Lower your voice. Reduce sensory input. One instruction at a time. Allow extra response time.</div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Blue Envelope Recognition -->
-    <section id="recognition" class="recognition">
-        <div class="container">
-            <h2>Blue Envelope Recognition</h2>
-            
-            <div class="recognition-content">
-                <div class="envelope-visual">
-                    <div class="envelope-demo">
-                        <div class="envelope-front">
-                            <div class="envelope-header">BLUE ENVELOPE PROGRAM</div>
-                            <div class="envelope-text">
-                                <p><strong>This driver has autism</strong></p>
-                                <p>Please be patient and allow extra time for responses</p>
-                                <ul>
-                                    <li>May not make eye contact</li>
-                                    <li>May repeat your words (echolalia)</li>
-                                    <li>May seem nervous or fidgety</li>
-                                    <li>May need clear, simple instructions</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="envelope-contents">
-                            <div class="document">Driver's License</div>
-                            <div class="document">Registration</div>
-                            <div class="document">Insurance Card</div>
-                            <div class="document">Communication Card</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recognition-details">
-                    <h3>What Officers Should Expect</h3>
-                    <div class="expectation-categories">
-                        <div class="expectation-category">
-                            <h4><i class="fas fa-envelope"></i> Visual Identification</h4>
-                            <ul>
-                                <li>Distinctive blue envelope (size varies by state)</li>
-                                <li>Clear program labeling on exterior</li>
-                                <li>Contains all standard traffic stop documents</li>
-                                <li>May include communication cards or medical alerts</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="expectation-category">
-                            <h4><i class="fas fa-user"></i> Driver Behavior</h4>
-                            <ul>
-                                <li>Driver will likely hand over entire envelope</li>
-                                <li>May point to envelope rather than speaking</li>
-                                <li>Participation is completely voluntary</li>
-                                <li>Some may be nervous about disclosure</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="key-message">
-                        <h4><i class="fas fa-lightbulb"></i> Key Recognition Point</h4>
-                        <p><strong>The blue envelope is an immediate visual cue that this traffic stop may require modified communication approaches.</strong> It's a request for patience and understanding, not an excuse or attempt to avoid consequences.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- WHY -->
+    <section id="why" class="problem">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">01 / Why This Matters</div>
+          <div>
+            <h2 class="section-title">Compliance Is <br>Not Always Possible.</h2>
+            <p class="section-intro">
+              An autistic driver who appears uncooperative may be experiencing sensory overload, communication shutdown, or a fight-or-flight response triggered by lights, sirens, and rapid commands. The behavior looks like defiance. It is not. Recognizing the difference saves lives and protects your career.
+            </p>
+          </div>
         </div>
+
+        <div class="big-stat-grid">
+          <div class="big-stat">
+            <span class="big-stat-num">1 in 31</span>
+            <div class="big-stat-label">U.S. children identified with autism (CDC, April 2025).</div>
+            <div class="big-stat-source">Source: CDC ADDM Network, 2022 surveillance</div>
+          </div>
+          <div class="big-stat">
+            <span class="big-stat-num">2.21%</span>
+            <div class="big-stat-label">of U.S. adults are on the autism spectrum &mdash; about 5.4 million Americans.</div>
+            <div class="big-stat-source">Source: CDC, Journal of Autism &amp; Developmental Disorders</div>
+          </div>
+          <div class="big-stat">
+            <span class="big-stat-num">7&times;</span>
+            <div class="big-stat-label">more likely to encounter law enforcement than neurotypical peers.</div>
+            <div class="big-stat-source">Source: U.S. DOJ data, cited by The Marshall Project</div>
+          </div>
+          <div class="big-stat">
+            <span class="big-stat-num">5,820</span>
+            <div class="big-stat-label">estimated autistic adults in Union County alone (2.21% of 263,386 residents).</div>
+            <div class="big-stat-source">Source: CDC + U.S. Census, July 2024</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Interaction Guidelines -->
-    <section id="interaction" class="interaction">
-        <div class="container">
-            <h2>Autism-Informed Interaction Guidelines</h2>
-            
-            <div class="guidelines-grid">
-                <div class="guideline-section">
-                    <h3><i class="fas fa-comments"></i> Communication Best Practices</h3>
-                    <div class="best-practices">
-                        <div class="practice do">
-                            <h4>DO:</h4>
-                            <ul>
-                                <li>Speak clearly and at normal volume</li>
-                                <li>Use simple, direct language</li>
-                                <li>Give one instruction at a time</li>
-                                <li>Allow extra time for responses</li>
-                                <li>Be patient with repetitive questions</li>
-                                <li>Stay calm and professional</li>
-                            </ul>
-                        </div>
-                        <div class="practice dont">
-                            <h4>DON'T:</h4>
-                            <ul>
-                                <li>Assume lack of eye contact is suspicious</li>
-                                <li>Interpret delayed responses as defiance</li>
-                                <li>Use multiple rapid-fire commands</li>
-                                <li>Mistake stimming for aggressive behavior</li>
-                                <li>Take echolalia as mockery</li>
-                                <li>Rush the interaction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="guideline-section">
-                    <h3><i class="fas fa-brain"></i> Understanding Autism Behaviors</h3>
-                    <div class="behavior-guide">
-                        <div class="behavior-item">
-                            <div class="behavior-name">Echolalia</div>
-                            <div class="behavior-description">Repeating your words or phrases - this is a processing mechanism, not mockery</div>
-                            <div class="behavior-response">Response: Continue normally, understand this helps them process information</div>
-                        </div>
-                        <div class="behavior-item">
-                            <div class="behavior-name">Stimming</div>
-                            <div class="behavior-description">Repetitive movements (hand flapping, rocking) - self-regulation behavior</div>
-                            <div class="behavior-response">Response: Allow unless it interferes with safety, don't command to stop</div>
-                        </div>
-                        <div class="behavior-item">
-                            <div class="behavior-name">Avoidance of Eye Contact</div>
-                            <div class="behavior-description">May look away, down, or around - not disrespectful or suspicious</div>
-                            <div class="behavior-response">Response: Don't demand eye contact, focus on verbal compliance</div>
-                        </div>
-                        <div class="behavior-item">
-                            <div class="behavior-name">Sensory Sensitivity</div>
-                            <div class="behavior-description">May be overwhelmed by lights, sirens, or loud voices</div>
-                            <div class="behavior-response">Response: Minimize sensory input when safe to do so</div>
-                        </div>
-                        <div class="behavior-item">
-                            <div class="behavior-name">Processing Delays</div>
-                            <div class="behavior-description">May need extra time to understand and respond to questions</div>
-                            <div class="behavior-response">Response: Pause between instructions, repeat if necessary</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- RECOGNIZE -->
+    <section id="recognize" class="how">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">02 / Recognize Autism</div>
+          <div>
+            <h2 class="section-title">Behaviors To <br>Watch For.</h2>
+            <p class="section-intro">
+              These are common autistic behaviors during high-stress encounters. Each one can be misread as drugs, intoxication, evasion, or hostility. None of them are. Look for clusters &mdash; not one behavior alone &mdash; and check for a blue envelope.
+            </p>
+          </div>
         </div>
+
+        <div class="behavior-grid">
+          <div class="behavior-card">
+            <div class="behavior-num">01</div>
+            <div class="behavior-name">Stimming</div>
+            <div class="behavior-mistaken">Mistaken for: drug use, agitation</div>
+            <div class="behavior-real">Self-regulation. Hand flapping, rocking, finger tapping. It calms the nervous system.</div>
+          </div>
+          <div class="behavior-card">
+            <div class="behavior-num">02</div>
+            <div class="behavior-name">No eye contact</div>
+            <div class="behavior-mistaken">Mistaken for: deception, guilt</div>
+            <div class="behavior-real">Eye contact is often physically painful or overwhelming for autistic people. Looking away helps them think.</div>
+          </div>
+          <div class="behavior-card">
+            <div class="behavior-num">03</div>
+            <div class="behavior-name">Delayed response</div>
+            <div class="behavior-mistaken">Mistaken for: non-compliance, defiance</div>
+            <div class="behavior-real">Processing speech under stress can take 5&ndash;15 seconds. Ask once, then wait silently.</div>
+          </div>
+          <div class="behavior-card">
+            <div class="behavior-num">04</div>
+            <div class="behavior-name">Echolalia</div>
+            <div class="behavior-mistaken">Mistaken for: mocking, hostility</div>
+            <div class="behavior-real">Repeating your words verbatim. A processing tool, often the only way to respond under stress.</div>
+          </div>
+          <div class="behavior-card">
+            <div class="behavior-num">05</div>
+            <div class="behavior-name">Literal interpretation</div>
+            <div class="behavior-mistaken">Mistaken for: sarcasm, smart-mouth</div>
+            <div class="behavior-real">Idioms like "step out of the vehicle" may be taken literally. Use plain, specific language.</div>
+          </div>
+          <div class="behavior-card">
+            <div class="behavior-num">06</div>
+            <div class="behavior-name">Meltdown / shutdown</div>
+            <div class="behavior-mistaken">Mistaken for: resisting arrest, intoxication</div>
+            <div class="behavior-real">Sensory overload causing fetal position, rocking, crying, or going completely still and silent. Not a choice.</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Scenario Training -->
-    <section id="scenarios" class="scenarios">
-        <div class="container">
-            <h2>Training Scenarios</h2>
-            
-            <div class="scenario-tabs">
-                <div class="tab-buttons">
-                    <button class="tab-button active" data-scenario="routine">Routine Traffic Stop</button>
-                    <button class="tab-button" data-scenario="crisis">Crisis Situation</button>
-                    <button class="tab-button" data-scenario="complex">Complex Interaction</button>
-                </div>
-
-                <div class="scenario-content">
-                    <div class="scenario active" id="routine-scenario">
-                        <h3>Scenario 1: Routine Traffic Stop</h3>
-                        <div class="scenario-setup">
-                            <h4>Setup:</h4>
-                            <p>You've pulled over a vehicle for speeding (10 mph over limit). The driver immediately presents a blue envelope when you approach the vehicle.</p>
-                        </div>
-                        
-                        <div class="scenario-steps">
-                            <div class="scenario-step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Initial Recognition</h4>
-                                    <p><strong>You see the blue envelope.</strong> Acknowledge it verbally: "I see you're part of the Blue Envelope Program. I understand you may communicate differently, and that's okay."</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Document Review</h4>
-                                    <p><strong>Check documents normally.</strong> The envelope contains license, registration, and insurance. Take your time and explain what you're doing: "I'm checking your license now."</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Explain the Stop</h4>
-                                    <p><strong>Use clear, simple language.</strong> "I stopped you because you were going 45 in a 35 mph zone. Do you understand?" Wait for response.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4>Complete the Stop</h4>
-                                    <p><strong>Proceed with normal citation process.</strong> Give clear instructions: "I'm going to write you a warning. Please wait here." Return documents with clear explanation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="scenario-outcome">
-                            <h4>Expected Outcome:</h4>
-                            <p>Successful traffic stop with reduced anxiety for the driver and clear communication throughout the process.</p>
-                        </div>
-                    </div>
-
-                    <div class="scenario" id="crisis-scenario">
-                        <h3>Scenario 2: Crisis Situation</h3>
-                        <div class="scenario-setup">
-                            <h4>Setup:</h4>
-                            <p>You respond to a call about an "agitated person" in a parking lot. Upon arrival, you see someone pacing and making repetitive movements. A family member approaches with a blue envelope, explaining this is their adult child having a sensory overload.</p>
-                        </div>
-                        
-                        <div class="scenario-steps">
-                            <div class="scenario-step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Initial Assessment</h4>
-                                    <p><strong>Recognize autism behaviors.</strong> The pacing and repetitive movements are stimming behaviors, not aggressive actions. Keep your distance initially.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Reduce Stimuli</h4>
-                                    <p><strong>Minimize sensory input.</strong> Turn off sirens and flashing lights. Ask bystanders to give space. Speak calmly to family member about triggers.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Indirect Communication</h4>
-                                    <p><strong>Work through family member initially.</strong> Ask what typically helps, what triggered this episode, and what usually calms them down.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4>Patient De-escalation</h4>
-                                    <p><strong>Allow time and space.</strong> Don't rush. If direct interaction is needed, use calm voice, simple words, and give the person plenty of physical space.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="scenario-outcome">
-                            <h4>Expected Outcome:</h4>
-                            <p>Successful de-escalation without use of force, person calms down with family support, situation resolved peacefully.</p>
-                        </div>
-                    </div>
-
-                    <div class="scenario" id="complex-scenario">
-                        <h3>Scenario 3: Complex Interaction</h3>
-                        <div class="scenario-setup">
-                            <h4>Setup:</h4>
-                            <p>You've stopped a vehicle for a traffic violation. The driver presents a blue envelope but seems extremely nervous, is echoing your questions back to you, and appears to be having difficulty understanding your instructions.</p>
-                        </div>
-                        
-                        <div class="scenario-steps">
-                            <div class="scenario-step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Recognize Communication Challenges</h4>
-                                    <p><strong>Identify echolalia and processing issues.</strong> The driver repeating your questions is trying to process information, not being difficult.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Adjust Communication Style</h4>
-                                    <p><strong>Slow down and simplify.</strong> Use shorter sentences. Ask one question at a time. Wait for responses. "Are you okay?" Wait. "Do you understand why I stopped you?" Wait.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Consider Support Person</h4>
-                                    <p><strong>Check for support.</strong> Ask if there's someone they'd like to call, if they have a support person, or if they'd prefer to have someone present.</p>
-                                </div>
-                            </div>
-                            <div class="scenario-step">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4>Document and Complete</h4>
-                                    <p><strong>Take extra time as needed.</strong> Ensure they understand any citation or warning. Confirm they know what to do next before they leave.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="scenario-outcome">
-                            <h4>Expected Outcome:</h4>
-                            <p>Successful interaction despite communication challenges, driver understands the situation and requirements, positive police-community interaction.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- DO / DON'T -->
+    <section id="adjust" class="cost">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">03 / Adjust Your Approach</div>
+          <div>
+            <h2 class="section-title">Do This. <br>Not That.</h2>
+            <p class="section-intro">
+              Standard traffic-stop protocol assumes a neurotypical driver. With a Blue Envelope holder, two small adjustments do most of the work: reduce sensory input and slow down communication.
+            </p>
+          </div>
         </div>
+
+        <div class="dodont-grid">
+          <div class="dodont-col do-col">
+            <div class="dodont-eyebrow">Do</div>
+            <ul class="dodont-list">
+              <li>Turn off siren and reduce light bar if safe</li>
+              <li>Lower your voice and slow your speech</li>
+              <li>Give one instruction at a time</li>
+              <li>Wait 5&ndash;15 seconds for a response before repeating</li>
+              <li>Use specific, literal language ("Open the glove box. Take out the registration.")</li>
+              <li>Stay further from the door than usual</li>
+              <li>Allow stimming &mdash; it is calming, not threatening</li>
+              <li>Ask if there is a support contact you can call</li>
+              <li>Note "Blue Envelope" in your CAD entry</li>
+            </ul>
+          </div>
+          <div class="dodont-col dont-col">
+            <div class="dodont-eyebrow">Don't</div>
+            <ul class="dodont-list">
+              <li>Shout or use an authoritative command tone</li>
+              <li>Stack multiple instructions in one sentence</li>
+              <li>Use idioms ("watch your step," "don't get cute")</li>
+              <li>Demand eye contact</li>
+              <li>Touch the driver without warning</li>
+              <li>Treat silence or stillness as defiance</li>
+              <li>Treat a meltdown as resisting arrest</li>
+              <li>Assume intoxication without medical screening</li>
+              <li>Confiscate the blue envelope</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Resources and Quick Reference -->
-    <section id="resources" class="resources">
-        <div class="container">
-            <h2>Quick Reference & Resources</h2>
-            
-            <div class="resources-grid">
-                <div class="quick-reference">
-                    <h3><i class="fas fa-clipboard-list"></i> Quick Reference Card</h3>
-                    <div class="reference-card">
-                        <div class="reference-section">
-                            <h4>Blue Envelope = Autism</h4>
-                            <ul>
-                                <li>✓ Voluntary program</li>
-                                <li>✓ Contains all required documents</li>
-                                <li>✓ Requests patience and understanding</li>
-                                <li>✗ Not an excuse or special treatment</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="reference-section">
-                            <h4>Key Behaviors</h4>
-                            <ul>
-                                <li><strong>Echolalia:</strong> Repeating words (processing)</li>
-                                <li><strong>Stimming:</strong> Repetitive movements (self-regulation)</li>
-                                <li><strong>Eye avoidance:</strong> Not disrespectful</li>
-                                <li><strong>Processing delay:</strong> Needs extra time</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="reference-section">
-                            <h4>Officer Response</h4>
-                            <ul>
-                                <li>✓ Be patient and calm</li>
-                                <li>✓ Use simple, clear language</li>
-                                <li>✓ One instruction at a time</li>
-                                <li>✓ Allow extra response time</li>
-                                <li>✓ Minimize sensory input when possible</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="additional-resources">
-                    <h3><i class="fas fa-book"></i> Additional Resources</h3>
-                    
-                    <div class="resource-category">
-                        <h4>Legal Requirements</h4>
-                        <div class="resource-item">
-                            <h5>Americans with Disabilities Act (ADA)</h5>
-                            <p>Law enforcement must provide reasonable accommodations and effective communication for individuals with disabilities.</p>
-                        </div>
-                        <div class="resource-item">
-                            <h5>State Programs</h5>
-                            <p>Currently implemented in 8 states statewide and 7 states with local programs. Check your state's specific guidelines.</p>
-                        </div>
-                    </div>
-
-                    <div class="resource-category">
-                        <h4>Statistics to Remember</h4>
-                        <div class="stat-grid">
-                            <div class="stat-item">
-                                <strong>2.21%</strong>
-                                <span>of adults have autism</span>
-                            </div>
-                            <div class="stat-item">
-                                <strong>1 in 31</strong>
-                                <span>children diagnosed (3.2%)</span>
-                            </div>
-                            <div class="stat-item">
-                                <strong>20%</strong>
-                                <span>have police contact by age 21</span>
-                            </div>
-                            <div class="stat-item">
-                                <strong>7x more likely</strong>
-                                <span>to interact with police</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resource-category">
-                        <h4>Emergency Contacts</h4>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <strong>Crisis Response:</strong>
-                                <span>Follow department mental health protocols</span>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Autism Resources:</strong>
-                                <span>Local autism organizations and advocacy groups</span>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Training Questions:</strong>
-                                <span>Contact training coordinator or supervisor</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="training-conclusion">
-                <h3>Key Takeaways</h3>
-                <div class="takeaway-grid">
-                    <div class="takeaway">
-                        <div class="takeaway-icon"><i class="fas fa-lightbulb"></i></div>
-                        <div class="takeaway-content">
-                            <h4>Recognition</h4>
-                            <p>Blue envelope = autism communication needs</p>
-                        </div>
-                    </div>
-                    <div class="takeaway">
-                        <div class="takeaway-icon"><i class="fas fa-clock"></i></div>
-                        <div class="takeaway-content">
-                            <h4>Patience</h4>
-                            <p>Allow extra time for processing and responses</p>
-                        </div>
-                    </div>
-                    <div class="takeaway">
-                        <div class="takeaway-icon"><i class="fas fa-comments"></i></div>
-                        <div class="takeaway-content">
-                            <h4>Communication</h4>
-                            <p>Clear, simple, one instruction at a time</p>
-                        </div>
-                    </div>
-                    <div class="takeaway">
-                        <div class="takeaway-icon"><i class="fas fa-heart"></i></div>
-                        <div class="takeaway-content">
-                            <h4>Respect</h4>
-                            <p>Same enforcement standards with understanding</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- PROTOCOL -->
+    <section id="protocol" class="how">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">04 / Stop Protocol</div>
+          <div>
+            <h2 class="section-title">Five Steps. <br>Sixty Seconds.</h2>
+            <p class="section-intro">
+              From the moment you see the blue envelope, here is the adjusted sequence. Same legal authority. Same documentation. Lower temperature.
+            </p>
+          </div>
         </div>
+
+        <div class="how-grid">
+          <div class="how-step">
+            <span class="how-step-num">01</span>
+            <h3 class="how-step-title">Reduce</h3>
+            <p class="how-step-body">Cut siren. Lower light bar to amber only if scene is safe. Approach at a slower pace than usual.</p>
+          </div>
+          <div class="how-step">
+            <span class="how-step-num">02</span>
+            <h3 class="how-step-title">Greet</h3>
+            <p class="how-step-body">"Good evening. I see your blue envelope. Take your time. I'll wait." Speak at half your normal volume.</p>
+          </div>
+          <div class="how-step">
+            <span class="how-step-num">03</span>
+            <h3 class="how-step-title">Wait</h3>
+            <p class="how-step-body">Let the driver reach for the documents in the envelope. Do not narrate. Do not stack a second instruction. Count to fifteen silently.</p>
+          </div>
+          <div class="how-step">
+            <span class="how-step-num">04</span>
+            <h3 class="how-step-title">Confirm</h3>
+            <p class="how-step-body">"Is there someone I can call for you, or are you OK?" If they say yes to a call, dial it. If they go silent or rock, give space.</p>
+          </div>
+          <div class="how-step">
+            <span class="how-step-num">05</span>
+            <h3 class="how-step-title">Document</h3>
+            <p class="how-step-body">Note "Blue Envelope" in your CAD log. If a citation is needed, write it. The program does not change the violation &mdash; only the encounter.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Blue Envelope Program Training</h4>
-                    <p>Evidence-based training materials for law enforcement officers to improve interactions with the autism community.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Main Presentation</a></li>
-                        <li><a href="#overview">Training Overview</a></li>
-                        <li><a href="#scenarios">Practice Scenarios</a></li>
-                        <li><a href="#resources">Quick Reference</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Implementation Support</h4>
-                    <p>For questions about implementing this training in your department, contact your training coordinator or autism advocacy organizations in your area.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Blue Envelope Program Training Materials. Based on evidence-based practices and successful implementations.</p>
-            </div>
+    <!-- SCENARIOS -->
+    <section id="scenarios" class="states">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">05 / Scenarios</div>
+          <div>
+            <h2 class="section-title">Three Real <br>Situations.</h2>
+            <p class="section-intro">
+              Quick scenarios drawn from documented Blue Envelope encounters and case studies. Each one ends in the choice that worked.
+            </p>
+          </div>
         </div>
-    </footer>
 
-    <script>
-        // Tab functionality for scenarios
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const scenarios = document.querySelectorAll('.scenario');
+        <div class="scenario-list">
+          <div class="scenario">
+            <div class="scenario-tag">Scenario A &mdash; Routine Stop</div>
+            <h3 class="scenario-title">The driver hands you a blue envelope and goes silent.</h3>
+            <p class="scenario-body">No eye contact. No verbal acknowledgment. Hands on the wheel, breathing fast.</p>
+            <p class="scenario-resolution"><strong>What works:</strong> Step back from the door. Lower your voice. Say "Take your time. I'm not in a hurry." Wait. Most drivers will start to communicate within 30&ndash;60 seconds once the pressure drops.</p>
+          </div>
+          <div class="scenario">
+            <div class="scenario-tag">Scenario B &mdash; Echolalia</div>
+            <h3 class="scenario-title">You ask "Do you know why I stopped you?" The driver repeats "Do you know why I stopped you?"</h3>
+            <p class="scenario-body">This is not mockery. It is echolalia &mdash; a processing pattern.</p>
+            <p class="scenario-resolution"><strong>What works:</strong> Don't escalate. Rephrase as a statement: "You were going 45 in a 35." Pause. Then: "Do you understand?" Allow time.</p>
+          </div>
+          <div class="scenario">
+            <div class="scenario-tag">Scenario C &mdash; Meltdown</div>
+            <h3 class="scenario-title">The driver gets out, sits on the curb, rocks back and forth, and won't speak.</h3>
+            <p class="scenario-body">This is a sensory overload meltdown, not resistance.</p>
+            <p class="scenario-resolution"><strong>What works:</strong> Don't touch. Don't surround. Move other officers back. Turn off lights if scene is safe. Ask "Is there someone I can call?" If yes, dial. Wait for the meltdown to pass &mdash; usually 5 to 15 minutes &mdash; before continuing the stop.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            tabButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const scenarioId = this.dataset.scenario;
-                    
-                    // Remove active class from all buttons and scenarios
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    scenarios.forEach(scenario => scenario.classList.remove('active'));
-                    
-                    // Add active class to clicked button and corresponding scenario
-                    this.classList.add('active');
-                    document.getElementById(scenarioId + '-scenario').classList.add('active');
-                });
-            });
+    <!-- LEGAL -->
+    <section id="legal" class="union">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">06 / Legal Basis</div>
+          <div>
+            <h2 class="section-title">ADA Title II. <br>Not Optional.</h2>
+            <p class="section-intro">
+              The Americans with Disabilities Act Title II requires state and local law enforcement to provide reasonable modifications in policies, practices, and procedures when interacting with people with disabilities. The Blue Envelope is a tool that helps you meet that legal obligation in a moment when documentation matters most.
+            </p>
+          </div>
+        </div>
 
-            // Smooth scrolling for navigation
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
+        <div class="union-grid">
+          <div class="union-cell">
+            <span class="union-cell-num">ADA</span>
+            <div class="union-cell-label">Title II requires reasonable modification of standard procedures for people with disabilities.</div>
+            <span class="union-cell-source">42 U.S.C. § 12131-12134</span>
+          </div>
+          <div class="union-cell">
+            <span class="union-cell-num">9 States</span>
+            <div class="union-cell-label">have already passed Blue Envelope laws making this the standard, not the exception.</div>
+            <span class="union-cell-source">As of April 2026</span>
+          </div>
+          <div class="union-cell">
+            <span class="union-cell-num">DOJ</span>
+            <div class="union-cell-label">Federal guidance: police should adapt tactics for individuals with developmental disabilities.</div>
+            <span class="union-cell-source">DOJ ADA Best Practices Toolkit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-block">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-num">07 / Print &amp; Use</div>
+          <div>
+            <h2 class="section-title">Take It <br><span class="yellow">To Roll Call.</span></h2>
+            <p class="section-intro">
+              This page is designed to be printed as a one-sheet for roll-call briefings, or screen-shared in a 15-minute department training. Use it however helps your team most.
+            </p>
+            <div class="cta-buttons">
+              <a href="javascript:window.print()" class="btn btn-primary">
+                Print This Page
+                <span class="btn-arrow">&rarr;</span>
+              </a>
+              <a href="index.html" class="btn btn-secondary">
+                Back to Proposal
+                <span class="btn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Blue Envelope / Union</div>
+          <p class="footer-tag">A community-led proposal for safer traffic stops between law enforcement and autistic drivers in Union County, North Carolina.</p>
+        </div>
+        <div>
+          <h4>Training Sections</h4>
+          <ul class="footer-links">
+            <li><a href="#why">Why It Matters</a></li>
+            <li><a href="#recognize">Recognize Autism</a></li>
+            <li><a href="#adjust">Do / Don't</a></li>
+            <li><a href="#protocol">Stop Protocol</a></li>
+            <li><a href="#scenarios">Scenarios</a></li>
+            <li><a href="#legal">Legal Basis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>The Proposal</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#problem">The Problem</a></li>
+            <li><a href="index.html#states">9 States</a></li>
+            <li><a href="index.html#union">Union County</a></li>
+            <li><a href="index.html#dare">Dare County</a></li>
+            <li><a href="index.html#cost">Cost</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Blue Envelope Union County Proposal</span>
+        <span>Researched &amp; built by Beth Cartrette</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=10"></script>
 </body>
 </html>

@@ -1,0 +1,676 @@
+/* ============================================
+   TRAINING PAGE — Component additions
+   Layered on top of styles.css
+   ============================================ */
+
+/* QUICK REFERENCE CARD */
+.quick-card {
+  background: var(--blue);
+  color: var(--cream);
+  padding: 0;
+  border-bottom: 2px solid var(--ink);
+}
+
+.qr-grid {
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+  gap: 0;
+  padding: 64px 0;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .qr-grid { grid-template-columns: 1fr; padding: 48px 0; }
+  .qr-divider { display: none; }
+}
+
+.qr-block {
+  padding: 0 var(--gutter);
+}
+
+.qr-divider {
+  background: var(--cream);
+}
+
+.qr-eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--cream);
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.qr-big {
+  font-family: var(--display);
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin-bottom: 16px;
+  max-width: 14ch;
+}
+
+.qr-sub {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--cream);
+  opacity: 0.85;
+  max-width: 40ch;
+}
+
+/* BEHAVIOR GRID */
+.behavior-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 48px;
+  border: 2px solid var(--ink);
+}
+
+@media (max-width: 920px) {
+  .behavior-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .behavior-grid { grid-template-columns: 1fr; }
+}
+
+.behavior-card {
+  padding: 32px;
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  background: var(--cream);
+  transition: all 0.3s var(--ease-out);
+}
+
+.behavior-card:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.behavior-card:hover .behavior-num,
+.behavior-card:hover .behavior-name,
+.behavior-card:hover .behavior-real { color: var(--cream); }
+
+.behavior-card:hover .behavior-mistaken { color: var(--yellow); }
+
+@media (min-width: 920px) {
+  .behavior-grid .behavior-card:nth-child(3n) { border-right: none; }
+  .behavior-grid .behavior-card:nth-last-child(-n+3) { border-bottom: none; }
+}
+
+.behavior-num {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.behavior-name {
+  font-family: var(--display);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.behavior-mistaken {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.behavior-real {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* DO / DON'T */
+.dodont-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 48px;
+  border: 2px solid var(--ink);
+}
+
+@media (max-width: 768px) {
+  .dodont-grid { grid-template-columns: 1fr; }
+}
+
+.dodont-col {
+  padding: 48px;
+  border-right: 2px solid var(--ink);
+}
+
+.dodont-col:last-child { border-right: none; }
+
+@media (max-width: 768px) {
+  .dodont-col { border-right: none; border-bottom: 2px solid var(--ink); }
+  .dodont-col:last-child { border-bottom: none; }
+}
+
+.do-col { background: var(--cream); }
+.dont-col { background: var(--ink); color: var(--cream); }
+
+.dodont-eyebrow {
+  font-family: var(--display);
+  font-size: clamp(56px, 6vw, 88px);
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.do-col .dodont-eyebrow { color: var(--blue); }
+.dont-col .dodont-eyebrow { color: var(--yellow); }
+
+.dodont-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dodont-list li {
+  padding: 16px 0 16px 32px;
+  border-top: 1px solid currentColor;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.do-col .dodont-list li {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.dont-col .dodont-list li {
+  border-color: var(--cream);
+  color: var(--cream);
+}
+
+.dodont-list li::before {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  font-family: var(--display);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.do-col .dodont-list li::before {
+  content: '→';
+  color: var(--blue);
+}
+
+.dont-col .dodont-list li::before {
+  content: '✕';
+  color: var(--red);
+}
+
+.dodont-list li:last-child {
+  padding-bottom: 0;
+}
+
+/* SCENARIOS */
+.scenario-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 48px;
+  border-top: 2px solid var(--ink);
+}
+
+.scenario {
+  padding: 48px 0;
+  border-bottom: 2px solid var(--ink);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .scenario { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
+}
+
+.scenario-tag {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blue);
+  padding-top: 4px;
+}
+
+.scenario-title {
+  font-family: var(--display);
+  font-size: clamp(24px, 2.6vw, 36px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 16px;
+  max-width: 24ch;
+}
+
+.scenario-body {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  max-width: 60ch;
+}
+
+.scenario-resolution {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  padding: 16px 24px;
+  background: var(--cream-deep);
+  border-left: 4px solid var(--blue);
+  max-width: 70ch;
+}
+
+.scenario-resolution strong {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+/* ============================================
+   PRINT — Aggressive reset for paper
+   Goal: dense, scannable officer one-sheet
+   Target: 2-3 pages packed
+   ============================================ */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.4in;
+  }
+
+  /* Hide everything decorative */
+  .header,
+  .footer,
+  .cta-buttons,
+  .cta-block,
+  .nav,
+  .nav-cta,
+  .mobile-menu-toggle,
+  .hero-tag-dot,
+  .hero-cta-group,
+  .btn,
+  .skip-link { display: none !important; }
+
+  /* Reset body */
+  html, body {
+    background: white !important;
+    color: #000 !important;
+    font-size: 9pt !important;
+    line-height: 1.3 !important;
+    font-family: 'Manrope', sans-serif !important;
+  }
+  body::before { display: none !important; }
+
+  /* Strip dark backgrounds on every section — very tight padding */
+  section,
+  .hero,
+  .quick-card,
+  .problem,
+  .how,
+  .cost,
+  .states,
+  .union,
+  .pullquote,
+  .roadmap {
+    background: white !important;
+    color: #000 !important;
+    padding: 4pt 0 !important;
+    border: none !important;
+  }
+
+  .union *,
+  .quick-card *,
+  .pullquote * {
+    color: #000 !important;
+    background: white !important;
+  }
+
+  /* Container reset */
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Type reset — compact for paper */
+  h1, h2, h3, h4 {
+    font-family: 'Anton', 'Arial Black', sans-serif !important;
+    color: #000 !important;
+    text-transform: uppercase !important;
+    page-break-after: avoid;
+    margin: 0 0 4pt 0 !important;
+  }
+  h1 { font-size: 18pt !important; line-height: 0.95 !important; }
+  h2 { font-size: 14pt !important; line-height: 0.95 !important; }
+  h3 { font-size: 11pt !important; line-height: 1 !important; }
+  h4 { font-size: 9pt !important; }
+
+  p {
+    font-size: 9pt !important;
+    line-height: 1.35 !important;
+    color: #000 !important;
+    max-width: 100% !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .eyebrow,
+  .section-num {
+    font-size: 7pt !important;
+    color: #555 !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 2pt !important;
+    display: block !important;
+  }
+
+  /* Hero — compact title strip only */
+  .hero {
+    padding-top: 0 !important;
+    padding-bottom: 6pt !important;
+    border-bottom: 1pt solid #000 !important;
+  }
+  .hero-title {
+    margin-bottom: 4pt !important;
+    display: inline !important;
+  }
+  .hero-title .blue,
+  .hero-title .ink {
+    color: #000 !important;
+    display: inline !important;
+  }
+  .hero-title .blue::after { content: ' '; }
+  .hero-meta {
+    display: block !important;
+    border: none !important;
+    margin-top: 4pt !important;
+    padding-top: 0 !important;
+  }
+  .hero-lead {
+    font-size: 9pt !important;
+    line-height: 1.35 !important;
+    max-width: 100% !important;
+  }
+
+  /* Quick card — make this PROMINENT, the key takeaway */
+  .quick-card {
+    padding: 6pt 0 !important;
+    border-top: 2pt solid #000 !important;
+    border-bottom: 2pt solid #000 !important;
+    background: #f0f0f0 !important;
+    margin-bottom: 6pt !important;
+  }
+  .quick-card * { background: transparent !important; }
+  .qr-grid {
+    grid-template-columns: 1fr 1pt 1fr !important;
+    gap: 8pt !important;
+    padding: 6pt 8pt !important;
+  }
+  .qr-divider { display: block !important; background: #000 !important; }
+  .qr-block { padding: 0 !important; }
+  .qr-eyebrow {
+    font-size: 7pt !important;
+    color: #555 !important;
+    margin-bottom: 2pt !important;
+    opacity: 1 !important;
+  }
+  .qr-big {
+    font-size: 18pt !important;
+    line-height: 0.95 !important;
+    margin-bottom: 3pt !important;
+    max-width: 100% !important;
+    color: #000 !important;
+    font-family: 'Anton', sans-serif !important;
+    text-transform: uppercase !important;
+  }
+  .qr-sub {
+    font-size: 8pt !important;
+    line-height: 1.3 !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+  }
+
+  /* Section header — very compact */
+  .section-header {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    margin-bottom: 4pt !important;
+    page-break-after: avoid;
+  }
+
+  .section-intro {
+    font-size: 8.5pt !important;
+    line-height: 1.3 !important;
+    margin-top: 2pt !important;
+    max-width: 100% !important;
+  }
+
+  /* Stat grids — 4 across to fit more */
+  .big-stat-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 4pt !important;
+    margin-top: 4pt !important;
+    page-break-inside: avoid;
+  }
+  .big-stat {
+    padding: 5pt !important;
+    border: 1pt solid #000 !important;
+    background: white !important;
+    page-break-inside: avoid;
+  }
+  .big-stat-num {
+    font-size: 18pt !important;
+    line-height: 0.9 !important;
+    margin-bottom: 2pt !important;
+    color: #000 !important;
+  }
+  .big-stat-label {
+    font-size: 7.5pt !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2pt !important;
+    max-width: 100% !important;
+  }
+  .big-stat-source {
+    font-size: 6pt !important;
+    color: #555 !important;
+  }
+
+  /* Behavior grid — 3 cols, very tight */
+  .behavior-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    border: 1pt solid #000 !important;
+    margin-top: 4pt !important;
+    page-break-inside: avoid;
+  }
+  .behavior-card {
+    padding: 5pt !important;
+    border-right: 1pt solid #000 !important;
+    border-bottom: 1pt solid #000 !important;
+    background: white !important;
+    page-break-inside: avoid;
+  }
+  .behavior-num { font-size: 6pt !important; margin-bottom: 2pt !important; color: #000 !important; }
+  .behavior-name { font-size: 10pt !important; margin-bottom: 2pt !important; line-height: 1 !important; }
+  .behavior-mistaken { font-size: 6pt !important; margin-bottom: 2pt !important; color: #000 !important; }
+  .behavior-real { font-size: 7.5pt !important; line-height: 1.25 !important; }
+
+  /* Do / Don't — tight */
+  .dodont-grid {
+    grid-template-columns: 1fr 1fr !important;
+    border: 1pt solid #000 !important;
+    margin-top: 4pt !important;
+    page-break-inside: avoid;
+  }
+  .dodont-col {
+    padding: 6pt !important;
+    background: white !important;
+    color: #000 !important;
+    border-right: 1pt solid #000 !important;
+  }
+  .do-col, .dont-col {
+    background: white !important;
+    color: #000 !important;
+  }
+  .dodont-eyebrow {
+    font-size: 14pt !important;
+    line-height: 0.9 !important;
+    margin-bottom: 4pt !important;
+    color: #000 !important;
+  }
+  .dodont-list li {
+    font-size: 8pt !important;
+    line-height: 1.25 !important;
+    padding: 2pt 0 2pt 12pt !important;
+    border-color: #000 !important;
+    color: #000 !important;
+  }
+  .dodont-list li::before {
+    color: #000 !important;
+    font-size: 9pt !important;
+    top: 2pt !important;
+  }
+
+  /* Stop protocol — 5 steps tight */
+  .how-grid {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 4pt !important;
+    margin-top: 4pt !important;
+    page-break-inside: avoid;
+  }
+  .how-step {
+    padding: 5pt !important;
+    border: 1pt solid #000 !important;
+    background: white !important;
+    page-break-inside: avoid;
+  }
+  .how-step-num {
+    font-size: 16pt !important;
+    line-height: 0.9 !important;
+    color: #000 !important;
+    margin-bottom: 2pt !important;
+  }
+  .how-step-title {
+    font-size: 9pt !important;
+    line-height: 1 !important;
+    margin-bottom: 2pt !important;
+  }
+  .how-step-body {
+    font-size: 7pt !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Scenarios — tight */
+  .scenario-list {
+    margin-top: 4pt !important;
+    border-top: 1pt solid #000 !important;
+  }
+  .scenario {
+    grid-template-columns: 1fr !important;
+    gap: 2pt !important;
+    padding: 4pt 0 !important;
+    border-bottom: 1pt solid #000 !important;
+    page-break-inside: avoid;
+  }
+  .scenario-tag {
+    font-size: 7pt !important;
+    margin-bottom: 1pt !important;
+    color: #000 !important;
+  }
+  .scenario-title {
+    font-size: 10pt !important;
+    line-height: 1 !important;
+    margin-bottom: 2pt !important;
+    max-width: 100% !important;
+  }
+  .scenario-body {
+    font-size: 8pt !important;
+    margin-bottom: 2pt !important;
+    max-width: 100% !important;
+  }
+  .scenario-resolution {
+    font-size: 8pt !important;
+    line-height: 1.3 !important;
+    padding: 3pt 5pt !important;
+    background: #f0f0f0 !important;
+    border-left: 2pt solid #000 !important;
+    max-width: 100% !important;
+  }
+
+  /* Union (legal basis) — tight */
+  .union-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    border-top: 1pt solid #000 !important;
+    margin-top: 4pt !important;
+    page-break-inside: avoid;
+  }
+  .union-cell {
+    padding: 5pt !important;
+    border-right: 1pt solid #000 !important;
+    border-bottom: 1pt solid #000 !important;
+    background: white !important;
+    color: #000 !important;
+  }
+  .union-cell-num {
+    font-size: 14pt !important;
+    line-height: 0.9 !important;
+    color: #000 !important;
+    margin-bottom: 2pt !important;
+  }
+  .union-cell-label {
+    font-size: 7.5pt !important;
+    line-height: 1.25 !important;
+    color: #000 !important;
+  }
+  .union-cell-source {
+    font-size: 6pt !important;
+    color: #555 !important;
+    margin-top: 2pt !important;
+  }
+
+  /* NO forced page breaks — let content flow naturally */
+  #recognize,
+  #protocol,
+  #adjust,
+  #scenarios,
+  #legal { page-break-before: auto !important; }
+
+  /* Force headings to single line — hide line breaks */
+  h1 br,
+  h2 br,
+  h3 br,
+  .scenario-title br,
+  .union-headline br {
+    display: none !important;
+  }
+
+  /* Add a space where the br was so words don't smash together */
+  h1 br + *,
+  h2 br + *,
+  h3 br + * {
+    margin-left: 0.25em;
+  }
+
+  /* Hide URL after links in print */
+  a[href]::after { content: '' !important; }
+}
