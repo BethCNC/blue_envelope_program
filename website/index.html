@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -85,7 +85,7 @@
       <div class="container">
         <div class="object-grid">
           <div class="object-text">
-            <div class="eyebrow" style="margin-bottom: 16px;">The Tool Itself</div>
+            <div class="eyebrow object-eyebrow">The Tool Itself</div>
             <h2 class="object-headline">It's just<br>an envelope.</h2>
             <p class="object-body">A standard #10 blue envelope. On the front: the driver's license, registration, and insurance &mdash; plus brief notes for the officer. On the back: tips for both the driver and the officer about how to communicate during a stop. Free, voluntary, and self-contained. Nothing high-tech. Nothing expensive. Nothing that requires a database or registry.</p>
             <p class="object-caption">A typical Blue Envelope as used in active state programs.</p>
@@ -251,7 +251,7 @@
           </div>
         </div>
 
-        <p class="eyebrow" style="margin-top: 32px;">+ County programs in Dare County NC, San Diego CA, Monmouth NJ, Placer CA, Boulder CO, Loudoun VA, and others.</p>
+        <p class="eyebrow footnote">+ County programs in Dare County NC, San Diego CA, Monmouth NJ, Placer CA, Boulder CO, Loudoun VA, and others.</p>
       </div>
     </section>
 
@@ -259,7 +259,7 @@
     <section id="union" class="union">
       <div class="container">
         <div class="section-header-flat">
-          <div class="section-num" style="color: var(--gray-light); border-color: var(--cream);">03 / Union County, NC</div>
+          <div class="section-num">03 / Union County, NC</div>
         </div>
 
         <div class="union-headline">
@@ -323,14 +323,11 @@
     <!-- COST -->
     <section id="cost" class="cost">
       <div class="container">
-        <div class="section-header" data-animate>
-          <div class="section-num">05 / The Real Cost</div>
-          <div>
-            <h2 class="section-title">Less Than<br>$1,000.</h2>
-            <p class="section-intro">
-              A Union County rollout doesn't require new legislation, new hires, or specialized equipment. Published benchmarks from existing programs put the realistic launch cost well under one thousand dollars in materials and training, using in-house roll-call briefings.
-            </p>
-          </div>
+        <div class="cost-mega-block">
+          <span class="eyebrow">05 / The Real Cost</span>
+          <span class="mega-num">$611</span>
+          <div class="mega-sub">is what it costs to start.</div>
+          <p class="lead-line">The whole thing costs less than a good office chair. Here&rsquo;s the breakdown.</p>
         </div>
 
         <div class="cost-grid">
@@ -356,21 +353,17 @@
           </div>
         </div>
 
-        <p class="eyebrow" style="margin-top: 32px; max-width: 60ch;">For comparison: San Diego County's heavily produced launch with full media campaign was budgeted at $75,000. Union County does not need that scale to begin.</p>
+        <p class="eyebrow footnote">For comparison: San Diego County&rsquo;s heavily produced launch with full media campaign was budgeted at $75,000. Union County does not need that scale to begin.</p>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
     <section id="how" class="how">
       <div class="container">
-        <div class="section-header" data-animate>
+        <div class="section-header-flat">
           <div class="section-num">06 / How It Works</div>
-          <div>
-            <h2 class="section-title">Three Steps. <br>That's It.</h2>
-            <p class="section-intro">
-              No registry. No proof of diagnosis required. No database of participants. The Blue Envelope is voluntary, free, and designed to fit inside an existing traffic stop with zero workflow change for officers.
-            </p>
-          </div>
+          <h2 class="section-title">Three Steps. That&rsquo;s It.</h2>
+          <p class="lead-line">The driver does two. The officer does one.</p>
         </div>
 
         <div class="how-grid">
@@ -410,41 +403,66 @@
     <!-- ROADMAP -->
     <section id="roadmap" class="roadmap">
       <div class="container">
-        <div class="section-header" data-animate>
+        <div class="section-header-flat">
           <div class="section-num">07 / Roadmap</div>
-          <div>
-            <h2 class="section-title">Five Phases. <br>Twelve Weeks.</h2>
-            <p class="section-intro">
-              Implementation can move from kickoff to public launch in approximately three months, using existing law enforcement and community channels. No legislation required.
-            </p>
-          </div>
+          <h2 class="section-title">Twelve Weeks From Kickoff To Launch.</h2>
+          <p class="lead-line">Five phases. No legislation required.</p>
         </div>
 
-        <div class="roadmap-grid">
-          <div class="roadmap-row" data-animate>
-            <div class="roadmap-phase">Phase 01<br>2-3 weeks</div>
-            <div class="roadmap-title">Stakeholders &amp; Scope</div>
-            <div class="roadmap-body">Convene Union County Sheriff, Monroe PD, Waxhaw PD, Marshville PD, Wingate PD, county manager, local hospitals, school SRO leads, and Autism Society of NC. Adopt voluntary, no-registry program policy.</div>
+        <div class="roadmap-timeline">
+          <div class="roadmap-axis">
+            <span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span><span>W9</span><span>W10</span><span>W11</span><span>W12</span>
           </div>
-          <div class="roadmap-row" data-animate>
-            <div class="roadmap-phase">Phase 02<br>2-4 weeks</div>
-            <div class="roadmap-title">Materials</div>
-            <div class="roadmap-body">Design and print #10 blue envelopes with bilingual driver tips and officer tips. Use Connecticut, Massachusetts, and Virginia phrasing as a base. Source via county procurement (3 quotes).</div>
+
+          <div class="roadmap-bars">
+            <div class="roadmap-bar-row">
+              <div class="roadmap-bar phase-1">
+                <div class="bar-title">01 Stakeholders</div>
+              </div>
+            </div>
+            <div class="roadmap-bar-row">
+              <div class="roadmap-bar phase-2">
+                <div class="bar-title">02 Materials</div>
+              </div>
+            </div>
+            <div class="roadmap-bar-row">
+              <div class="roadmap-bar phase-3">
+                <div class="bar-title">03 Training Prep</div>
+              </div>
+            </div>
+            <div class="roadmap-bar-row">
+              <div class="roadmap-bar phase-4">
+                <div class="bar-title">04 Distribution &amp; Launch</div>
+              </div>
+            </div>
+            <div class="roadmap-bar-row">
+              <div class="roadmap-bar phase-5">
+                <div class="bar-title">05 Metrics &amp; Report</div>
+              </div>
+            </div>
           </div>
-          <div class="roadmap-row" data-animate>
-            <div class="roadmap-phase">Phase 03<br>1-2 weeks prep</div>
-            <div class="roadmap-title">Training</div>
-            <div class="roadmap-body">30-45 minute roll-call briefing for every sworn officer. Repeat for new hires. One-page handout, optional 5-minute video. Layered over existing CIT training where applicable.</div>
-          </div>
-          <div class="roadmap-row" data-animate>
-            <div class="roadmap-phase">Phase 04<br>2-3 weeks</div>
-            <div class="roadmap-title">Distribution &amp; Launch</div>
-            <div class="roadmap-body">Pick-up points at all PD lobbies, county libraries, DMV events, autism support groups. Joint press conference with sheriff, chiefs, and advocates. Stock every patrol car with spare envelopes.</div>
-          </div>
-          <div class="roadmap-row" data-animate>
-            <div class="roadmap-phase">Phase 05<br>Ongoing</div>
-            <div class="roadmap-title">Metrics &amp; Annual Report</div>
-            <div class="roadmap-body">Track envelopes distributed, training delivered, officer recall quizzes, community surveys. Annual report to the Board of Commissioners. Use data to support a future statewide North Carolina bill.</div>
+
+          <div class="roadmap-captions">
+            <div class="roadmap-caption">
+              <span class="cap-num">01</span>
+              Convene Sheriff + municipal chiefs + community orgs. Adopt voluntary, no-registry policy.
+            </div>
+            <div class="roadmap-caption">
+              <span class="cap-num">02</span>
+              Design and print #10 blue envelopes with bilingual driver + officer tips.
+            </div>
+            <div class="roadmap-caption">
+              <span class="cap-num">03</span>
+              30&ndash;45 minute roll-call briefing for every sworn officer.
+            </div>
+            <div class="roadmap-caption">
+              <span class="cap-num">04</span>
+              Pick-up at all PD lobbies, libraries, DMV events. Joint press conference.
+            </div>
+            <div class="roadmap-caption">
+              <span class="cap-num">05</span>
+              Track distribution, training completion, community surveys. Annual report.
+            </div>
           </div>
         </div>
       </div>
@@ -453,23 +471,19 @@
     <!-- CTA -->
     <section class="cta-block">
       <div class="container">
-        <div class="section-header" data-animate>
+        <div class="section-header-flat">
           <div class="section-num">08 / Next Step</div>
-          <div>
-            <h2 class="section-title">Let's Make<br><span class="yellow">Union First.</span></h2>
-            <p class="section-intro">
-              This proposal is a starting point, not a finished plan. The materials, the model, and the budget are all here. What's needed now is a conversation between Union County law enforcement, county leadership, and the autism community.
-            </p>
-            <div class="cta-buttons">
-              <a href="training.html" class="btn btn-primary">
-                View Officer Training
-                <span class="btn-arrow">&rarr;</span>
-              </a>
-              <a href="#problem" class="btn btn-secondary">
-                Re-Read the Proposal
-                <span class="btn-arrow">&rarr;</span>
-              </a>
-            </div>
+          <h2 class="section-title">Let&rsquo;s Make <span class="yellow">Union First.</span></h2>
+          <p class="lead-line">The materials are here. The model is proven. All that&rsquo;s missing is a conversation.</p>
+          <div class="cta-buttons">
+            <a href="training.html" class="btn btn-primary">
+              View Officer Training
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+            <a href="#problem" class="btn btn-secondary">
+              Re-Read the Proposal
+              <span class="btn-arrow">&rarr;</span>
+            </a>
           </div>
         </div>
       </div>
@@ -477,37 +491,15 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer-dark">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand">Blue Envelope / Union</div>
-          <p class="footer-tag">A community-led proposal for safer traffic stops between law enforcement and autistic drivers in Union County, North Carolina.</p>
+      <span class="footer-dark-url">blueenvelopeunion.vercel.app</span>
+      <div class="footer-dark-meta">
+        <span>&copy; 2026 &middot; Researched &amp; built by Beth Cartrette</span>
+        <div class="links">
+          <a href="#main">Back to top</a>
+          <a href="training.html">Officer Training</a>
         </div>
-        <div>
-          <h4>The Proposal</h4>
-          <ul class="footer-links">
-            <li><a href="#problem">The Problem</a></li>
-            <li><a href="#states">Adoption</a></li>
-            <li><a href="#union">Union County</a></li>
-            <li><a href="#cost">Cost</a></li>
-            <li><a href="#how">How It Works</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="training.html">Officer Training</a></li>
-            <li><a href="https://portal.ct.gov/dmv/resources/the-blue-envelope" target="_blank" rel="noopener">Connecticut DMV</a></li>
-            <li><a href="https://www.dmv.virginia.gov/BlueEnvelope" target="_blank" rel="noopener">Virginia DMV</a></li>
-            <li><a href="https://www.cdc.gov/autism/data-research/index.html" target="_blank" rel="noopener">CDC Autism Data</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Blue Envelope Union County Proposal</span>
-        <span>Researched &amp; built by Beth Cartrette</span>
       </div>
     </div>
   </footer>
