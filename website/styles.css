@@ -328,7 +328,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--space-5);
-  align-items: end;
+  align-items: start;
   margin-top: var(--space-6);
   padding-top: var(--space-4);
   border-top: 2px solid var(--ink);
