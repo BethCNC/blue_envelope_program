@@ -6,6 +6,31 @@
 (function() {
   'use strict';
 
+  // ===== Theme toggle =====
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      let next;
+      if (current === 'dark') {
+        next = 'light';
+      } else if (current === 'light') {
+        next = 'dark';
+      } else {
+        // No explicit setting yet — use opposite of system
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        next = prefersDark ? 'light' : 'dark';
+      }
+      html.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+
+      // Update aria-label for screen readers
+      themeToggle.setAttribute('aria-label',
+        next === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    });
+  }
+
   // ===== Mobile menu =====
   const menuToggle = document.querySelector('.mobile-menu-toggle');
   const navMenu = document.querySelector('.nav-menu');

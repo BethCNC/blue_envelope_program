@@ -30,6 +30,9 @@ html {
   --yellow: #ffe744;
   --red: #d62828;
 
+  /* Theme transition */
+  --theme-transition: background 0.3s var(--ease-out), color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+
   --display: 'Anton', 'Arial Black', sans-serif;
   --body: 'Manrope', system-ui, sans-serif;
   --mono: 'JetBrains Mono', 'Courier New', monospace;
@@ -2033,6 +2036,165 @@ section { padding: var(--pad-section) 0; position: relative; }
 .eyebrow.object-eyebrow {
   display: block;
   margin-bottom: var(--space-2);
+}
+
+/* ============================================
+   DARK MODE — swaps cream ↔ ink with overrides
+   Triggered by [data-theme="dark"] OR system preference
+   ============================================ */
+
+[data-theme="dark"] {
+  --cream: #0e1014;
+  --cream-deep: #16181e;
+  --ink: #faf8f3;
+  --ink-soft: #e8e5de;
+  --gray: #a8a8a8;
+  --gray-light: #6b6b6b;
+  --blue: #6fa0ff;
+  --blue-deep: #002fa7;
+  --blue-bright: #a8c3ff;
+  --yellow: #ffe744;
+  --red: #ff6b6b;
+}
+
+/* Respect OS preference only when user hasn't set a manual preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --cream: #0e1014;
+    --cream-deep: #16181e;
+    --ink: #faf8f3;
+    --ink-soft: #e8e5de;
+    --gray: #a8a8a8;
+    --gray-light: #6b6b6b;
+    --blue: #6fa0ff;
+    --blue-deep: #002fa7;
+    --blue-bright: #a8c3ff;
+    --yellow: #ffe744;
+    --red: #ff6b6b;
+  }
+}
+
+/* Smooth transitions */
+body,
+.header,
+section,
+.framing-line,
+.big-stat,
+.how-step,
+.state-card,
+.problem-grid .stat-cell,
+.union-cell,
+.cost-cell,
+.dare-agencies,
+.stats-bar-item,
+.footer-dark {
+  transition: var(--theme-transition);
+}
+
+/* ----- Dark mode overrides for sections that should NOT invert ----- */
+
+/* Pullquote keeps Klein Blue bg with near-white text */
+[data-theme="dark"] .pullquote,
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pullquote {} }
+
+[data-theme="dark"] .pullquote-text,
+[data-theme="dark"] .pullquote-attribution {
+  color: #faf8f3;
+}
+
+/* Union section: was ink bg with cream text.
+   After swap: becomes cream bg with ink text automatically.
+   The yellow accent stays. The cell borders need adjusting. */
+
+/* CTA block same treatment */
+
+/* NC state card — keeps Klein Blue background in dark mode */
+[data-theme="dark"] .state-card.nc {
+  background: var(--blue-deep);
+  color: #faf8f3;
+}
+[data-theme="dark"] .state-card.nc .state-card-num,
+[data-theme="dark"] .state-card.nc .state-card-name,
+[data-theme="dark"] .state-card.nc .state-card-date,
+[data-theme="dark"] .state-card.nc .state-card-law {
+  color: #faf8f3;
+}
+
+/* Newest state card — yellow stays, but text should stay dark for contrast */
+[data-theme="dark"] .state-card.newest {
+  background: var(--yellow);
+}
+[data-theme="dark"] .state-card.newest .state-card-num,
+[data-theme="dark"] .state-card.newest .state-card-name,
+[data-theme="dark"] .state-card.newest .state-card-date,
+[data-theme="dark"] .state-card.newest .state-card-law,
+[data-theme="dark"] .state-card.newest .state-card-status {
+  color: #0a0a0a;
+}
+
+/* Object photo border stays visible */
+[data-theme="dark"] .object-image img {
+  border-color: var(--ink);
+  box-shadow: 12px 12px 0 var(--blue);
+}
+
+/* Nav scroll progress stays visible */
+[data-theme="dark"] .scroll-progress {
+  background: var(--blue);
+}
+
+/* Nav logo mark inverted border treatment */
+[data-theme="dark"] .logo-mark {
+  background: var(--blue);
+  border-color: var(--ink);
+}
+
+/* THEME TOGGLE BUTTON */
+.theme-toggle {
+  background: transparent;
+  border: 2px solid var(--ink);
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-left: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s var(--ease-out);
+  color: var(--ink);
+}
+
+.theme-toggle:hover {
+  background: var(--ink);
+  color: var(--cream);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--blue);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
+
+@media (max-width: 920px) {
+  .theme-toggle { margin-left: 0; }
 }
 
 /* FRAMING LINE above hero */
