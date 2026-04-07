@@ -1052,61 +1052,6 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--ink-soft);
 }
 
-/* PHOTO MOMENT — full-width envelope-in-use image */
-.photo-moment {
-  background: var(--cream-deep);
-  padding: var(--pad-section) 0;
-  border-bottom: 2px solid var(--ink);
-}
-
-@media (max-width: 768px) {
-  .photo-moment { padding: var(--pad-section-mobile) 0; }
-}
-
-.photo-moment-figure {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-6);
-  align-items: center;
-}
-
-@media (max-width: 920px) {
-  .photo-moment-figure { grid-template-columns: 1fr; gap: var(--space-4); }
-}
-
-.photo-moment-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 2px solid var(--ink);
-  box-shadow: 12px 12px 0 var(--blue);
-}
-
-.photo-moment-caption {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-
-.photo-moment-caption .eyebrow {
-  display: block;
-  margin-bottom: var(--space-1);
-}
-
-.photo-moment-caption .caption-text {
-  font-family: var(--display);
-  font-size: clamp(40px, 5vw, 72px);
-  line-height: 0.95;
-  text-transform: uppercase;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-  text-wrap: balance;
-  max-width: 20ch;
-}
-
 /* PULL QUOTE */
 .pullquote {
   background: var(--blue);
