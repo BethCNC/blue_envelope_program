@@ -751,10 +751,10 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .state-card-status.active { color: var(--blue); }
 
-/* Hover lift */
+/* Hover lift — uses blue-light for a softer, brand-consistent accent */
 .state-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--blue);
+  box-shadow: 6px 6px 0 var(--blue-light);
   z-index: 2;
 }
 
