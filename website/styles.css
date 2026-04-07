@@ -751,11 +751,23 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .state-card-status.active { color: var(--blue); }
 
-/* Hover lift — uses blue-light for a softer, brand-consistent accent */
+/* Hover — fill with blue-light, lift, ink-shadow accent */
 .state-card:hover {
+  background: var(--blue-light);
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--blue-light);
+  box-shadow: 6px 6px 0 var(--ink);
   z-index: 2;
+}
+.state-card:hover .state-card-num,
+.state-card:hover .state-card-name,
+.state-card:hover .state-card-date,
+.state-card:hover .state-card-law {
+  color: var(--ink);
+}
+.state-card:hover .state-card-status,
+.state-card:hover .state-card-status.active {
+  color: var(--ink);
+  border-color: var(--ink);
 }
 
 /* Newest variant — light blue accent (readable in both modes) */
@@ -800,7 +812,30 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--yellow);
 }
 .state-card.nc:hover {
+  background: var(--blue);
   box-shadow: 6px 6px 0 var(--yellow);
+}
+.state-card.nc:hover .state-card-num,
+.state-card.nc:hover .state-card-name,
+.state-card.nc:hover .state-card-date,
+.state-card.nc:hover .state-card-law { color: var(--cream); }
+.state-card.nc:hover .state-card-status {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+/* Newest variant already has blue-light bg — invert hover so user sees feedback */
+.state-card.newest:hover {
+  background: var(--ink);
+  box-shadow: 6px 6px 0 var(--blue-light);
+}
+.state-card.newest:hover .state-card-num,
+.state-card.newest:hover .state-card-name,
+.state-card.newest:hover .state-card-date,
+.state-card.newest:hover .state-card-law { color: var(--cream); }
+.state-card.newest:hover .state-card-status {
+  color: var(--cream);
+  border-color: var(--cream);
 }
 
 .states-grid {
