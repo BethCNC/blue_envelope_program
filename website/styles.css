@@ -27,6 +27,7 @@ html {
   --blue: #002fa7;
   --blue-deep: #001a5e;
   --blue-bright: #0046ff;
+  --blue-light: #6fa0ff;
   --yellow: #ffe744;
   --red: #d62828;
 
@@ -757,16 +758,19 @@ section { padding: var(--pad-section) 0; position: relative; }
   z-index: 2;
 }
 
-/* Newest variant — yellow accent */
+/* Newest variant — light blue accent (readable in both modes) */
 .state-card.newest {
-  background: var(--yellow);
+  background: var(--blue-light);
 }
 .state-card.newest .state-card-num,
+.state-card.newest .state-card-name,
+.state-card.newest .state-card-date,
 .state-card.newest .state-card-law {
   color: var(--ink);
 }
 .state-card.newest .state-card-status {
   color: var(--ink);
+  border-color: var(--ink);
 }
 
 /* Pending variant — dimmed with dashed border status */
@@ -2094,19 +2098,47 @@ section,
 /* ----- Dark mode overrides for sections that should NOT invert ----- */
 
 /* Pullquote keeps Klein Blue bg with near-white text */
-[data-theme="dark"] .pullquote,
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pullquote {} }
-
 [data-theme="dark"] .pullquote-text,
 [data-theme="dark"] .pullquote-attribution {
   color: #faf8f3;
 }
 
-/* Union section: was ink bg with cream text.
-   After swap: becomes cream bg with ink text automatically.
-   The yellow accent stays. The cell borders need adjusting. */
+/* Union section — stays dark in BOTH modes (inversion moment)
+   Yellow on cream would fail WCAG contrast. Force ink bg + cream text. */
+[data-theme="dark"] .union {
+  background: #0a0a0a !important;
+  color: #faf8f3 !important;
+  border-bottom-color: #faf8f3 !important;
+}
+[data-theme="dark"] .union-headline,
+[data-theme="dark"] .union .section-title,
+[data-theme="dark"] .union-cell-label {
+  color: #faf8f3 !important;
+}
+[data-theme="dark"] .union-cell {
+  border-right-color: #faf8f3 !important;
+  border-bottom-color: #faf8f3 !important;
+}
+[data-theme="dark"] .union-cell-source {
+  color: #c9c5bd !important;
+}
+[data-theme="dark"] .union-cell-num {
+  color: #ffe744 !important;
+}
 
-/* CTA block same treatment */
+/* CTA block — same treatment, stays dark in both modes */
+[data-theme="dark"] .cta-block {
+  background: #0a0a0a !important;
+  color: #faf8f3 !important;
+  border-bottom-color: #faf8f3 !important;
+}
+[data-theme="dark"] .cta-block .section-title,
+[data-theme="dark"] .cta-block .lead-line {
+  color: #faf8f3 !important;
+}
+[data-theme="dark"] .cta-block .yellow {
+  color: #ffe744 !important;
+}
 
 /* NC state card — keeps Klein Blue background in dark mode */
 [data-theme="dark"] .state-card.nc {
@@ -2120,9 +2152,9 @@ section,
   color: #faf8f3;
 }
 
-/* Newest state card — yellow stays, but text should stay dark for contrast */
+/* Newest state card already uses --blue-light which stays readable in both modes */
 [data-theme="dark"] .state-card.newest {
-  background: var(--yellow);
+  background: #6fa0ff;
 }
 [data-theme="dark"] .state-card.newest .state-card-num,
 [data-theme="dark"] .state-card.newest .state-card-name,
