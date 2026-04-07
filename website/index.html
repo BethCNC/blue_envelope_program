@@ -19,18 +19,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <header class="header">
-    <nav class="nav">
-      <a href="#" class="logo">
-        <span class="logo-mark"></span>
+  <div class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a href="#main" class="logo" aria-label="Blue Envelope Union County — home">
+        <span class="logo-mark" aria-hidden="true"></span>
         Blue Envelope / Union
       </a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" role="list">
         <li><a href="#problem" class="nav-link">Problem</a></li>
         <li><a href="#states" class="nav-link">9 States</a></li>
         <li><a href="#union" class="nav-link">Union Co.</a></li>
@@ -39,18 +41,18 @@
         <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
         <li><a href="training.html" class="nav-cta">Officer Training</a></li>
       </ul>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </nav>
   </header>
 
-  <main id="main">
+  <main id="main" role="main">
 
-    <div class="framing-line">A 90-second proposal for Union County, North Carolina</div>
+    <p class="framing-line">A 90-second proposal for Union County, North Carolina</p>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" aria-label="Introduction">
       <div class="container">
         <div class="hero-tag">
           <span class="hero-tag-dot"></span>
@@ -98,7 +100,7 @@
     </section>
 
     <!-- STATS BAR -->
-    <div class="stats-bar">
+    <div class="stats-bar" role="region" aria-label="Key statistics">
       <div class="stats-bar-item">
         <div class="stats-bar-num">9</div>
         <div class="stats-bar-label">States with Laws</div>
@@ -262,10 +264,10 @@
           <div class="section-num">03 / Union County, NC</div>
         </div>
 
-        <div class="union-headline">
+        <h2 class="union-headline">
           The Gap is<br>
           <span class="yellow">Visible.</span>
-        </div>
+        </h2>
 
         <div class="union-grid">
           <div class="union-cell">
@@ -325,7 +327,7 @@
       <div class="container">
         <div class="cost-mega-block">
           <span class="eyebrow">05 / The Real Cost</span>
-          <span class="mega-num">$611</span>
+          <h2 class="mega-num">$611</h2>
           <div class="mega-sub">is what it costs to start.</div>
           <p class="lead-line">The whole thing costs less than a good office chair. Here&rsquo;s the breakdown.</p>
         </div>
@@ -384,6 +386,17 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- PHOTO MOMENT — envelope in use -->
+    <section class="photo-moment" aria-label="The Blue Envelope in practice">
+      <figure class="photo-moment-figure">
+        <img src="img/blue-envelope-held.png" alt="A hand holds out a blue envelope containing documents to an unseen officer, demonstrating how a driver presents it during a traffic stop." />
+        <figcaption class="photo-moment-caption">
+          <span class="eyebrow">In Practice</span>
+          <span class="caption-text">This is what it looks like at 2 AM on Highway 74.</span>
+        </figcaption>
+      </figure>
     </section>
 
     <!-- PULL QUOTE — VICTOR PEREZ -->
@@ -491,7 +504,7 @@
 
   </main>
 
-  <footer class="footer-dark">
+  <footer class="footer-dark" role="contentinfo">
     <div class="container">
       <span class="footer-dark-url">blueenvelopeunion.vercel.app</span>
       <div class="footer-dark-meta">
@@ -504,6 +517,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=9"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>

@@ -293,11 +293,18 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 /* HERO */
 .hero {
-  padding-top: 152px;
-  padding-bottom: 128px;
+  padding-top: calc(72px + var(--space-5));   /* fixed header (72) + 48 breathing room */
+  padding-bottom: var(--pad-section);
   position: relative;
   overflow: hidden;
   border-bottom: 2px solid var(--ink);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: calc(72px + var(--space-4));
+    padding-bottom: var(--pad-section-mobile);
+  }
 }
 
 .hero-tag {
@@ -890,6 +897,61 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--ink-soft);
 }
 
+/* PHOTO MOMENT — full-width envelope-in-use image */
+.photo-moment {
+  background: var(--cream-deep);
+  padding: var(--pad-section) 0;
+  border-bottom: 2px solid var(--ink);
+}
+
+@media (max-width: 768px) {
+  .photo-moment { padding: var(--pad-section-mobile) 0; }
+}
+
+.photo-moment-figure {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+@media (max-width: 920px) {
+  .photo-moment-figure { grid-template-columns: 1fr; gap: var(--space-4); }
+}
+
+.photo-moment-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--ink);
+  box-shadow: 12px 12px 0 var(--blue);
+}
+
+.photo-moment-caption {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.photo-moment-caption .eyebrow {
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.photo-moment-caption .caption-text {
+  font-family: var(--display);
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  max-width: 20ch;
+}
+
 /* PULL QUOTE */
 .pullquote {
   background: var(--blue);
@@ -1103,15 +1165,161 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 ::selection { background: var(--blue); color: var(--cream); }
 
+/* SCROLL PROGRESS BAR — fixed under nav */
+.scroll-progress {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--blue);
+  z-index: 101;
+  transition: width 0.05s linear;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .scroll-progress { top: 64px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress { transition: none; }
+}
+
 /* ============================================
    AUDIT REDESIGN — Components for restructured sections
    ============================================ */
 
-/* Mobile section padding tightening */
+/* ===== RESPONSIVE OVERRIDES ===== */
+
+/* Large tablet / small desktop — 920-1200 */
+@media (max-width: 1200px) {
+  .dare-overflow-title { white-space: normal; }
+}
+
+/* Tablet — 768-920 */
+@media (max-width: 920px) {
+  .hero-meta { grid-template-columns: 1fr; gap: var(--space-4); }
+  .hero-cta-group { flex-direction: row; flex-wrap: wrap; }
+  .problem-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .problem-grid .stat-cell.hero-stat,
+  .problem-grid .stat-cell.wide-stat {
+    grid-row: auto;
+    grid-column: span 2;
+  }
+  .cost-grid { grid-template-columns: 1fr; }
+  .how-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+  .union-grid { grid-template-columns: 1fr; }
+}
+
+/* Mobile — 768 and below */
 @media (max-width: 768px) {
-  section { padding: 64px 0 !important; }
-  .hero { padding-top: 120px !important; padding-bottom: 64px !important; }
-  h1 { font-size: clamp(48px, 14vw, 96px) !important; }
+  :root {
+    --gutter: 24px;
+  }
+  section { padding: var(--pad-section-mobile) 0; }
+  .hero { padding-top: calc(72px + var(--space-4)); padding-bottom: var(--pad-section-mobile); }
+  .object-section { padding: var(--pad-section-mobile) 0; }
+  .pullquote { padding: var(--pad-section-mobile) 0; }
+  .cta-block { padding: var(--pad-section-mobile) 0; }
+
+  /* Nav mobile */
+  .nav { height: 64px; padding: 0 24px; }
+  .logo { font-size: 16px; }
+  .logo-mark { width: 18px; height: 12px; }
+
+  /* Mobile menu touch targets */
+  .nav-menu.is-open a { padding: 16px 0; min-height: 44px; display: flex; align-items: center; }
+  .mobile-menu-toggle { min-width: 44px; min-height: 44px; }
+
+  /* Hero type scales down hard */
+  .hero-title { word-break: break-word; }
+  .hero-meta { grid-template-columns: 1fr; gap: var(--space-4); margin-top: var(--space-4); padding-top: var(--space-4); }
+  .hero-lead { font-size: 16px; }
+  .hero-cta-group { flex-direction: column; align-items: stretch; width: 100%; }
+  .hero-cta-group .btn { width: 100%; justify-content: space-between; }
+
+  /* Buttons are full-width touch targets */
+  .btn { padding: 16px 24px; min-height: 44px; }
+
+  /* Stats bar stacks 2x2 */
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .stats-bar-item { padding: 24px 16px; }
+  .stats-bar-num { font-size: clamp(32px, 9vw, 48px); }
+
+  /* Problem grid stacks */
+  .problem-grid { grid-template-columns: 1fr; }
+  .problem-grid .stat-cell,
+  .problem-grid .stat-cell.hero-stat,
+  .problem-grid .stat-cell.wide-stat {
+    grid-column: auto;
+    grid-row: auto;
+    border-right: none;
+  }
+  .problem-grid .stat-num { font-size: clamp(56px, 16vw, 120px); }
+  .problem-grid .hero-stat .stat-num { font-size: clamp(72px, 20vw, 160px); }
+
+  /* Object section — stacked */
+  .object-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+
+  /* States list — full stack */
+  .state-row {
+    grid-template-columns: 1fr !important;
+    gap: 4px !important;
+    padding: 20px 0 !important;
+  }
+  .state-row .state-name { font-size: clamp(24px, 7vw, 36px); }
+  .state-row.nc-row { margin-left: -24px; margin-right: -24px; padding-left: 24px !important; padding-right: 24px !important; }
+
+  /* Union county — stack */
+  .union-headline { margin: var(--space-4) 0; }
+  .union-grid { grid-template-columns: 1fr; }
+  .union-cell { border-right: none; }
+
+  /* Dare county — stack */
+  .dare-overflow-title { white-space: normal; font-size: clamp(56px, 16vw, 96px); }
+  .dare-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+
+  /* Cost section mega */
+  .cost-mega-block { padding-bottom: var(--space-4); margin-bottom: var(--space-4); }
+  .cost-grid { grid-template-columns: 1fr; }
+
+  /* How It Works */
+  .how-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+  .how-step-title { font-size: clamp(32px, 10vw, 48px); }
+
+  /* Pull quote */
+  .pullquote-text { font-size: clamp(28px, 8vw, 48px); }
+
+  /* Roadmap — hide the horizontal grid on mobile, stack captions */
+  .roadmap-axis { display: none; }
+  .roadmap-bars { padding: 0; border-bottom: 2px solid var(--ink); padding-bottom: var(--space-3); }
+  .roadmap-bar-row { height: auto; display: block; }
+  .roadmap-bar {
+    grid-column: auto !important;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 8px;
+  }
+  .roadmap-bar .bar-title { font-size: 16px; }
+  .roadmap-captions { grid-template-columns: 1fr; gap: var(--space-3); margin-top: var(--space-3); }
+
+  /* CTA section */
+  .cta-block .section-title { font-size: clamp(36px, 12vw, 72px); }
+
+  /* Framing line smaller on mobile */
+  .framing-line { font-size: 10px; padding: 12px 16px; }
+}
+
+/* Small mobile — 480 and below */
+@media (max-width: 480px) {
+  :root { --gutter: 20px; }
+  .stats-bar { grid-template-columns: 1fr; }
+  .stats-bar-item:nth-child(2) { border-right: none !important; border-bottom: 2px solid var(--ink); }
+  .stats-bar-item:nth-child(3) { border-bottom: 2px solid var(--ink); }
 }
 
 /* MEGA TYPE — shock tier number */
@@ -1573,7 +1781,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .roadmap-bar.phase-1 { background: var(--blue); grid-column: 1 / span 3; }
 .roadmap-bar.phase-2 { background: var(--ink);  grid-column: 3 / span 4; }
-.roadmap-bar.phase-3 { background: var(--blue); grid-column: 5 / span 2; }
+.roadmap-bar.phase-3 { background: var(--blue); grid-column: 5 / span 3; }
 .roadmap-bar.phase-4 { background: var(--ink);  grid-column: 7 / span 3; }
 .roadmap-bar.phase-5 { background: var(--blue); grid-column: 10 / span 3; }
 
@@ -1687,6 +1895,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--gray);
   text-align: center;
   padding: 16px 0;
+  margin: 0;
   border-bottom: 1px solid var(--gray-light);
   background: var(--cream-deep);
 }

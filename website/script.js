@@ -48,22 +48,34 @@
     });
   }
 
-  // ===== Header scroll behavior =====
+  // ===== Header scroll behavior + scroll progress =====
   const header = document.querySelector('.header');
+  const progressBar = document.querySelector('.scroll-progress');
   let lastScroll = 0;
 
   function handleScroll() {
     const currentScroll = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (currentScroll / docHeight) * 100 : 0;
+
     if (currentScroll > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
+
+    if (progressBar) {
+      progressBar.style.width = progress.toFixed(2) + '%';
+      progressBar.setAttribute('aria-valuenow', Math.round(progress));
+    }
+
     highlightActiveSection();
     lastScroll = currentScroll;
   }
 
   window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', handleScroll, { passive: true });
+  handleScroll();
 
   // ===== Scroll-triggered animations =====
   document.documentElement.classList.add('js-loaded');
