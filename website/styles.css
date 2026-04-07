@@ -468,47 +468,78 @@ section { padding: var(--pad-section) 0; position: relative; }
   box-shadow: 16px 16px 0 var(--blue);
 }
 
-/* STATS BAR */
+/* STATS BAR — aligns with container grid */
 .stats-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  padding: var(--space-6) 0;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
   background: var(--cream);
 }
 
+.stats-bar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 2px solid var(--ink);
+}
+
 .stats-bar-item {
-  padding: 32px 24px;
+  padding: var(--space-4) var(--space-4);
   border-right: 2px solid var(--ink);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--space-3);
+  min-height: 200px;
+  justify-content: space-between;
+  background: var(--cream);
+  transition: all 0.3s var(--ease-out);
 }
+
+.stats-bar-item:hover {
+  background: var(--ink);
+}
+
+.stats-bar-item:hover .stats-bar-num,
+.stats-bar-item:hover .stats-bar-label {
+  color: var(--cream);
+}
+
+.stats-bar-item:hover .stats-bar-num { color: var(--yellow); }
 
 .stats-bar-item:last-child { border-right: none; }
 
 .stats-bar-num {
   font-family: var(--display);
-  font-size: clamp(36px, 4vw, 56px);
+  font-size: clamp(48px, 5.5vw, 88px);
   line-height: 0.9;
   color: var(--blue);
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .stats-bar-label {
   font-family: var(--body);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  line-height: 1.4;
   color: var(--ink);
+  max-width: 24ch;
+  text-wrap: pretty;
 }
 
-@media (max-width: 768px) {
-  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 920px) {
+  .stats-bar-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-bar-item { min-height: 180px; }
   .stats-bar-item:nth-child(2) { border-right: none; }
   .stats-bar-item:nth-child(1),
   .stats-bar-item:nth-child(2) { border-bottom: 2px solid var(--ink); }
+}
+
+@media (max-width: 600px) {
+  .stats-bar-grid { grid-template-columns: 1fr; }
+  .stats-bar-item { border-right: none !important; min-height: 140px; }
+  .stats-bar-item:not(:last-child) { border-bottom: 2px solid var(--ink); }
+  .stats-bar-item:nth-child(2) { border-bottom: 2px solid var(--ink) !important; }
 }
 
 /* SECTION HEADER */
