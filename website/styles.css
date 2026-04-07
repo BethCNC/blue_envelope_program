@@ -254,7 +254,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 .nav-cta:hover {
   background: var(--ink);
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--blue);
+  box-shadow: 4px 4px 0 var(--blue-light);
 }
 
 .mobile-menu-toggle {
@@ -390,7 +390,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 .btn-primary:hover {
   background: var(--ink);
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--blue);
+  box-shadow: 6px 6px 0 var(--blue-light);
 }
 
 .btn-secondary { background: transparent; color: var(--ink); }
@@ -399,7 +399,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
   color: var(--cream);
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--blue);
+  box-shadow: 6px 6px 0 var(--blue-light);
 }
 
 .btn-arrow { display: inline-block; transition: transform 0.2s; }
@@ -463,13 +463,13 @@ section { padding: var(--pad-section) 0; position: relative; }
   max-width: 540px;
   height: auto;
   border: 2px solid var(--ink);
-  box-shadow: 12px 12px 0 var(--blue);
+  box-shadow: 12px 12px 0 var(--blue-light);
   transition: transform 0.4s var(--ease-out);
 }
 
 .object-image:hover img {
   transform: translate(-4px, -4px);
-  box-shadow: 16px 16px 0 var(--blue);
+  box-shadow: 16px 16px 0 var(--blue-light);
 }
 
 /* STATS BAR — aligns with container grid */
@@ -608,7 +608,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
   color: var(--cream);
   transform: translate(-4px, -4px);
-  box-shadow: 8px 8px 0 var(--blue);
+  box-shadow: 8px 8px 0 var(--blue-light);
 }
 
 .big-stat:hover .big-stat-num,
@@ -1073,7 +1073,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .how-step:hover {
   transform: translate(-4px, -4px);
-  box-shadow: 8px 8px 0 var(--blue);
+  box-shadow: 8px 8px 0 var(--blue-light);
 }
 
 .how-step-num {
@@ -1556,7 +1556,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
   color: var(--cream);
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--blue);
+  box-shadow: 6px 6px 0 var(--blue-light);
   z-index: 2;
   position: relative;
 }
@@ -1857,7 +1857,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 }
 
 .how-step:hover {
-  box-shadow: 12px 12px 0 var(--blue);
+  box-shadow: 12px 12px 0 var(--blue-light);
 }
 
 /* ROADMAP — horizontal timeline */
@@ -1913,7 +1913,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 .roadmap-bar:hover {
   background: var(--ink);
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--blue);
+  box-shadow: 6px 6px 0 var(--blue-light);
   z-index: 2;
 }
 
@@ -2167,7 +2167,7 @@ section,
 /* Object photo border stays visible */
 [data-theme="dark"] .object-image img {
   border-color: var(--ink);
-  box-shadow: 12px 12px 0 var(--blue);
+  box-shadow: 12px 12px 0 var(--blue-light);
 }
 
 /* Nav scroll progress stays visible */
@@ -2201,7 +2201,7 @@ section,
   background: var(--ink);
   color: var(--cream);
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--blue);
+  box-shadow: 4px 4px 0 var(--blue-light);
 }
 
 .theme-toggle svg {
