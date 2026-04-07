@@ -612,6 +612,155 @@ section { padding: var(--pad-section) 0; position: relative; }
   border-bottom: 2px solid var(--ink);
 }
 
+/* STATE CARDS — vertical column layout with variation */
+.states-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+}
+
+.state-card {
+  background: var(--cream);
+  padding: var(--space-4);
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-height: 240px;
+  position: relative;
+  transition: all 0.3s var(--ease-out);
+}
+
+/* Remove right border on last column */
+.state-card:nth-child(4n) { border-right: none; }
+/* Remove bottom border on last row — 11 cards = 2 full rows + 3 in last row */
+.state-card:nth-last-child(-n+3) { border-bottom: none; }
+
+@media (max-width: 1200px) {
+  .states-card-grid { grid-template-columns: repeat(3, 1fr); }
+  .state-card:nth-child(4n) { border-right: 2px solid var(--ink); }
+  .state-card:nth-child(3n) { border-right: none; }
+  .state-card:nth-last-child(-n+3) { border-bottom: none; }
+}
+
+@media (max-width: 768px) {
+  .states-card-grid { grid-template-columns: repeat(2, 1fr); }
+  .state-card:nth-child(4n),
+  .state-card:nth-child(3n) { border-right: 2px solid var(--ink); }
+  .state-card:nth-child(2n) { border-right: none; }
+  .state-card:nth-last-child(-n+3) { border-bottom: 2px solid var(--ink); }
+  .state-card:nth-last-child(-n+2) { border-bottom: none; }
+}
+
+@media (max-width: 480px) {
+  .states-card-grid { grid-template-columns: 1fr; }
+  .state-card { border-right: none !important; }
+  .state-card:last-child { border-bottom: none !important; }
+  .state-card:not(:last-child) { border-bottom: 2px solid var(--ink) !important; }
+}
+
+.state-card-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--gray);
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+.state-card-name {
+  font-family: var(--display);
+  font-size: clamp(32px, 3.2vw, 48px);
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+}
+
+.state-card-date {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.05em;
+}
+
+.state-card-law {
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray);
+  line-height: 1.4;
+  margin-top: auto;
+}
+
+.state-card-status {
+  font-family: var(--body);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 6px 10px;
+  border: 2px solid currentColor;
+  align-self: flex-start;
+  margin-top: var(--space-2);
+}
+
+.state-card-status.active { color: var(--blue); }
+
+/* Hover lift */
+.state-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 var(--blue);
+  z-index: 2;
+}
+
+/* Newest variant — yellow accent */
+.state-card.newest {
+  background: var(--yellow);
+}
+.state-card.newest .state-card-num,
+.state-card.newest .state-card-law {
+  color: var(--ink);
+}
+.state-card.newest .state-card-status {
+  color: var(--ink);
+}
+
+/* Pending variant — dimmed with dashed border status */
+.state-card.pending {
+  background: var(--cream-deep);
+  opacity: 0.75;
+}
+.state-card.pending .state-card-status {
+  color: var(--gray);
+  border-style: dashed;
+}
+
+/* NC variant — Klein Blue hero card */
+.state-card.nc {
+  background: var(--blue);
+  color: var(--cream);
+}
+.state-card.nc .state-card-num,
+.state-card.nc .state-card-name,
+.state-card.nc .state-card-date,
+.state-card.nc .state-card-law,
+.state-card.nc .state-card-status {
+  color: var(--cream);
+}
+.state-card.nc .state-card-status {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+.state-card.nc:hover {
+  box-shadow: 6px 6px 0 var(--yellow);
+}
+
 .states-grid {
   display: grid;
   grid-template-columns: 1fr;
