@@ -356,7 +356,7 @@
 
   /* Type reset — compact for paper */
   h1, h2, h3, h4 {
-    font-family: 'Anton', 'Arial Black', sans-serif !important;
+    font-family: 'Founders Grotesk', 'Helvetica Neue', Arial, sans-serif !important;
     color: #000 !important;
     text-transform: uppercase !important;
     page-break-after: avoid;
@@ -441,7 +441,7 @@
     margin-bottom: 3pt !important;
     max-width: 100% !important;
     color: #000 !important;
-    font-family: 'Anton', sans-serif !important;
+    font-family: 'Founders Grotesk', 'Helvetica Neue', Arial, sans-serif !important;
     text-transform: uppercase !important;
   }
   .qr-sub {
