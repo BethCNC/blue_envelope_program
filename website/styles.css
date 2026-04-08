@@ -210,6 +210,8 @@ section { padding: var(--pad-section) 0; position: relative; }
   display: flex;
   align-items: center;
   gap: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .logo-mark {
@@ -223,10 +225,12 @@ section { padding: var(--pad-section) 0; position: relative; }
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
   flex-wrap: nowrap;
 }
+
+.nav-menu li { white-space: nowrap; }
 
 .nav-link {
   font-family: var(--body);
@@ -293,7 +297,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
   .nav-menu { display: none; }
   .mobile-menu-toggle { display: flex; }
   .nav-menu.is-open {
@@ -697,11 +701,20 @@ section { padding: var(--pad-section) 0; position: relative; }
 /* Remove bottom border on last row — 11 cards = 2 full rows + 3 in last row */
 .state-card:nth-last-child(-n+3) { border-bottom: none; }
 
+/* NC is card 11 (last) — make it span the empty 12th slot so the grid fills cleanly.
+   Prevents the "random empty block" in the bottom-right. */
+.state-card.nc {
+  grid-column: span 2;
+  border-right: none;
+}
+
 @media (max-width: 1200px) {
   .states-card-grid { grid-template-columns: repeat(3, 1fr); }
   .state-card:nth-child(4n) { border-right: 2px solid var(--ink); }
   .state-card:nth-child(3n) { border-right: none; }
   .state-card:nth-last-child(-n+3) { border-bottom: none; }
+  /* Reset span at 3-col layout — 11 cards = 3+3+3+2, NC is card 11, no empty slot */
+  .state-card.nc { grid-column: auto; }
 }
 
 @media (max-width: 768px) {
@@ -730,12 +743,15 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .state-card-name {
   font-family: var(--display);
-  font-size: clamp(32px, 3.2vw, 48px);
-  line-height: 0.9;
+  font-size: clamp(26px, 2.4vw, 36px);
+  line-height: 0.95;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--ink);
   margin: 0;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .state-card-date {
@@ -932,24 +948,30 @@ section { padding: var(--pad-section) 0; position: relative; }
 }
 
 /* UNION (the gap) */
+/* UNION SECTION — hardcoded dark in ALL modes (theme-independent).
+   Yellow-on-cream fails WCAG contrast, so this section is an "inversion moment"
+   that stays dark regardless of light/dark/OS-preference. Do NOT use var(--ink),
+   var(--cream), etc. here — those flip with the theme and break the contrast lock. */
 .union {
-  background: #0a0a0a;
-  color: #faf8f3;
-  border-bottom: 2px solid #0a0a0a;
+  background: #0a0a0a !important;
+  color: #faf8f3 !important;
+  border-bottom: 2px solid #0a0a0a !important;
 }
 .union .section-title,
 .union h2,
 .union h3,
 .union .union-headline,
 .union .union-cell-label,
-.union .section-intro { color: #faf8f3; }
-.union .union-cell-num { color: #ffe744; }
-
-.union .section-num { color: var(--gray-light); border-color: var(--cream); }
-.union .section-title,
-.union h2,
-.union h3 { color: var(--cream); }
-.union .section-intro { color: var(--cream); }
+.union .section-intro,
+.union .lead-line { color: #faf8f3 !important; }
+.union .union-cell-num { color: #ffe744 !important; }
+.union .section-num { color: #c9c5bd !important; border-color: #faf8f3 !important; }
+.union-cell {
+  border-right-color: #faf8f3 !important;
+  border-bottom-color: #faf8f3 !important;
+}
+.union .union-cell-source { color: #c9c5bd !important; }
+.union-grid { border-top-color: #faf8f3 !important; }
 
 .union-headline {
   font-family: var(--display);
@@ -1304,12 +1326,13 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--ink-soft);
 }
 
-/* CTA BLOCK */
+/* CTA BLOCK — hardcoded dark in ALL modes (same inversion-moment rule as .union).
+   Do NOT use var(--ink)/var(--cream) here — those flip with the theme. */
 .cta-block {
-  background: var(--ink);
-  color: var(--cream);
+  background: #0a0a0a !important;
+  color: #faf8f3 !important;
   padding: var(--pad-section) 0;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 2px solid #0a0a0a !important;
 }
 
 @media (max-width: 768px) {
@@ -1317,9 +1340,10 @@ section { padding: var(--pad-section) 0; position: relative; }
 }
 
 .cta-block h2,
-.cta-block .section-title { color: var(--cream); }
-.cta-block .yellow { color: var(--yellow); }
-.cta-block .section-intro { color: var(--cream); }
+.cta-block .section-title { color: #faf8f3 !important; }
+.cta-block .yellow { color: #ffe744 !important; }
+.cta-block .section-intro,
+.cta-block .lead-line { color: #faf8f3 !important; }
 
 .cta-buttons {
   display: flex;
@@ -1328,19 +1352,24 @@ section { padding: var(--pad-section) 0; position: relative; }
   flex-wrap: wrap;
 }
 
-.cta-block .btn { border-color: var(--cream); color: var(--cream); }
-.cta-block .btn-primary { background: var(--yellow); color: var(--ink); border-color: var(--yellow); }
+/* Yellow button on DARK bg: yellow #ffe744 + ink text #0a0a0a = 14.8:1 contrast ✓ */
+.cta-block .btn { border-color: #faf8f3 !important; color: #faf8f3 !important; }
+.cta-block .btn-primary {
+  background: #ffe744 !important;
+  color: #0a0a0a !important;
+  border-color: #ffe744 !important;
+}
 
 .cta-block .btn-primary:hover {
-  background: var(--cream);
-  color: var(--ink);
-  box-shadow: 6px 6px 0 var(--yellow);
+  background: #faf8f3 !important;
+  color: #0a0a0a !important;
+  box-shadow: 6px 6px 0 #ffe744 !important;
 }
 
 .cta-block .btn-secondary:hover {
-  background: var(--cream);
-  color: var(--ink);
-  box-shadow: 6px 6px 0 var(--yellow);
+  background: #faf8f3 !important;
+  color: #0a0a0a !important;
+  box-shadow: 6px 6px 0 #ffe744 !important;
 }
 
 .cta-block .container > .section-header-flat {
@@ -1358,7 +1387,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 }
 
 .cta-block__author {
-  border-left: 3px solid var(--yellow);
+  border-left: 3px solid #ffe744;
   padding-left: var(--space-4);
   padding-top: var(--space-3);
 }
@@ -1368,7 +1397,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   font-weight: 700;
   font-size: clamp(24px, 2.4vw, 36px);
   text-transform: uppercase;
-  color: var(--cream);
+  color: #faf8f3 !important;
   line-height: 1;
   margin-bottom: var(--space-2);
   letter-spacing: -0.005em;
@@ -1379,7 +1408,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--gray-light);
+  color: #c9c5bd !important;
   margin-bottom: var(--space-3);
   display: block;
 }
@@ -1387,8 +1416,8 @@ section { padding: var(--pad-section) 0; position: relative; }
 .cta-block__author-body {
   font-size: 15px;
   line-height: 1.5;
-  color: var(--cream);
-  opacity: 0.9;
+  color: #faf8f3 !important;
+  opacity: 0.95;
 }
 
 /* FOOTER */
@@ -1688,15 +1717,15 @@ section { padding: var(--pad-section) 0; position: relative; }
   text-wrap: pretty;
 }
 
-/* Dark-section override — used on union, cta-block */
+/* Dark-section override — used on union, cta-block (theme-independent) */
 .union .section-header-flat .section-num,
 .cta-block .section-header-flat .section-num {
-  color: var(--gray-light);
+  color: #c9c5bd !important;
 }
 
 .union .section-header-flat .lead-line,
 .cta-block .section-header-flat .lead-line {
-  color: var(--cream);
+  color: #faf8f3 !important;
 }
 
 /* PROBLEM ASYMMETRIC GRID */
@@ -1762,9 +1791,11 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--blue);
 }
 
-/* DANGER stat — red background, cream text, yellow number */
+/* DANGER stat — matches other stat cells (removed red, was visually jarring
+   and failed contrast with yellow-on-red). Uses ink bg + yellow num to emphasize
+   without breaking the palette. */
 .problem-grid .stat-cell.danger-stat {
-  background: var(--red);
+  background: var(--ink);
   color: var(--cream);
 }
 .problem-grid .stat-cell.danger-stat .stat-num { color: var(--yellow); }
@@ -1773,7 +1804,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--cream);
 }
 .problem-grid .stat-cell.danger-stat:hover {
-  background: var(--ink);
+  background: var(--blue);
 }
 
 /* Remove right border on last col */
