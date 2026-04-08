@@ -52,7 +52,7 @@ html {
 
   /* Type scale */
   --type-mega: clamp(120px, 22vw, 360px);   /* shock-tier — full viewport stops */
-  --type-display: clamp(64px, 13vw, 220px); /* hero h1 */
+  --type-display: clamp(56px, 11vw, 176px); /* hero h1 */
   --type-h2: clamp(48px, 8vw, 128px);
   --type-h3: clamp(32px, 4.5vw, 64px);
 
@@ -93,7 +93,7 @@ body {
   font-family: var(--body);
   background: var(--cream);
   color: var(--ink);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6;
   font-size: 18px;
   overflow-x: hidden;
@@ -112,8 +112,8 @@ body::before {
 
 h1, h2, h3, h4 {
   font-family: var(--display);
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.005em;
   line-height: 0.92;
   text-transform: uppercase;
   color: var(--ink);
@@ -132,7 +132,7 @@ p, .section-intro, .hero-lead, .object-body,
   widows: 3;
 }
 
-h1 { font-size: clamp(64px, 13vw, 220px); line-height: 0.85; letter-spacing: -0.035em; }
+h1 { font-size: clamp(56px, 11vw, 176px); line-height: 0.85; letter-spacing: -0.01em; }
 h2 { font-size: clamp(48px, 8vw, 128px); line-height: 0.88; }
 h3 { font-size: clamp(32px, 4.5vw, 64px); line-height: 0.95; }
 h4 { font-size: clamp(20px, 2.4vw, 32px); line-height: 1; }
@@ -2289,4 +2289,35 @@ section,
   margin: 0;
   border-bottom: 1px solid var(--gray-light);
   background: var(--cream-deep);
+}
+
+/* ============================================
+   A11y — focus rings
+   ============================================ */
+.btn:focus-visible,
+.state-card:focus-visible,
+.stat-cell:focus-visible,
+.how-step:focus-visible,
+.nav-link:focus-visible,
+.nav-cta:focus-visible,
+.theme-toggle:focus-visible,
+.mobile-menu-toggle:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--blue-light);
+  outline-offset: 4px;
+}
+
+/* ============================================
+   A11y — reduced motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-tag-dot { animation: none; }
 }

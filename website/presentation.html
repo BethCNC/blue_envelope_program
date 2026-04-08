@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Blue Envelope Program — A Proposal for Union County, NC</title>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       BLUE ENVELOPE — PROPOSAL PRESENTATION
+       Print-first multi-page proposal
+       ============================================ */
+
+    /* Founders Grotesk — local fonts */
+    @font-face { font-family: 'Founders Grotesk'; src: url('fonts/FoundersGrotesk-Light.otf') format('opentype'); font-weight: 300; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('fonts/FoundersGrotesk-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('fonts/FoundersGrotesk-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('fonts/FoundersGrotesk-Semibold.otf') format('opentype'); font-weight: 600; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Founders Grotesk'; src: url('fonts/FoundersGrotesk-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0a0a0a;
+      --gray: #555;
+      --gray-light: #ccc;
+      --blue: #002fa7;
+      --blue-light: #6fa0ff;
+      --yellow: #ffe744;
+      --cream: #faf8f3;
+      --cream-deep: #f3efe6;
+      --display: 'Founders Grotesk', 'Helvetica Neue', Arial, sans-serif;
+      --body: 'Manrope', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    @page { size: letter; margin: 0; }
+
+    html, body {
+      font-family: var(--body);
+      color: var(--ink);
+      background: var(--cream);
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+
+    body { padding: 0; max-width: 8.5in; margin: 0 auto; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--display);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.005em;
+      line-height: 0.95;
+      color: var(--ink);
+    }
+
+    p { font-size: 10pt; line-height: 1.45; margin-bottom: 6pt; }
+    strong { font-weight: 700; }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--blue);
+      font-weight: 600;
+      margin-bottom: 6pt;
+      display: block;
+    }
+
+    .gray-eyebrow {
+      font-family: var(--mono);
+      font-size: 7.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+      font-weight: 600;
+      margin-bottom: 4pt;
+      display: block;
+    }
+
+    /* PAGE STRUCTURE */
+    .page {
+      padding: 0.5in;
+      width: 8.5in;
+      height: 11in;
+      max-width: 8.5in;
+      page-break-after: always;
+      break-after: page;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    .page:last-of-type {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    .page-footer {
+      margin-top: auto;
+      padding-top: 14pt;
+      border-top: 1pt solid var(--ink);
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--mono);
+      font-size: 7pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+    }
+
+    .page-num {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    /* COVER PAGE */
+    .cover {
+      justify-content: space-between;
+    }
+
+    .cover-meta {
+      font-family: var(--mono);
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gray);
+      padding-bottom: 12pt;
+      border-bottom: 2pt solid var(--ink);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cover-title {
+      font-size: 96pt;
+      line-height: 0.85;
+      margin: 0.3in 0;
+    }
+    .cover-title .blue { color: var(--blue); }
+    .cover-title .blockend { display: block; }
+
+    .cover-lead {
+      font-size: 14pt;
+      line-height: 1.35;
+      max-width: 6in;
+      font-weight: 500;
+      color: var(--ink);
+      margin-top: 12pt;
+      margin-bottom: 24pt;
+    }
+
+    .cover-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14pt;
+      padding: 18pt 0;
+      border-top: 1pt solid var(--ink);
+      border-bottom: 1pt solid var(--ink);
+      margin-bottom: 24pt;
+    }
+
+    .cover-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 4pt;
+    }
+
+    .cover-stat-num {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 28pt;
+      line-height: 0.9;
+      color: var(--ink);
+    }
+    .cover-stat-num.blue { color: var(--blue); }
+
+    .cover-stat-label {
+      font-size: 8pt;
+      line-height: 1.3;
+      color: var(--gray);
+    }
+
+    .cover-author {
+      font-size: 9pt;
+      color: var(--gray);
+    }
+    .cover-author strong { color: var(--ink); }
+
+    /* SECTION PAGES */
+    .section-num {
+      font-family: var(--mono);
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--blue);
+      font-weight: 600;
+      margin-bottom: 6pt;
+    }
+
+    .section-title {
+      font-size: 44pt;
+      line-height: 0.9;
+      margin-bottom: 8pt;
+    }
+    .section-title .yellow { background: var(--yellow); padding: 0 4pt; }
+    .section-title .blockend { display: block; }
+
+    .lead-line {
+      font-size: 12pt;
+      line-height: 1.4;
+      max-width: 6in;
+      color: var(--ink);
+      margin-bottom: 18pt;
+      padding-bottom: 14pt;
+      border-bottom: 1pt solid var(--ink);
+      font-weight: 500;
+    }
+
+    /* PROBLEM PAGE STATS */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12pt;
+      margin-top: 6pt;
+    }
+
+    .stat-cell {
+      border: 1.5pt solid var(--ink);
+      padding: 14pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 1.6in;
+    }
+
+    .stat-cell.wide { grid-column: 1 / -1; }
+
+    .stat-num {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 56pt;
+      line-height: 0.85;
+      color: var(--blue);
+      display: block;
+      margin-bottom: 6pt;
+    }
+
+    .stat-label {
+      font-size: 11pt;
+      line-height: 1.35;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .stat-source {
+      font-family: var(--mono);
+      font-size: 7pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      margin-top: 8pt;
+    }
+
+    /* PULL QUOTE */
+    .pullquote {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 24pt;
+      margin-top: 14pt;
+    }
+    .pullquote-text {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 32pt;
+      line-height: 0.95;
+      color: var(--cream);
+      margin-bottom: 10pt;
+      text-transform: uppercase;
+    }
+    .pullquote-attribution {
+      font-size: 9pt;
+      line-height: 1.45;
+      color: var(--cream);
+      opacity: 0.85;
+      display: block;
+    }
+
+    /* STATES PAGE */
+    .states-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8pt;
+      margin-top: 6pt;
+    }
+
+    .state-card {
+      border: 1pt solid var(--ink);
+      padding: 10pt;
+      min-height: 1in;
+      display: flex;
+      flex-direction: column;
+      gap: 2pt;
+    }
+
+    .state-card.pending { border-color: var(--blue); border-width: 1.5pt; }
+    .state-card.nc { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+    .state-card.nc .state-card-num,
+    .state-card.nc .state-card-name,
+    .state-card.nc .state-card-date,
+    .state-card.nc .state-card-law,
+    .state-card.nc .state-card-status { color: var(--cream); }
+
+    .state-card-num {
+      font-family: var(--mono);
+      font-size: 7pt;
+      color: var(--gray);
+      letter-spacing: 0.1em;
+    }
+
+    .state-card-name {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 14pt;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .state-card-date {
+      font-size: 8.5pt;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .state-card-law {
+      font-size: 7.5pt;
+      color: var(--gray);
+      line-height: 1.3;
+    }
+
+    .state-card-status {
+      font-family: var(--mono);
+      font-size: 6.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      font-weight: 600;
+      margin-top: auto;
+    }
+
+    .footnote {
+      font-family: var(--mono);
+      font-size: 7.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray);
+      margin-top: 12pt;
+      line-height: 1.4;
+    }
+
+    /* UNION COUNTY PAGE */
+    .union-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12pt;
+      margin-top: 12pt;
+      padding-top: 14pt;
+      border-top: 1pt solid var(--ink);
+    }
+
+    .union-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 4pt;
+    }
+
+    .union-num {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 48pt;
+      line-height: 0.9;
+      color: var(--blue);
+    }
+    .union-num.mega { font-size: 64pt; }
+    .union-num.zero { color: var(--ink); }
+
+    .union-label {
+      font-size: 9pt;
+      line-height: 1.35;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .union-source {
+      font-family: var(--mono);
+      font-size: 7pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+    }
+
+    /* DARE COUNTY PAGE */
+    .dare-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 18pt;
+      margin-top: 6pt;
+    }
+
+    .dare-text p {
+      font-size: 10.5pt;
+      line-height: 1.5;
+      margin-bottom: 8pt;
+    }
+
+    .dare-text strong {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .dare-coalition {
+      background: var(--cream-deep);
+      border: 1pt solid var(--ink);
+      padding: 14pt;
+    }
+
+    .dare-coalition-header {
+      font-family: var(--mono);
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      font-weight: 600;
+      margin-bottom: 8pt;
+      padding-bottom: 6pt;
+      border-bottom: 1pt solid var(--ink);
+    }
+
+    .dare-coalition ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .dare-coalition li {
+      font-size: 8.5pt;
+      padding: 4pt 0;
+      border-bottom: 1pt dashed var(--gray-light);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .dare-coalition li:last-child { border-bottom: none; }
+
+    .dare-coalition .role {
+      font-family: var(--mono);
+      font-size: 7pt;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+
+    /* HOW + COST PAGE */
+    .how-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10pt;
+      margin-top: 6pt;
+      margin-bottom: 18pt;
+    }
+
+    .how-step {
+      border: 1pt solid var(--ink);
+      padding: 12pt;
+    }
+
+    .how-step-num {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 24pt;
+      color: var(--blue);
+      line-height: 0.9;
+      display: block;
+      margin-bottom: 4pt;
+    }
+
+    .how-step-title {
+      font-size: 12pt;
+      margin-bottom: 4pt;
+    }
+
+    .how-step-body {
+      font-size: 8.5pt;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    .cost-block {
+      background: var(--blue);
+      color: var(--cream);
+      padding: 22pt;
+      margin-top: 14pt;
+    }
+
+    .cost-eyebrow {
+      font-family: var(--mono);
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--cream);
+      opacity: 0.85;
+      margin-bottom: 6pt;
+      display: block;
+    }
+
+    .cost-num {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 80pt;
+      line-height: 0.85;
+      color: var(--cream);
+      margin-bottom: 4pt;
+    }
+
+    .cost-sub {
+      font-size: 14pt;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 14pt;
+    }
+
+    .cost-breakdown {
+      list-style: none;
+      padding: 0;
+      border-top: 1pt solid var(--cream);
+      padding-top: 10pt;
+    }
+
+    .cost-breakdown li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9pt;
+      padding: 3pt 0;
+      color: var(--cream);
+    }
+
+    .cost-breakdown li.total {
+      border-top: 1pt solid var(--cream);
+      margin-top: 4pt;
+      padding-top: 6pt;
+      font-weight: 700;
+    }
+
+    /* ROADMAP PAGE */
+    .roadmap-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 6pt;
+    }
+
+    .roadmap-phase {
+      display: grid;
+      grid-template-columns: 0.6in 1.2in 1fr;
+      gap: 14pt;
+      padding: 10pt 0;
+      border-bottom: 1pt solid var(--gray-light);
+      align-items: start;
+    }
+    .roadmap-phase:last-child { border-bottom: 1.5pt solid var(--ink); }
+
+    .roadmap-phase-num {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 24pt;
+      color: var(--blue);
+      line-height: 0.9;
+    }
+
+    .roadmap-phase-weeks {
+      font-family: var(--mono);
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      font-weight: 600;
+      padding-top: 4pt;
+    }
+
+    .roadmap-phase-title {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 13pt;
+      text-transform: uppercase;
+      margin-bottom: 3pt;
+      line-height: 1.05;
+    }
+
+    .roadmap-phase-body {
+      font-size: 9pt;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    /* CLOSING PAGE */
+    .closing-headline {
+      font-size: 56pt;
+      line-height: 0.88;
+      margin-bottom: 14pt;
+    }
+
+    .author-block {
+      background: var(--cream-deep);
+      border-left: 3pt solid var(--blue);
+      padding: 18pt;
+      margin-top: 18pt;
+    }
+
+    .author-name {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 16pt;
+      text-transform: uppercase;
+      margin-bottom: 4pt;
+    }
+
+    .author-meta {
+      font-family: var(--mono);
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+      margin-bottom: 10pt;
+    }
+
+    .author-body {
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
+    @media screen {
+      body { background: #d8d4cb; padding: 20px 0; }
+      .page { background: var(--cream); margin: 0 auto 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.15); }
+    }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .page { box-shadow: none; background: var(--cream); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ PAGE 1 — COVER ============ -->
+  <section class="page cover">
+    <div>
+      <div class="cover-meta">
+        <span>Proposal &middot; Confidential Draft</span>
+        <span>April 2026</span>
+      </div>
+
+      <h1 class="cover-title">
+        <span class="blue">Blue</span><span class="blockend">Envelope.</span>
+      </h1>
+
+      <p class="cover-lead">
+        A simple, voluntary tool that helps law enforcement officers communicate effectively with autistic drivers during traffic stops. Already law in nine states. Already running in Dare County, NC. Not yet in Union County.
+      </p>
+    </div>
+
+    <div>
+      <div class="cover-stats">
+        <div class="cover-stat">
+          <span class="cover-stat-num blue">9</span>
+          <span class="cover-stat-label">U.S. states with laws on the books</span>
+        </div>
+        <div class="cover-stat">
+          <span class="cover-stat-num">1 in 31</span>
+          <span class="cover-stat-label">U.S. children with autism (CDC, 2025)</span>
+        </div>
+        <div class="cover-stat">
+          <span class="cover-stat-num">5,820</span>
+          <span class="cover-stat-label">Estimated autistic adults in Union County</span>
+        </div>
+        <div class="cover-stat">
+          <span class="cover-stat-num blue">$611</span>
+          <span class="cover-stat-label">Estimated launch cost for the program</span>
+        </div>
+      </div>
+
+      <p class="cover-author">
+        <strong>A proposal for Union County, North Carolina.</strong><br>
+        Researched and prepared by Jennifer Beth Cartrette &middot; April 2026<br>
+        Live at <strong>blueenvelopeunion.vercel.app</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 — THE PROBLEM ============ -->
+  <section class="page">
+    <div class="section-num">01 / The Problem</div>
+    <h2 class="section-title">Traffic Stops<span class="blockend">Go Wrong.</span></h2>
+    <p class="lead-line">Four numbers that should make Union County uncomfortable.</p>
+
+    <div class="problem-grid">
+      <div class="stat-cell">
+        <div>
+          <span class="stat-num">20%</span>
+          <div class="stat-label">of autistic young adults have been stopped or questioned by police by age 21.</div>
+        </div>
+        <div class="stat-source">Journal of Autism &amp; Developmental Disorders, 2016</div>
+      </div>
+
+      <div class="stat-cell">
+        <div>
+          <span class="stat-num">7&times;</span>
+          <div class="stat-label">more likely to encounter police than neurotypical peers.</div>
+        </div>
+        <div class="stat-source">U.S. DOJ via The Marshall Project</div>
+      </div>
+
+      <div class="stat-cell">
+        <div>
+          <span class="stat-num">33&ndash;50%</span>
+          <div class="stat-label">of people killed by police have some form of disability.</div>
+        </div>
+        <div class="stat-source">Ruderman Family Foundation, 2016</div>
+      </div>
+
+      <div class="stat-cell">
+        <div>
+          <span class="stat-num">11</span>
+          <div class="stat-label">U.S. states require autism-specific training for law enforcement. <strong>North Carolina is not one of them.</strong></div>
+        </div>
+        <div class="stat-source">NCSL / PBS NewsHour, 2024</div>
+      </div>
+    </div>
+
+    <div class="pullquote">
+      <p class="pullquote-text">14 shots in under 2 seconds.</p>
+      <span class="pullquote-attribution">
+        Pocatello, Idaho, April 5, 2025. Victor Perez, 17, was a nonspeaking autistic Latino teen with intellectual disability and cerebral palsy. Officers fired 14 rounds in under two seconds. Twelve struck him. He died. The Idaho Attorney General declined to file charges, citing that "the officers were not familiar with Perez's limited capabilities." His family filed a federal ADA lawsuit in June 2025.
+      </span>
+    </div>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">02 / 08</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 3 — NATIONAL ADOPTION ============ -->
+  <section class="page">
+    <div class="section-num">02 / National Adoption</div>
+    <h2 class="section-title">Nine States.<span class="blockend">One Pending.</span></h2>
+    <p class="lead-line">North Carolina's own bill is stuck in committee. Union County does not have to wait on Raleigh.</p>
+
+    <div class="states-grid">
+      <article class="state-card">
+        <span class="state-card-num">01</span>
+        <h3 class="state-card-name">Connecticut</h3>
+        <span class="state-card-date">2020</span>
+        <span class="state-card-law">DMV Statewide</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">02</span>
+        <h3 class="state-card-name">Arizona</h3>
+        <span class="state-card-date">Pre-2025</span>
+        <span class="state-card-law">MVD Statewide</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">03</span>
+        <h3 class="state-card-name">Indiana</h3>
+        <span class="state-card-date">Pre-2026</span>
+        <span class="state-card-law">BMV Statewide</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">04</span>
+        <h3 class="state-card-name">Massachusetts</h3>
+        <span class="state-card-date">Spring 2024</span>
+        <span class="state-card-law">State Police Program</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">05</span>
+        <h3 class="state-card-name">Mississippi</h3>
+        <span class="state-card-date">Jul 1, 2025</span>
+        <span class="state-card-law">SB 2260 / DPS</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">06</span>
+        <h3 class="state-card-name">Rhode Island</h3>
+        <span class="state-card-date">Jan 2025</span>
+        <span class="state-card-law">DMV Statewide</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">07</span>
+        <h3 class="state-card-name">Virginia</h3>
+        <span class="state-card-date">Jul 1, 2025</span>
+        <span class="state-card-law">HB2501 / §46.2-203.3</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">08</span>
+        <h3 class="state-card-name">Arkansas</h3>
+        <span class="state-card-date">Feb 2025</span>
+        <span class="state-card-law">Act 16 of 2025</span>
+        <span class="state-card-status">Active</span>
+      </article>
+      <article class="state-card">
+        <span class="state-card-num">09</span>
+        <h3 class="state-card-name">Washington</h3>
+        <span class="state-card-date">Jun 11, 2026</span>
+        <span class="state-card-law">HB 2323 / DOL</span>
+        <span class="state-card-status">Newest</span>
+      </article>
+      <article class="state-card pending">
+        <span class="state-card-num">10</span>
+        <h3 class="state-card-name">Georgia</h3>
+        <span class="state-card-date">Awaiting Signature</span>
+        <span class="state-card-law">SB 433 "Rio's Law"</span>
+        <span class="state-card-status">Pending</span>
+      </article>
+      <article class="state-card nc">
+        <span class="state-card-num">11</span>
+        <h3 class="state-card-name">North Carolina</h3>
+        <span class="state-card-date">Stalled in Senate</span>
+        <span class="state-card-law">HB 21 / Committee on Rules</span>
+        <span class="state-card-status">This Is Us</span>
+      </article>
+    </div>
+
+    <p class="footnote">
+      + County-level programs in Dare County NC, San Diego CA, Monmouth NJ, Placer CA, Boulder CO, Loudoun VA, and others. None require new state legislation.
+    </p>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">03 / 08</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 4 — UNION COUNTY ============ -->
+  <section class="page">
+    <div class="section-num">03 / Union County, NC</div>
+    <h2 class="section-title">The Gap is<span class="blockend"><span class="yellow">Visible.</span></span></h2>
+    <p class="lead-line">Union County has the population, the diagnoses, and the policing footprint to need this. It does not have the program.</p>
+
+    <div class="union-grid">
+      <div class="union-cell">
+        <span class="union-num">263,386</span>
+        <div class="union-label">Union County residents (Census, July 2024)</div>
+        <span class="union-source">U.S. Census Bureau QuickFacts</span>
+      </div>
+      <div class="union-cell">
+        <span class="union-num mega">5,820</span>
+        <div class="union-label">Estimated autistic adults in Union County, applying CDC's 2.21% prevalence to the adult population.</div>
+        <span class="union-source">CDC ASD prevalence data, 2025</span>
+      </div>
+      <div class="union-cell">
+        <span class="union-num zero">0</span>
+        <div class="union-label">Mentions of autism, disability, or ADA accommodation across the entire Monroe Police Department public website (15 pages, 32,388 words analyzed).</div>
+        <span class="union-source">Independent content audit, 2025</span>
+      </div>
+    </div>
+
+    <p style="margin-top: 24pt; font-size: 11pt; line-height: 1.5; max-width: 6.5in;">
+      An estimated <strong>nearly six thousand autistic adults</strong> drive, walk, and live in Union County. Some of them will be stopped by Union County or Monroe Police this year. None of those officers have been trained on what an autistic meltdown looks like, because no such training exists in this jurisdiction. There is no public policy, no public statement, no public framework. The Blue Envelope program closes that gap with one piece of paper, one 30-minute roll-call briefing, and a one-time material cost of <strong>$611</strong>.
+    </p>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">04 / 08</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 5 — DARE COUNTY ============ -->
+  <section class="page">
+    <div class="section-num">04 / NC Precedent</div>
+    <h2 class="section-title">Dare County<span class="blockend"><span class="yellow">Did It First.</span></span></h2>
+    <p class="lead-line">North Carolina already has a working, voluntary, county-level Blue Envelope program. It launched in 2024 with no new law and no state funding.</p>
+
+    <div class="dare-grid">
+      <div class="dare-text">
+        <p><strong>One person.</strong> Outer Banks Health Speech Language Pathologist Kristin Kuhar saw the program in another state and brought it home.</p>
+        <p><strong>Seven agencies.</strong> Within months she built a coalition of every police department in Dare County plus the Sheriff's Office.</p>
+        <p><strong>One year.</strong> The program launched in July 2024 with free envelopes at police lobbies, libraries, medical practices, senior centers, and high schools.</p>
+        <p><strong>No new law required.</strong> Voluntary. Self-implemented. Already running. The Dare County model is the template Union County can copy verbatim.</p>
+      </div>
+
+      <div class="dare-coalition">
+        <div class="dare-coalition-header">The Dare County Coalition</div>
+        <ul>
+          <li><span>Dare County Sheriff</span><span class="role">Doughtie</span></li>
+          <li><span>Kill Devil Hills PD</span><span class="role">Britt</span></li>
+          <li><span>Kitty Hawk PD</span><span class="role">Palkovics</span></li>
+          <li><span>Manteo PD</span><span class="role">Eilert</span></li>
+          <li><span>Southern Shores PD</span><span class="role">Kole</span></li>
+          <li><span>Duck PD</span><span class="role">Ackerman</span></li>
+          <li><span>Nags Head PD</span><span class="role">Montgomery</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top: 24pt; font-size: 10pt; line-height: 1.5; color: var(--gray); max-width: 6.5in;">
+      Dare County proves that this program does not need state legislation, federal funding, or a multi-year planning process to get off the ground. One determined person, a printer, and a coalition meeting was enough. Union County has all three.
+    </p>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">05 / 08</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 6 — HOW + COST ============ -->
+  <section class="page">
+    <div class="section-num">05 / How It Works &amp; What It Costs</div>
+    <h2 class="section-title">Three Steps.<span class="blockend">Six Hundred Bucks.</span></h2>
+    <p class="lead-line">The driver does two. The officer does one. The whole program costs less than a good office chair to launch.</p>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <span class="how-step-num">01</span>
+        <h3 class="how-step-title">Pick Up</h3>
+        <p class="how-step-body">Driver picks up a free Blue Envelope at any participating Union County PD lobby, library, or DMV pop-up event. No registration, no proof of diagnosis required.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-step-num">02</span>
+        <h3 class="how-step-title">Prepare</h3>
+        <p class="how-step-body">Driver places copies of license, registration, and insurance inside the envelope, plus optional emergency contacts and personal communication notes.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-step-num">03</span>
+        <h3 class="how-step-title">Present</h3>
+        <p class="how-step-body">During a stop, the driver hands the envelope to the officer. The officer immediately knows to slow down, reduce sensory input, and use single-step instructions.</p>
+      </div>
+    </div>
+
+    <div class="cost-block">
+      <span class="cost-eyebrow">Total launch cost &mdash; moderate uptake scenario</span>
+      <div class="cost-num">$611</div>
+      <div class="cost-sub">is what it costs to start.</div>
+      <ul class="cost-breakdown">
+        <li><span>Envelopes (1,455 units + 20% spares = 1,746 @ $0.35)</span><span>$611</span></li>
+        <li><span>Officer training handouts (500 @ $0.05/page)</span><span>$25</span></li>
+        <li><span>Optional in-house training video</span><span>$0&ndash;$500</span></li>
+        <li><span>Roll-call briefing time (45 min/squad)</span><span>$0 hard cost</span></li>
+        <li class="total"><span>Total to launch</span><span>Under $1,000</span></li>
+      </ul>
+    </div>
+
+    <p class="footnote">
+      For comparison: San Diego County's heavily produced launch with full media campaign was budgeted at $75,000. Union County does not need that scale to begin.
+    </p>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">06 / 08</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 7 — ROADMAP ============ -->
+  <section class="page">
+    <div class="section-num">06 / Implementation Roadmap</div>
+    <h2 class="section-title">Twelve Weeks From<span class="blockend">Kickoff to Launch.</span></h2>
+    <p class="lead-line">Five phases. No legislation required. Every step has a working precedent in Dare County.</p>
+
+    <ul class="roadmap-list">
+      <li class="roadmap-phase">
+        <div class="roadmap-phase-num">01</div>
+        <div class="roadmap-phase-weeks">Weeks 1&ndash;2</div>
+        <div>
+          <div class="roadmap-phase-title">Stakeholder Convening</div>
+          <p class="roadmap-phase-body">Convene the Sheriff's Office, all municipal police chiefs (Monroe, Indian Trail, Waxhaw, Wesley Chapel, Marvin, Weddington, Stallings, Hemby Bridge, Lake Park, Mineral Springs, Wingate, Marshville), and community partners. Adopt a voluntary, no-registry policy framework.</p>
+        </div>
+      </li>
+      <li class="roadmap-phase">
+        <div class="roadmap-phase-num">02</div>
+        <div class="roadmap-phase-weeks">Weeks 3&ndash;5</div>
+        <div>
+          <div class="roadmap-phase-title">Materials Production</div>
+          <p class="roadmap-phase-body">Design and print #10 Blue Envelopes with bilingual driver and officer tip sheets. Source through approved county vendor or use 123Print bulk benchmark ($0.35/unit).</p>
+        </div>
+      </li>
+      <li class="roadmap-phase">
+        <div class="roadmap-phase-num">03</div>
+        <div class="roadmap-phase-weeks">Weeks 4&ndash;7</div>
+        <div>
+          <div class="roadmap-phase-title">Officer Training Prep</div>
+          <p class="roadmap-phase-body">Develop a 30&ndash;45 minute roll-call briefing for every sworn officer. Use Dare County's existing material as the template. Add Union County's own jurisdictional context.</p>
+        </div>
+      </li>
+      <li class="roadmap-phase">
+        <div class="roadmap-phase-num">04</div>
+        <div class="roadmap-phase-weeks">Weeks 8&ndash;10</div>
+        <div>
+          <div class="roadmap-phase-title">Distribution &amp; Public Launch</div>
+          <p class="roadmap-phase-body">Stock all PD lobbies, libraries, and DMV events with envelopes. Joint press conference with the Sheriff and at least three municipal chiefs. Press release to local outlets.</p>
+        </div>
+      </li>
+      <li class="roadmap-phase">
+        <div class="roadmap-phase-num">05</div>
+        <div class="roadmap-phase-weeks">Weeks 11&ndash;12</div>
+        <div>
+          <div class="roadmap-phase-title">Metrics &amp; Annual Report</div>
+          <p class="roadmap-phase-body">Track distribution counts, training completion rates, and community survey feedback. Publish a one-page annual public report. Schedule next year's review cycle.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">07 / 08</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 8 — CLOSING / NEXT STEP ============ -->
+  <section class="page">
+    <div class="section-num">07 / Next Step</div>
+    <h2 class="closing-headline">Let's Make<br>Union <span class="yellow">First.</span></h2>
+
+    <p style="font-size: 12pt; line-height: 1.5; max-width: 6.5in; margin-bottom: 14pt;">
+      The materials are designed. The model is proven. The cost is rounding-error against a county budget. The implementation timeline is twelve weeks. There is no legal barrier, no funding barrier, and no precedent barrier.
+    </p>
+
+    <p style="font-size: 12pt; line-height: 1.5; max-width: 6.5in; margin-bottom: 14pt;">
+      What this proposal needs is one conversation with one decision-maker who can convene the room. The Dare County model only required <strong>one person</strong> to start it. Union County can be the second North Carolina county to launch &mdash; or it can wait for Raleigh.
+    </p>
+
+    <p style="font-size: 12pt; line-height: 1.5; max-width: 6.5in;">
+      Full sourced research, the officer training one-sheet, the cost model, and the implementation roadmap are live and public at <strong>blueenvelopeunion.vercel.app</strong>.
+    </p>
+
+    <div class="author-block">
+      <div class="author-name">Jennifer Beth Cartrette</div>
+      <div class="author-meta">Researcher &middot; Designer &middot; Union County resident &middot; April 2026</div>
+      <p class="author-body">
+        I am an autistic adult who lives in Union County. This proposal exists because of a December 2024 traffic stop in which I had a documented autistic meltdown on the side of the road and went home wanting to make sure other autistic drivers in this county would never have that experience. The full project &mdash; site, research, cost model, training module, and implementation roadmap &mdash; was researched, written, designed, and built by me as a voluntary act of community advocacy.
+      </p>
+    </div>
+
+    <div class="page-footer">
+      <span>blueenvelopeunion.vercel.app</span>
+      <span class="page-num">08 / 08</span>
+    </div>
+  </section>
+
+</body>
+</html>
