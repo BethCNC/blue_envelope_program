@@ -223,8 +223,9 @@ section { padding: var(--pad-section) 0; position: relative; }
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 32px;
+  gap: 24px;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -236,6 +237,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   color: var(--ink);
   position: relative;
   padding: 4px 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -261,6 +263,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  white-space: nowrap;
   transition: all 0.2s;
 }
 
@@ -290,7 +293,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1100px) {
   .nav-menu { display: none; }
   .mobile-menu-toggle { display: flex; }
   .nav-menu.is-open {
@@ -930,10 +933,17 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 /* UNION (the gap) */
 .union {
-  background: var(--ink);
-  color: var(--cream);
-  border-bottom: 2px solid var(--ink);
+  background: #0a0a0a;
+  color: #faf8f3;
+  border-bottom: 2px solid #0a0a0a;
 }
+.union .section-title,
+.union h2,
+.union h3,
+.union .union-headline,
+.union .union-cell-label,
+.union .section-intro { color: #faf8f3; }
+.union .union-cell-num { color: #ffe744; }
 
 .union .section-num { color: var(--gray-light); border-color: var(--cream); }
 .union .section-title,
@@ -2096,7 +2106,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   font-family: var(--display);
   font-size: clamp(14px, 1.4vw, 20px);
   text-transform: uppercase;
-  color: var(--cream);
+  color: #faf8f3;
   letter-spacing: -0.01em;
   white-space: nowrap;
   overflow: hidden;
@@ -2104,9 +2114,9 @@ section { padding: var(--pad-section) 0; position: relative; }
 }
 
 .roadmap-bar.phase-1 { background: var(--blue); grid-column: 1 / span 3; }
-.roadmap-bar.phase-2 { background: var(--ink);  grid-column: 3 / span 4; }
+.roadmap-bar.phase-2 { background: #0a0a0a; border-color: #0a0a0a; grid-column: 3 / span 4; }
 .roadmap-bar.phase-3 { background: var(--blue); grid-column: 5 / span 3; }
-.roadmap-bar.phase-4 { background: var(--ink);  grid-column: 7 / span 3; }
+.roadmap-bar.phase-4 { background: #0a0a0a; border-color: #0a0a0a; grid-column: 7 / span 3; }
 .roadmap-bar.phase-5 { background: var(--blue); grid-column: 10 / span 3; }
 
 .roadmap-bar.phase-2 .bar-title,
