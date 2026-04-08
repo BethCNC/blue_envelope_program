@@ -270,28 +270,32 @@
       margin-top: 8pt;
     }
 
-    /* PULL QUOTE */
+    /* PULL QUOTE — newspaper-style, print friendly */
     .pullquote {
-      background: var(--ink);
-      color: var(--cream);
-      padding: 24pt;
+      background: var(--cream);
+      color: var(--ink);
+      padding: 18pt 0 18pt 18pt;
       margin-top: 14pt;
+      border-top: 4pt solid var(--ink);
+      border-bottom: 1pt solid var(--ink);
+      border-left: 6pt solid var(--ink);
     }
     .pullquote-text {
       font-family: var(--display);
       font-weight: 700;
       font-size: 32pt;
       line-height: 0.95;
-      color: var(--cream);
+      color: var(--ink);
       margin-bottom: 10pt;
       text-transform: uppercase;
     }
     .pullquote-attribution {
       font-size: 9pt;
       line-height: 1.45;
-      color: var(--cream);
-      opacity: 0.85;
+      color: var(--ink);
       display: block;
+      font-style: italic;
+      padding-right: 14pt;
     }
 
     /* STATES PAGE */
@@ -312,12 +316,19 @@
     }
 
     .state-card.pending { border-color: var(--blue); border-width: 1.5pt; }
-    .state-card.nc { background: var(--ink); color: var(--cream); border-color: var(--ink); }
-    .state-card.nc .state-card-num,
-    .state-card.nc .state-card-name,
-    .state-card.nc .state-card-date,
-    .state-card.nc .state-card-law,
-    .state-card.nc .state-card-status { color: var(--cream); }
+    .state-card.nc {
+      background: var(--cream);
+      border: 2pt solid var(--ink);
+      position: relative;
+    }
+    .state-card.nc .state-card-status {
+      color: #b31515;
+      font-weight: 700;
+    }
+    .state-card.nc .state-card-name::after {
+      content: " ◆";
+      color: #b31515;
+    }
 
     .state-card-num {
       font-family: var(--mono);
@@ -501,11 +512,13 @@
       color: var(--ink);
     }
 
+    /* COST BLOCK — print friendly (no heavy fill) */
     .cost-block {
-      background: var(--blue);
-      color: var(--cream);
+      background: var(--cream);
+      color: var(--ink);
       padding: 22pt;
       margin-top: 14pt;
+      border: 3pt solid var(--ink);
     }
 
     .cost-eyebrow {
@@ -513,8 +526,7 @@
       font-size: 8pt;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--cream);
-      opacity: 0.85;
+      color: var(--blue);
       margin-bottom: 6pt;
       display: block;
     }
@@ -524,21 +536,21 @@
       font-weight: 700;
       font-size: 80pt;
       line-height: 0.85;
-      color: var(--cream);
+      color: var(--blue);
       margin-bottom: 4pt;
     }
 
     .cost-sub {
       font-size: 14pt;
       font-weight: 500;
-      color: var(--cream);
+      color: var(--ink);
       margin-bottom: 14pt;
     }
 
     .cost-breakdown {
       list-style: none;
       padding: 0;
-      border-top: 1pt solid var(--cream);
+      border-top: 1pt solid var(--ink);
       padding-top: 10pt;
     }
 
@@ -547,11 +559,11 @@
       justify-content: space-between;
       font-size: 9pt;
       padding: 3pt 0;
-      color: var(--cream);
+      color: var(--ink);
     }
 
     .cost-breakdown li.total {
-      border-top: 1pt solid var(--cream);
+      border-top: 1pt solid var(--ink);
       margin-top: 4pt;
       padding-top: 6pt;
       font-weight: 700;
