@@ -225,7 +225,7 @@ section { padding: var(--pad-section) 0; position: relative; }
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 18px;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -234,10 +234,10 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .nav-link {
   font-family: var(--body);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   color: var(--ink);
   position: relative;
   padding: 4px 0;
@@ -261,12 +261,12 @@ section { padding: var(--pad-section) 0; position: relative; }
 .nav-cta {
   background: var(--blue);
   color: var(--cream);
-  padding: 12px 20px;
+  padding: 10px 14px;
   border: 2px solid var(--ink);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   white-space: nowrap;
   transition: all 0.2s;
 }
@@ -297,7 +297,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .nav-menu { display: none; }
   .mobile-menu-toggle { display: flex; }
   .nav-menu.is-open {
@@ -2395,6 +2395,21 @@ section,
 [data-theme="dark"] .logo-mark {
   background: var(--blue);
   border-color: var(--ink);
+}
+
+/* Roadmap dark phase bars — hardcoded #0a0a0a blends into dark bg,
+   lift them with a visible surface and cream border */
+[data-theme="dark"] .roadmap-bar.phase-2,
+[data-theme="dark"] .roadmap-bar.phase-4 {
+  background: #1c2230;
+  border-color: var(--ink);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .roadmap-bar.phase-2,
+  :root:not([data-theme="light"]) .roadmap-bar.phase-4 {
+    background: #1c2230;
+    border-color: var(--ink);
+  }
 }
 
 /* THEME TOGGLE BUTTON */
