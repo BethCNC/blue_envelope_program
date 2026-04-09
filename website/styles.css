@@ -194,7 +194,6 @@ section { padding: var(--pad-section) 0; position: relative; }
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 72px;
   max-width: var(--max-w);
   margin: 0 auto;
@@ -203,15 +202,10 @@ section { padding: var(--pad-section) 0; position: relative; }
   position: relative;
 }
 
-/* Logo pinned left, theme toggle pinned right (via space-between).
-   Nav menu absolutely centered in the nav so logo width doesn't
-   throw off the visual balance. */
-.nav .nav-menu {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+/* Logo pinned left, theme toggle pinned right.
+   Auto margins on both sides of nav-menu center it in the
+   space between logo and toggle (no overlap with the logo). */
+.nav .nav-menu { margin-left: auto; margin-right: auto; }
 
 .logo {
   font-family: var(--display);
