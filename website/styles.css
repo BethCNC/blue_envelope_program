@@ -199,6 +199,18 @@ section { padding: var(--pad-section) 0; position: relative; }
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 var(--gutter);
+  gap: 24px;
+  position: relative;
+}
+
+/* Logo pinned left, theme toggle pinned right (via space-between).
+   Nav menu absolutely centered in the nav so logo width doesn't
+   throw off the visual balance. */
+.nav .nav-menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -297,7 +309,7 @@ section { padding: var(--pad-section) 0; position: relative; }
   background: var(--ink);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .nav-menu { display: none; }
   .mobile-menu-toggle { display: flex; }
   .nav-menu.is-open {
@@ -306,6 +318,7 @@ section { padding: var(--pad-section) 0; position: relative; }
     top: 72px;
     left: 0;
     right: 0;
+    transform: none;
     flex-direction: column;
     background: var(--cream);
     border-bottom: 2px solid var(--ink);
