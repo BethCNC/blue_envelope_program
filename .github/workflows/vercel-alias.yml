@@ -1,0 +1,63 @@
+name: Re-alias blueenvelopeunion to latest production
+
+# Why this exists:
+# blueenvelopeunion.vercel.app is a manual Vercel alias, not a project
+# domain, so it does NOT auto-follow new production deploys. Beth gave
+# this URL to her lawyer, so it MUST stay current.
+#
+# This workflow waits for the GitHub-triggered Vercel deploy to finish,
+# finds the latest READY production deployment, and re-aliases the
+# short URL to it.
+#
+# Required GitHub repo secret: VERCEL_TOKEN
+#   Generate at https://vercel.com/account/tokens (full access scope)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  realias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel build to finish
+        run: sleep 90
+
+      - name: Find latest production deployment
+        id: find
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          PROJECT_ID="prj_LIJcIjI4bWYjYYeYShK9ns3ADpFT"
+          TEAM_ID="team_dRpCD2vFr4jSanoIf5KLP7hM"
+          RESPONSE=$(curl -s \
+            "https://api.vercel.com/v6/deployments?projectId=$PROJECT_ID&teamId=$TEAM_ID&state=READY&target=production&limit=1" \
+            -H "Authorization: Bearer $VERCEL_TOKEN")
+          DEPLOY_URL=$(echo "$RESPONSE" | jq -r '.deployments[0].url')
+          DEPLOY_ID=$(echo "$RESPONSE" | jq -r '.deployments[0].uid')
+          echo "Latest production deploy: $DEPLOY_URL ($DEPLOY_ID)"
+          if [ "$DEPLOY_URL" = "null" ] || [ -z "$DEPLOY_URL" ]; then
+            echo "No READY production deployment found"
+            exit 1
+          fi
+          echo "deploy_url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
+          echo "deploy_id=$DEPLOY_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Re-alias blueenvelopeunion.vercel.app
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          DEPLOY_ID: ${{ steps.find.outputs.deploy_id }}
+        run: |
+          TEAM_ID="team_dRpCD2vFr4jSanoIf5KLP7hM"
+          RESULT=$(curl -s -X POST \
+            "https://api.vercel.com/v2/deployments/$DEPLOY_ID/aliases?teamId=$TEAM_ID" \
+            -H "Authorization: Bearer $VERCEL_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"alias":"blueenvelopeunion.vercel.app"}')
+          echo "$RESULT"
+          # Treat any response containing "oldDeploymentId" or "uid" as success
+          echo "$RESULT" | jq -e '.uid // .oldDeploymentId' > /dev/null || {
+            echo "Alias update may have failed"
+            exit 1
+          }
