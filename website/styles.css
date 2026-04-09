@@ -49,7 +49,9 @@ html {
 
   --display: 'Founders Grotesk', 'Helvetica Neue', Arial, sans-serif;
   --body: 'Manrope', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  /* mono retired per Beth — alias to body so existing var(--mono)
+     usages render in the body sans-serif instead */
+  --mono: 'Manrope', system-ui, sans-serif;
 
   /* Type scale */
   --type-mega: clamp(120px, 22vw, 360px);   /* shock-tier — full viewport stops */
