@@ -1551,10 +1551,8 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 /* ===== RESPONSIVE OVERRIDES ===== */
 
-/* Large tablet / small desktop — 920-1200 */
-@media (max-width: 1200px) {
-  .dare-overflow-title { white-space: normal; }
-}
+/* (former .dare-overflow-title wrap override removed — wrap is now
+   default at every viewport, so no breakpoint-specific rule needed) */
 
 /* Tablet — 768-920 */
 @media (max-width: 920px) {
@@ -1946,14 +1944,18 @@ section { padding: var(--pad-section) 0; position: relative; }
 
 .dare-overflow-title {
   font-family: var(--display);
-  font-size: clamp(80px, 16vw, 280px);
-  line-height: 0.85;
-  letter-spacing: -0.04em;
+  /* Sized so "DARE COUNTY DID IT FIRST." fits on-screen at every
+     viewport — wraps naturally and capped so it never overflows. */
+  font-size: clamp(56px, 10vw, 168px);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--ink);
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
   margin: 0 0 32px;
   padding-right: 0;
+  max-width: 100%;
 }
 
 .dare-overflow-title .yellow {
